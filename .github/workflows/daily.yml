@@ -63,7 +63,8 @@ jobs:
       - name: Summary
         run: |
           node -e "
-          const a=require('./data/archive.json');
+          const fs=require('fs');
+          const a=JSON.parse(fs.readFileSync('./data/archive.json','utf8'));
           const t=a[0];
           console.log('### '+t.date+' — '+t.count+' questions ('+t.source+') across '+t.subjects+' subjects');
           console.log('Archive days: '+a.length);
