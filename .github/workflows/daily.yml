@@ -13,7 +13,7 @@ on:
       provider:
         description: 'openai | sarvam | gemini | custom | none'
         required: false
-        default: 'openai'
+        default: 'sarvam'
 
 permissions:
   contents: write
@@ -35,18 +35,24 @@ jobs:
 
       - name: Generate today's paper
         env:
-          AI_PROVIDER: ${{ github.event.inputs.provider || vars.AI_PROVIDER || 'openai' }}
+          AI_PROVIDER: ${{ github.event.inputs.provider || vars.AI_PROVIDER || 'sarvam' }}
           AI_API_KEY: ${{ secrets.AI_API_KEY }}
           AI_MODEL: ${{ vars.AI_MODEL }}
           AI_ENDPOINT: ${{ vars.AI_ENDPOINT }}
           QUESTIONS_PER_DAY: ${{ github.event.inputs.count || vars.QUESTIONS_PER_DAY || '500' }}
         run: node tools/generate-daily.mjs
 
+      - name: Compact old papers if the repo is filling up
+        env:
+          SIZE_LIMIT_MB: '700'
+          KEEP_DAYS: '183'
+        run: node tools/compact-archive.mjs
+
       - name: Commit the archive
         run: |
           git config user.name "examarena-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/daily data/archive.json
+          git add data/daily data/archive.json data/archive
           if git diff --staged --quiet; then
             echo "No changes to publish."
           else

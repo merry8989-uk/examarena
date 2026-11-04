@@ -3,6 +3,7 @@ import * as S from './store.js';
 import * as E from './engine.js';
 import * as AI from './ai.js';
 import * as U from './upload.js';
+import * as C from './chat.js';
 
 const runtime = { timer: null, live: null, paper: null, result: null };
 
@@ -1179,6 +1180,266 @@ The SI unit of force is,Joule,Newton,Watt,Pascal,B,Physics,Force is mass times a
   }));
 }
 
+/* ================= ASK AI ================= */
+const CHAT_KEY = 'ea.v1.chat';
+
+const ICONS = {
+  clip: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>',
+  mic: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>',
+  stop: '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>',
+  speaker: '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/></svg>'
+};
+const icon = k => ICONS[k] || '';
+
+function chatHistory() {
+  try { return JSON.parse(localStorage.getItem(CHAT_KEY)) || []; } catch { return []; }
+}
+function saveChatHistory(msgs) {
+  try { localStorage.setItem(CHAT_KEY, JSON.stringify(msgs.slice(-40))); } catch {}
+}
+
+export async function mountChat(app, view) {
+  await C.loadConfig();
+  if (!C.state.messages.length) C.state.messages = chatHistory();
+  const be = C.backend();
+
+  view.innerHTML = `
+    <div class="chathead">
+      <div>
+        <span class="eyebrow">Ask anything · text · image · PDF · voice</span>
+        <h1 style="font-size:1.8rem;margin:0">Ask AI</h1>
+      </div>
+      <div class="row">
+        <span class="pill ${be.mode === 'proxy' ? 'easy' : be.mode === 'key' ? 'medium' : ''}">${esc(be.label)}</span>
+        <button class="btn small ghost" id="newChat">New chat</button>
+      </div>
+    </div>
+
+    ${be.mode === 'none' ? `
+      <div class="card pad" style="margin:1rem 0;border-color:var(--gold)">
+        <h3 style="margin-top:0">Connect the AI first</h3>
+        <p class="muted" style="font-size:.9rem;margin-bottom:.6rem">This page is a public static site, so the key cannot live in the JavaScript. Two ways to make it work:</p>
+        <p style="font-size:.9rem;margin:0 0 .5rem"><strong>1 · Secure proxy (recommended, works for every visitor).</strong> Deploy <code>worker/sarvam-proxy.js</code> as a free Cloudflare Worker, add the key there as a secret, then paste the worker URL into <code>data/config.json</code>. The key stays on the worker and the browser never sees it.</p>
+        <p style="font-size:.9rem;margin:0"><strong>2 · Your own key, this browser only.</strong> Add a Sarvam key in AI settings. It is stored locally on this device and used only here.</p>
+        <div class="row" style="margin-top:.9rem">
+          <button class="btn" data-act="open-ai">Open AI settings</button>
+          <a class="btn ghost" href="worker/sarvam-proxy.js" target="_blank" rel="noopener">View the worker script</a>
+        </div>
+      </div>` : ''}
+
+    <div class="chatwrap">
+      <div class="chatlog" id="chatLog"></div>
+      <div class="composer">
+        <div class="attachrow" id="attachRow"></div>
+        <div class="composerrow">
+          <button class="cbtn" id="attachBtn" title="Attach an image, PDF or text file">${icon('clip')}</button>
+          <button class="cbtn" id="micBtn" title="Ask by voice">${icon('mic')}</button>
+          <textarea id="chatInput" rows="1" placeholder="Ask anything — a concept, a doubt, a full topic, or say “make notes on Article 21”…"></textarea>
+          <button class="btn" id="sendBtn">Send</button>
+        </div>
+        <div class="dim" style="font-size:.72rem;margin-top:.4rem">Enter to send · Shift+Enter for a new line · answers can be saved as PDF, DOC or notes</div>
+        <input type="file" id="chatFile" accept="image/*,.pdf,.txt,.md" hidden />
+      </div>
+    </div>
+  `;
+
+  const log = view.querySelector('#chatLog');
+  const input = view.querySelector('#chatInput');
+  const sendBtn = view.querySelector('#sendBtn');
+  const attachRow = view.querySelector('#attachRow');
+
+  const paintAttachments = () => {
+    attachRow.innerHTML = C.state.attachments.map((a, i) =>
+      `<span class="attachchip">${a.type === 'pdf' ? '📄' : '🖼️'} ${esc(a.name)} <span class="dim">${esc(a.note || '')}</span>
+        <button data-rm="${i}" aria-label="Remove">✕</button></span>`).join('');
+    attachRow.querySelectorAll('[data-rm]').forEach(b => b.addEventListener('click', () => {
+      C.state.attachments.splice(Number(b.dataset.rm), 1);
+      paintAttachments();
+    }));
+  };
+
+  const paint = () => {
+    const msgs = C.state.messages;
+    if (!msgs.length) {
+      log.innerHTML = `<div class="chatempaty">
+        <p style="margin:0 0 .6rem"><strong>Try one of these</strong></p>
+        <div class="row">
+          ${['Explain Article 21 with two examples', 'Make revision notes on the Kosi river', 'Difference between CGST and IGST', '20 practice questions on GST input credit']
+            .map(q => `<button class="chip" data-seed="${esc(q)}">${esc(q)}</button>`).join('')}
+        </div>
+        <p class="dim" style="font-size:.78rem;margin:.9rem 0 0">Attach a photo of a question, a PDF chapter, or hold the mic and speak — in Hindi or English.</p>
+      </div>`;
+      log.querySelectorAll('[data-seed]').forEach(b => b.addEventListener('click', () => {
+        input.value = b.dataset.seed;
+        input.focus();
+      }));
+      return;
+    }
+    log.innerHTML = msgs.map((m, i) => {
+      if (m.role === 'system') return '';
+      const isUser = m.role === 'user';
+      return `<div class="bubble ${isUser ? 'me' : 'ai'}">
+        <div class="who">${isUser ? 'You' : 'ExamArena AI'}</div>
+        <div class="body">${C.renderMD(m.content)}</div>
+        ${isUser ? '' : `<div class="msgacts">
+          <button class="cbtn sm" data-speak="${i}" title="Play this answer">${icon('speaker')}</button>
+          <button class="cbtn sm" data-pdf="${i}" title="Export as PDF">PDF</button>
+          <button class="cbtn sm" data-doc="${i}" title="Export as Word">DOC</button>
+          <button class="cbtn sm" data-note="${i}" title="Save as a note">Note</button>
+        </div>`}
+      </div>`;
+    }).join('');
+    log.scrollTop = log.scrollHeight;
+
+    log.querySelectorAll('[data-speak]').forEach(b => b.addEventListener('click', () => speakAt(Number(b.dataset.speak), b)));
+    log.querySelectorAll('[data-pdf]').forEach(b => b.addEventListener('click', () => {
+      const i = Number(b.dataset.pdf);
+      C.exportPDF(C.state.messages.slice(0, i + 1), 'ExamArena — ' + C.state.messages[i].content.slice(0, 50));
+    }));
+    log.querySelectorAll('[data-doc]').forEach(b => b.addEventListener('click', () => {
+      const i = Number(b.dataset.doc);
+      C.exportDOC(C.state.messages.slice(0, i + 1), 'ExamArena — ' + C.state.messages[i].content.slice(0, 50));
+    }));
+    log.querySelectorAll('[data-note]').forEach(b => b.addEventListener('click', () => {
+      const i = Number(b.dataset.note);
+      C.saveAsNote(C.state.messages.slice(0, i + 1), 'AI: ' + C.state.messages[i].content.slice(0, 50));
+      toast('Saved to your notes — usable in the builder and upload pages.');
+    }));
+  };
+
+  const speakAt = async (i, btn) => {
+    const text = C.state.messages[i].content;
+    btn.disabled = true;
+    btn.textContent = '…';
+    try {
+      const url = await C.speak(text, /[\u0900-\u097F]/.test(text) ? 'hi-IN' : 'en-IN');
+      const audio = new Audio(url);
+      audio.play();
+      btn.innerHTML = icon('stop');
+      audio.onended = () => { btn.innerHTML = icon('speaker'); btn.disabled = false; };
+      audio.onerror = () => { btn.innerHTML = icon('speaker'); btn.disabled = false; };
+    } catch (err) {
+      // fall back to the browser voice so audio always works offline of the API
+      try {
+        const u = new SpeechSynthesisUtterance(text.slice(0, 600));
+        u.lang = /[\u0900-\u097F]/.test(text) ? 'hi-IN' : 'en-IN';
+        speechSynthesis.speak(u);
+        btn.innerHTML = icon('speaker');
+      } catch {
+        toast(err.message || 'Audio failed.');
+      }
+      btn.disabled = false;
+    }
+  };
+
+  const doSend = async () => {
+    if (C.state.busy) return;
+    const text = input.value.trim();
+    if (!text && !C.state.attachments.length) return;
+    if (C.backend().mode === 'none') return toast('Connect the AI first — see the card above.');
+
+    C.state.busy = true;
+    sendBtn.disabled = true;
+    const attachments = C.state.attachments.slice();
+    C.state.attachments = [];
+    paintAttachments();
+    input.value = '';
+    input.style.height = 'auto';
+
+    C.state.messages.push({ role: 'user', content: text || '(attachment)', ts: Date.now() });
+    paint();
+    log.insertAdjacentHTML('beforeend', `<div class="bubble ai pending" id="pending"><div class="who">ExamArena AI</div><div class="body"><span class="dotsload"><i></i><i></i><i></i></span></div></div>`);
+    log.scrollTop = log.scrollHeight;
+
+    try {
+      // send() appends the user turn itself, so drop the placeholder we just pushed
+      C.state.messages.pop();
+      await C.send(text, attachments);
+      saveChatHistory(C.state.messages);
+    } catch (err) {
+      C.state.messages.push({ role: 'assistant', content: '⚠️ ' + (err.message === 'NO_BACKEND' ? 'Connect the AI first — see the card above.' : err.message), ts: Date.now() });
+    } finally {
+      document.getElementById('pending')?.remove();
+      C.state.busy = false;
+      sendBtn.disabled = false;
+      paint();
+    }
+  };
+
+  sendBtn.addEventListener('click', doSend);
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); doSend(); }
+  });
+  input.addEventListener('input', () => {
+    input.style.height = 'auto';
+    input.style.height = Math.min(input.scrollHeight, 160) + 'px';
+  });
+
+  const fileInput = view.querySelector('#chatFile');
+  view.querySelector('#attachBtn').addEventListener('click', () => fileInput.click());
+  fileInput.addEventListener('change', async () => {
+    const f = fileInput.files[0];
+    if (!f) return;
+    toast('Reading ' + f.name + '…');
+    try {
+      const att = await C.attachFile(f);
+      if (!att.text || att.text.length < 20) throw new Error('No readable text in that file.');
+      C.state.attachments.push(att);
+      paintAttachments();
+      toast('Attached — ' + att.text.length + ' characters read.');
+    } catch (err) {
+      toast(err.message, 4500);
+    } finally {
+      fileInput.value = '';
+    }
+  });
+
+  const micBtn = view.querySelector('#micBtn');
+  let recorder = null;
+  micBtn.addEventListener('click', async () => {
+    if (recorder) {
+      micBtn.classList.remove('rec');
+      micBtn.innerHTML = icon('stop');
+      try {
+        const blob = await recorder.stop();
+        recorder = null;
+        const text = await C.transcribe(blob);
+        input.value = (input.value ? input.value + ' ' : '') + text;
+        input.focus();
+      } catch (err) {
+        recorder = null;
+        toast(err.message || 'Voice input failed.', 4500);
+      } finally {
+        micBtn.innerHTML = icon('mic');
+      }
+      return;
+    }
+    try {
+      recorder = C.createRecorder();
+      await recorder.start();
+      micBtn.classList.add('rec');
+      micBtn.innerHTML = icon('stop');
+      toast('Recording… tap again to stop.');
+    } catch (err) {
+      recorder = null;
+      toast('Microphone unavailable: ' + err.message, 4500);
+    }
+  });
+
+  view.querySelector('#newChat')?.addEventListener('click', () => {
+    if (!confirm('Clear this conversation? Saved notes and exports are not affected.')) return;
+    C.state.messages = [];
+    saveChatHistory([]);
+    paint();
+  });
+
+  view.querySelectorAll('[data-act="open-ai"]').forEach(b => b.addEventListener('click', () => openAI(app)));
+
+  paintAttachments();
+  paint();
+  if (C.state.messages.length) log.scrollTop = log.scrollHeight;
+}
+
 /* ================= MODALS ================= */
 export function openPulse() {
   const url = 'https://merry8989-uk.github.io/pulse-feed/#/feed';
@@ -1296,6 +1557,7 @@ export function openAbout() {
       <p><strong>Answer analysis.</strong> Every question carries background, discussion, a WH breakdown, current status, why each wrong option fails, a confidence tip, a practice pointer and a source.</p>
       <p><strong>Your ID.</strong> A hash of this device's fingerprint plus your network, stored in storage and a cookie. Fixed permanently, no login.</p>
       <p><strong>AI.</strong> Bring your own key. Without one, the built-in bank of 132 curated questions and anything you upload still runs everything.</p>
+      <p><strong>Ask AI.</strong> Text, photo, PDF or voice in; answer in chat with optional audio; export to PDF, DOC or notes. The key sits on a small proxy worker, never in this public repo.</p>
       <p><strong>Pulse Feed.</strong> The three-dot menu in the top right opens the anonymous chat feed.</p>
       <p class="dim" style="font-size:.82rem">Questions are written and reviewed for factual accuracy, but always cross-check against your official syllabus and sources before an exam.</p>
     </div>

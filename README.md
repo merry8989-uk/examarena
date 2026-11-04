@@ -45,6 +45,50 @@ AI_PROVIDER=openai AI_API_KEY=sk-... QUESTIONS_PER_DAY=500 node tools/generate-d
 
 Cost note: 500 questions is roughly 25 model calls of 20 questions each. On a small model (gpt-4o-mini, gemini-flash, sarvam-105b) that is a few rupees to a few tens of rupees a day. Want 500 **per subject** instead of 500 total? Set `QUESTIONS_PER_DAY` to `subject count × 500` — around 13,500, and the cost scales with it.
 
+## Ask AI (chat with the same key, safely)
+
+The **Ask AI** page answers anything — typed text, a photo of a question, a PDF chapter, or your voice — and can read the answer back to you. Answers export to PDF, DOC, Markdown, or straight into your notes (which then feed the question builder).
+
+Inputs and outputs:
+
+| | How |
+|---|---|
+| Text | `sarvam-105b` chat completion |
+| Image | Tesseract OCR in the browser, then the model reads the text |
+| PDF | pdf.js text extraction in the browser, then the model reads it |
+| Voice in | microphone → 16-bit WAV → Sarvam `saaras:v4` speech-to-text |
+| Audio out | Sarvam `bulbul:v4-flash` text-to-speech, browser voice as fallback |
+| Export | PDF (print), DOC (Word), Markdown, saved note |
+
+### Why there is a worker
+
+This repo is **public**. A key inside `assets/js/*.js` is a key given away to everyone who opens dev tools, and GitHub's secret scanner will flag it too. So the browser never holds the key in the recommended setup:
+
+```
+browser → Cloudflare Worker (holds the key) → api.sarvam.ai
+```
+
+Deploy it once:
+
+1. dash.cloudflare.com → Workers & Pages → Create → Worker → name `examarena-ai` → Deploy
+2. Edit code → paste all of `worker/sarvam-proxy.js` → Deploy
+3. Settings → Variables and secrets → add **Secret** `SARVAM_API_KEY`, and **Text** `ALLOW_ORIGIN` = `https://merry8989-uk.github.io`
+4. Copy the worker URL into `data/config.json` → `"proxyUrl": "https://examarena-ai.<you>.workers.dev"`
+
+Until that is done, the page falls back to a key the visitor saves in AI settings on their own device.
+
+### The daily job's key
+
+The nightly generator uses the repository secret `AI_API_KEY` — encrypted, never rendered into the site, never in a file. Set it at Settings → Secrets and variables → Actions.
+
+**If a key has ever been pasted into a chat, an issue or a commit, rotate it** at dashboard.sarvam.ai. Rotating costs one minute and closes the leak.
+
+## Archive storage limit
+
+`tools/compact-archive.mjs` runs in the nightly workflow. It checks the size of `data/daily`; once it crosses **700 MB** it keeps the last **6 months** as individual files, rolls everything older into one gzipped file per month under `data/archive/`, deletes the day files, and keeps one `archive.json` entry per day pointing at the bundle. The Archive page decompresses the bundle in the browser, so every date stays openable and the repo stops growing without losing anything.
+
+Tune with `SIZE_LIMIT_MB` and `KEEP_DAYS`, or force a run with `FORCE=1 node tools/compact-archive.mjs`.
+
 ## Run locally
 
 ```bash

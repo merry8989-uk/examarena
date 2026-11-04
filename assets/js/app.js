@@ -86,6 +86,7 @@ async function route() {
       break;
     case 'daily': await UI.mountDaily(app, view); break;
     case 'archive': await UI.mountArchive(app, view); break;
+    case 'chat': await UI.mountChat(app, view); break;
     case 'builder': UI.mountBuilder(app, view); break;
     case 'series': UI.mountSeries(app, view); break;
     case 'upload': UI.mountUpload(app, view); break;

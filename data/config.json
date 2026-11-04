@@ -1,0 +1,5 @@
+{
+ "proxyUrl": "",
+ "model": "sarvam-105b",
+ "note": "Deploy worker/sarvam-proxy.js as a Cloudflare Worker, then put its URL in proxyUrl. Empty means the site uses the key each visitor saves in AI settings."
+}
