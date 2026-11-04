@@ -145,6 +145,38 @@ export function buildDaily({ catalogue, bank, date, count = 50, topicalShare = 0
   };
 }
 
+/* ---------- archived daily papers ---------- */
+export async function loadArchive() {
+  try {
+    const res = await fetch(BASE + 'archive.json', { cache: 'no-store' });
+    if (!res.ok) return [];
+    const data = await res.json();
+    return Array.isArray(data) ? data.sort((a, b) => String(b.date).localeCompare(String(a.date))) : [];
+  } catch { return []; }
+}
+
+export async function loadDailyFile(date) {
+  try {
+    const res = await fetch(`${BASE}daily/${date}.json`, { cache: 'no-store' });
+    if (!res.ok) return null;
+    const data = await res.json();
+    if (!data || !Array.isArray(data.questions) || !data.questions.length) return null;
+    return data;
+  } catch { return null; }
+}
+
+/** Split any paper into attemptable parts of at most maxPer questions. */
+export function splitParts(questions, maxPer = 150) {
+  const sizes = planSeries(questions.length, maxPer);
+  const out = [];
+  let at = 0;
+  sizes.forEach((n, i) => {
+    out.push({ index: i + 1, total: sizes.length, count: n, questions: questions.slice(at, at + n) });
+    at += n;
+  });
+  return out;
+}
+
 /* ---------- custom paper ---------- */
 export function buildPaper({ bank, exams = [], subjects = [], streams = [], difficulty = 'any', count = 50, seed = Date.now(), exclude = [] }) {
   const rnd = rngFromSeed(seed);

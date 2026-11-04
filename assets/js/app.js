@@ -81,10 +81,11 @@ async function route() {
   switch (seg) {
     case '':
     case 'home':
-      UI.mountHome(app, view);
+      await UI.mountHome(app, view);
       injectResumeBanner();
       break;
-    case 'daily': UI.mountDaily(app, view); break;
+    case 'daily': await UI.mountDaily(app, view); break;
+    case 'archive': await UI.mountArchive(app, view); break;
     case 'builder': UI.mountBuilder(app, view); break;
     case 'series': UI.mountSeries(app, view); break;
     case 'upload': UI.mountUpload(app, view); break;

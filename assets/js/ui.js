@@ -36,12 +36,19 @@ export function teardown() {
 }
 
 /* ================= HOME ================= */
-export function mountHome(app, view) {
+export async function mountHome(app, view) {
   const st = S.stats();
   const p = S.profile();
   const ui = app.ui.home = app.ui.home || { stream: 'all', q: '', subject: 'all' };
   const date = E.todayStr();
-  const daily = E.buildDaily({ catalogue: app.catalogue, bank: app.bank, date });
+  const todayFile = await E.loadDailyFile(date);
+  let daily;
+  if (todayFile) {
+    daily = { topic: todayFile.topic, questions: todayFile.questions, source: todayFile.source };
+  } else {
+    const d = E.buildDaily({ catalogue: app.catalogue, bank: app.bank, date });
+    daily = { topic: d.topic, questions: d.questions, source: 'bank' };
+  }
   const subjects = E.subjectsInBank(app.bank);
 
   view.innerHTML = `
@@ -59,7 +66,7 @@ export function mountHome(app, view) {
         <div class="today">
           <span class="eyebrow" style="color:var(--teal)">Today · ${esc(new Date(date + 'T00:00:00Z').toLocaleDateString('en-IN', { day: '2-digit', month: 'short' }))}</span>
           <div class="topic">${esc(daily.topic)}</div>
-          <div class="muted" style="font-size:.86rem">${daily.questions.length} questions · mixed difficulty · free</div>
+          <div class="muted" style="font-size:.86rem">${daily.questions.length} questions · ${daily.source === 'ai' ? 'AI generated' : 'curated bank'} · free</div>
           <button class="btn small" data-act="start-daily" style="align-self:flex-start">Begin</button>
         </div>
         <div class="statcard">
@@ -147,57 +154,199 @@ function wireExamCards(app, view) {
   }));
 }
 
-/* ================= DAILY ================= */
-export function mountDaily(app, view) {
+/* ================= DAILY + ARCHIVE ================= */
+export async function mountDaily(app, view) {
   const days = Array.from({ length: 7 }, (_, i) => E.todayStr(-i));
-  const today = E.buildDaily({ catalogue: app.catalogue, bank: app.bank, date: days[0] });
+  const today = days[0];
+  const file = await E.loadDailyFile(today);
+  const archive = await E.loadArchive();
+  const fallback = file ? null : E.buildDaily({ catalogue: app.catalogue, bank: app.bank, date: today });
+  const count = file ? file.count : fallback.questions.length;
+  const parts = file ? E.splitParts(file.questions, 150) : [];
+  const src = file ? (file.source === 'ai' ? 'AI generated' : 'curated bank') : 'curated bank';
+  const subjectCount = file
+    ? Object.keys(file.subjects || {}).length
+    : new Set(fallback.questions.map(q => q.subject)).size;
+
+  const archivedOthers = archive.filter(a => a.date !== today);
+  const recent = archivedOthers.length
+    ? archivedOthers.slice(0, 6)
+    : days.slice(1).map(d => ({ date: d, count: null, topic: E.dailyTopic(app.catalogue, d), source: 'bank' }));
+
   view.innerHTML = `
-    <span class="eyebrow">Daily paper · no login needed</span>
-    <h1 style="font-size:2rem">Today's free mock test</h1>
-    <p class="muted" style="max-width:70ch">A new paper is assembled at midnight for every visitor, from the same deterministic seed — so the paper is identical for everyone today and different tomorrow. It rotates through the topic calendar, weighted towards today's theme.</p>
+    <span class="eyebrow">Daily paper · archived date wise</span>
+    <h1 style="font-size:2rem">Today's mock test</h1>
+    <p class="muted" style="max-width:74ch">${file
+      ? 'The overnight job generated this paper and stored it in the repository, so it is identical for every visitor today and kept forever in the archive.'
+      : 'The overnight job has not published a paper for today yet, so this one is assembled live from the curated bank using a date seed. It is the same for every visitor today and different tomorrow.'}</p>
 
     <div class="card pad" style="margin:1.2rem 0">
-      <div class="row between">
+      <div class="row between" style="align-items:flex-start">
         <div>
-          <span class="eyebrow" style="color:var(--teal)">${esc(new Date(days[0] + 'T00:00:00Z').toLocaleDateString('en-IN', { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' }))}</span>
-          <h2 style="margin:.2rem 0 .3rem">${esc(today.topic)}</h2>
-          <p class="muted" style="margin:0">${today.questions.length} questions · ${today.topicalCount} on today's topic, ${today.generalCount} general · 1 minute per question · full analysis after you submit</p>
+          <span class="eyebrow" style="color:var(--teal)">${esc(new Date(today + 'T00:00:00Z').toLocaleDateString('en-IN', { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' }))}</span>
+          <h2 style="margin:.2rem 0 .3rem">${esc(file ? file.topic : fallback.topic)}</h2>
+          <p class="muted" style="margin:0">${count} questions · ${subjectCount} subjects · ${esc(src)}${file && file.provider && file.provider !== 'none' ? ' · ' + esc(file.provider) : ''}</p>
         </div>
         <div class="row">
-          <button class="btn" data-count="50">Start 50 Q</button>
-          <button class="btn soft" data-count="25">25 Q</button>
-          <button class="btn soft" data-count="100">100 Q</button>
+          <button class="btn" data-quick="50">Quick 50</button>
+          ${count > 100 ? `<button class="btn soft" data-quick="100">100 Q</button>` : ''}
         </div>
       </div>
+      ${parts.length > 1 ? `<div class="hr"></div>
+        <span class="eyebrow">Attempt by part</span>
+        <div class="optrow" style="margin:0">
+          ${parts.map(p => `<button class="chip" data-part="${p.index - 1}">Part ${p.index} · ${p.count} Q</button>`).join('')}
+          <button class="chip" data-all="1">All ${count} Q</button>
+        </div>
+        <p class="dim" style="font-size:.76rem;margin:.6rem 0 0">A 500-question day is bound into separate timed papers, the way a real exam runs its shifts.</p>` : ''}
     </div>
 
-    <h3>Previous daily papers</h3>
+    <div class="sectionhead">
+      <h3 style="margin:0">Recent papers</h3>
+      <a href="#/archive" class="dim" style="font-size:.84rem">Full archive · ${archive.length} day${archive.length === 1 ? '' : 's'} →</a>
+    </div>
     <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(250px,1fr))">
-      ${days.slice(1).map(d => {
-        const paper = E.buildDaily({ catalogue: app.catalogue, bank: app.bank, date: d });
-        return `<div class="examcard">
-          <div class="meta">${esc(new Date(d + 'T00:00:00Z').toLocaleDateString('en-IN', { day: '2-digit', month: 'short' }))}</div>
-          <h4>${esc(paper.topic)}</h4>
-          <div class="meta">${paper.questions.length} questions</div>
-          <button class="btn small ghost" data-date="${d}" style="align-self:flex-start">Attempt</button>
-        </div>`;
-      }).join('')}
+      ${recent.map(a => `<div class="examcard">
+        <div class="row between">
+          <span class="meta">${esc(new Date(a.date + 'T00:00:00Z').toLocaleDateString('en-IN', { day: '2-digit', month: 'short' }))}</span>
+          <span class="pill ${a.source === 'ai' ? 'easy' : ''}">${a.source === 'ai' ? 'AI' : 'bank'}</span>
+        </div>
+        <h4 style="font-size:.95rem">${esc(a.topic || 'Daily paper')}</h4>
+        <div class="meta">${a.count ? a.count + ' questions' : '50 questions'}</div>
+        <button class="btn small ghost" data-arch="${esc(a.date)}" style="align-self:flex-start">Attempt</button>
+      </div>`).join('')}
     </div>
   `;
-  view.querySelectorAll('[data-count]').forEach(b => b.addEventListener('click', () => startDaily(app, days[0], Number(b.dataset.count))));
-  view.querySelectorAll('[data-date]').forEach(b => b.addEventListener('click', () => startDaily(app, b.dataset.date, 50)));
+
+  view.querySelectorAll('[data-quick]').forEach(b => b.addEventListener('click', () => openDaily(app, today, { quick: Number(b.dataset.quick) })));
+  view.querySelectorAll('[data-part]').forEach(b => b.addEventListener('click', () => openDaily(app, today, { part: Number(b.dataset.part) })));
+  const all = view.querySelector('[data-all]');
+  if (all) all.addEventListener('click', () => openDaily(app, today, {}));
+  view.querySelectorAll('[data-arch]').forEach(b => b.addEventListener('click', () => openArchived(app, b.dataset.arch)));
+}
+
+export async function mountArchive(app, view) {
+  const archive = await E.loadArchive();
+  if (!archive.length) {
+    view.innerHTML = `
+      <span class="eyebrow">Archive</span>
+      <h1 style="font-size:2rem">Question archive</h1>
+      <div class="empty" style="margin-top:1.2rem;text-align:left;padding:1.6rem">
+        <strong>No archived papers yet.</strong>
+        <p class="muted" style="margin:.6rem 0 0">The daily job runs at 00:00 IST and writes one file per day into <code>data/daily/</code>, listed in <code>data/archive.json</code>. Until it has run, every page falls back to the date-seeded paper from the curated bank — nothing is ever lost, it just is not archived as a file yet.</p>
+        <p class="muted" style="margin:.6rem 0 0">To publish one now, run <code>node tools/generate-daily.mjs</code> locally, or trigger the workflow manually from the Actions tab.</p>
+      </div>`;
+    return;
+  }
+
+  const months = {};
+  archive.forEach(a => { const m = a.date.slice(0, 7); (months[m] = months[m] || []).push(a); });
+  const monthName = m => new Date(m + '-01T00:00:00Z').toLocaleDateString('en-IN', { month: 'long', year: 'numeric' });
+  const totalQ = archive.reduce((s, a) => s + (a.count || 0), 0);
+
+  view.innerHTML = `
+    <span class="eyebrow">Archive · ${archive.length} days · ${totalQ} questions</span>
+    <h1 style="font-size:2rem">Every paper, date wise</h1>
+    <p class="muted" style="max-width:74ch">Each day's paper is its own file in the repository and is never overwritten. Open any date, attempt it as often as you like, and the analysis is the same every time.</p>
+    ${Object.entries(months).map(([m, list]) => `
+      <div class="sectionhead"><h3 style="margin:0">${esc(monthName(m))}</h3><span class="dim" style="font-size:.82rem">${list.length} paper${list.length === 1 ? '' : 's'}</span></div>
+      <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr))">
+        ${list.map(a => `<div class="examcard">
+          <div class="row between">
+            <strong>${esc(new Date(a.date + 'T00:00:00Z').toLocaleDateString('en-IN', { day: '2-digit', month: 'short', weekday: 'short' }))}</strong>
+            <span class="pill ${a.source === 'ai' ? 'easy' : ''}">${a.source === 'ai' ? 'AI' : 'bank'}</span>
+          </div>
+          <div class="meta">${esc(a.topic || 'Daily paper')}</div>
+          <div class="meta">${a.count} questions${a.subjects ? ' · ' + a.subjects + ' subjects' : ''}</div>
+          <div class="row" style="margin-top:auto">
+            ${E.planSeries(a.count, 150).map((n, i) => `<button class="chip sm" data-arch="${esc(a.date)}" data-part="${i}">P${i + 1} · ${n}</button>`).join('')}
+          </div>
+        </div>`).join('')}
+      </div>`).join('')}
+  `;
+
+  view.querySelectorAll('[data-arch]').forEach(b => b.addEventListener('click', () => openArchived(app, b.dataset.arch, Number(b.dataset.part))));
+}
+
+async function openDaily(app, date, opts = {}) {
+  try {
+    const file = await E.loadDailyFile(date);
+    let questions, title, subtitle;
+
+    if (file) {
+      const parts = E.splitParts(file.questions, 150);
+      const src = file.source === 'ai' ? ' · AI generated' : ' · curated bank';
+      if (opts.part != null && parts[opts.part]) {
+        const p = parts[opts.part];
+        questions = p.questions;
+        title = `Daily paper ${date} — Part ${p.index} of ${p.total}`;
+      } else if (opts.quick) {
+        questions = E.seededShuffle(file.questions, E.rngFromSeed('quick-' + date)).slice(0, opts.quick);
+        title = `Daily paper ${date} — quick ${questions.length}`;
+      } else {
+        questions = file.questions;
+        title = `Daily paper ${date} — all ${questions.length}`;
+      }
+      subtitle = (file.topic || 'Daily paper') + src;
+    } else {
+      const paper = E.buildDaily({ catalogue: app.catalogue, bank: app.bank, date, count: opts.quick || 50 });
+      questions = paper.questions;
+      title = paper.title;
+      subtitle = paper.topic + ' · curated bank';
+    }
+
+    if (!questions.length) return toast('No paper available for that date yet.');
+    beginTest(app, { questions, title, subtitle, kind: 'daily' });
+  } catch (err) {
+    toast(err.message || 'Could not open that paper.');
+  }
+}
+
+async function openArchived(app, date, partIdx) {
+  try {
+    const file = await E.loadDailyFile(date);
+    if (!file) return toast('That paper is not in the archive.');
+    const parts = E.splitParts(file.questions, 150);
+
+    if (partIdx != null && parts[partIdx]) {
+      const p = parts[partIdx];
+      return beginTest(app, {
+        questions: p.questions,
+        title: `Daily paper ${date} — Part ${p.index} of ${p.total}`,
+        subtitle: (file.topic || '') + (file.source === 'ai' ? ' · AI generated' : ' · curated bank'),
+        kind: 'daily'
+      });
+    }
+    if (parts.length === 1) {
+      return beginTest(app, { questions: parts[0].questions, title: `Daily paper ${date}`, subtitle: file.topic || '', kind: 'daily' });
+    }
+
+    const root = modal(`
+      <div class="modalhead"><h3>${esc(date)} — ${esc(file.topic || 'Daily paper')}</h3><button class="xbtn" data-dismiss="1">✕</button></div>
+      <div class="modalbody">
+        <p class="muted" style="font-size:.88rem">${file.count} questions in ${parts.length} parts. Pick one to attempt.</p>
+        <div class="optrow">
+          ${parts.map(p => `<button class="chip" data-go="${p.index - 1}">Part ${p.index} · ${p.count} Q</button>`).join('')}
+        </div>
+      </div>
+    `, { slim: true });
+    root.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => {
+      const p = parts[Number(b.dataset.go)];
+      closeModal();
+      beginTest(app, {
+        questions: p.questions,
+        title: `Daily paper ${date} — Part ${p.index} of ${p.total}`,
+        subtitle: file.topic || '',
+        kind: 'daily'
+      });
+    }));
+  } catch (err) {
+    toast(err.message || 'Could not open that paper.');
+  }
 }
 
 function startDaily(app, date, count) {
-  const paper = E.buildDaily({ catalogue: app.catalogue, bank: app.bank, date, count });
-  if (!paper.questions.length) return toast('The bank is empty — upload questions first.');
-  if (paper.shortfall > 0) toast(`Your bank has ${paper.questions.length} questions for this paper; add more or use AI to fill ${paper.shortfall}.`, 4200);
-  beginTest(app, {
-    questions: paper.questions,
-    title: paper.title,
-    subtitle: paper.topic,
-    kind: 'daily'
-  });
+  openDaily(app, date, { quick: count });
 }
 
 function startExam(app, examId, count) {
@@ -1142,6 +1291,7 @@ export function openAbout() {
     <div class="modalhead"><h3>How ExamArena works</h3><button class="xbtn" data-dismiss="1">✕</button></div>
     <div class="modalbody">
       <p><strong>Daily paper.</strong> A deterministic seed built from today's date selects the paper, so every visitor gets the same 50 questions today and a different set tomorrow. No server, no cron job — the paper exists even when nobody has visited.</p>
+      <p><strong>Daily job and archive.</strong> A scheduled GitHub Action generates the day's paper at midnight IST, writes it to its own file and commits it. Every past day stays in the repository, listed on the Archive page by date.</p>
       <p><strong>Series builder.</strong> Ask for 500 questions and it is bound into 150 + 150 + 150 + 50: separate timed papers, each tracked on the series page.</p>
       <p><strong>Answer analysis.</strong> Every question carries background, discussion, a WH breakdown, current status, why each wrong option fails, a confidence tip, a practice pointer and a source.</p>
       <p><strong>Your ID.</strong> A hash of this device's fingerprint plus your network, stored in storage and a cookie. Fixed permanently, no login.</p>

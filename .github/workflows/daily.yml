@@ -1,0 +1,64 @@
+name: Daily question generation
+
+on:
+  schedule:
+    # 18:30 UTC = 00:00 IST — the paper is ready before the day starts in India
+    - cron: '30 18 * * *'
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'How many questions to generate'
+        required: false
+        default: '500'
+      provider:
+        description: 'openai | sarvam | gemini | custom | none'
+        required: false
+        default: 'openai'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-questions
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate today's paper
+        env:
+          AI_PROVIDER: ${{ github.event.inputs.provider || vars.AI_PROVIDER || 'openai' }}
+          AI_API_KEY: ${{ secrets.AI_API_KEY }}
+          AI_MODEL: ${{ vars.AI_MODEL }}
+          AI_ENDPOINT: ${{ vars.AI_ENDPOINT }}
+          QUESTIONS_PER_DAY: ${{ github.event.inputs.count || vars.QUESTIONS_PER_DAY || '500' }}
+        run: node tools/generate-daily.mjs
+
+      - name: Commit the archive
+        run: |
+          git config user.name "examarena-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/daily data/archive.json
+          if git diff --staged --quiet; then
+            echo "No changes to publish."
+          else
+            git commit -m "Daily paper: $(date -u -d '+5 hours 30 minutes' +%F)"
+            git push
+          fi
+
+      - name: Summary
+        run: |
+          node -e "
+          const a=require('./data/archive.json');
+          const t=a[0];
+          console.log('### '+t.date+' — '+t.count+' questions ('+t.source+') across '+t.subjects+' subjects');
+          console.log('Archive days: '+a.length);
+          " >> $GITHUB_STEP_SUMMARY

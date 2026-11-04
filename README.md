@@ -17,6 +17,34 @@ A static, device-first mock-test platform for Indian exams — competition (UPSC
 | **Pulse Feed** | The three-dot menu, top right, opens the anonymous chat feed in an overlay. |
 | **Progress** | Attempt history, per-subject accuracy, score bars, streaks, resume-in-progress-test banner. |
 
+## Daily automation (500 questions a day, archived)
+
+`.github/workflows/daily.yml` runs at **18:30 UTC = 00:00 IST** every day and:
+
+1. generates the day's questions with your AI key, distributed across every subject in the catalogue,
+2. validates and de-duplicates them,
+3. writes `data/daily/YYYY-MM-DD.json` and updates `data/archive.json`,
+4. commits and pushes — the site serves the new paper immediately, and the file stays in the repo forever.
+
+The site's **Archive** page lists every generated day, grouped by month, and each day is attemptable in parts of 150.
+
+**One manual step, once:** add your key as a repository secret.
+
+> Settings → Secrets and variables → Actions → **New repository secret** → name `AI_API_KEY`, value your key.
+
+Optional repository *variables* (Settings → Variables → Actions): `AI_PROVIDER` (`openai` | `sarvam` | `gemini` | `custom`), `AI_MODEL`, `AI_ENDPOINT`, `QUESTIONS_PER_DAY` (default `500`).
+
+Without `AI_API_KEY` the job still runs, but it publishes a paper assembled from the curated bank and marks it `source: "bank"` — the archive keeps growing, the questions just are not new. The site never pretends otherwise.
+
+Run it by hand any time:
+
+```bash
+AI_PROVIDER=openai AI_API_KEY=sk-... QUESTIONS_PER_DAY=500 node tools/generate-daily.mjs
+# or: Actions tab → Daily question generation → Run workflow
+```
+
+Cost note: 500 questions is roughly 25 model calls of 20 questions each. On a small model (gpt-4o-mini, gemini-flash, sarvam-105b) that is a few rupees to a few tens of rupees a day. Want 500 **per subject** instead of 500 total? Set `QUESTIONS_PER_DAY` to `subject count × 500` — around 13,500, and the cost scales with it.
+
 ## Run locally
 
 ```bash
