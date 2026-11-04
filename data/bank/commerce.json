@@ -1,0 +1,918 @@
+[
+ {
+  "id": "com-acc-01",
+  "exams": [
+   "ca-foundation",
+   "bcom",
+   "class12-commerce",
+   "bba"
+  ],
+  "stream": "professional",
+  "course": "B.Com / CA Foundation",
+  "subject": "Accountancy",
+  "topic": "Accounting Equation",
+  "difficulty": "easy",
+  "q": "The accounting equation is best expressed as:",
+  "options": [
+   "Assets = Liabilities − Capital",
+   "Assets = Liabilities + Capital",
+   "Capital = Assets + Liabilities",
+   "Liabilities = Assets + Capital"
+  ],
+  "answer": 1,
+  "history": "The equation follows from double entry: everything a business owns was financed either by outsiders (liabilities) or by owners (capital).",
+  "discussion": "Every transaction keeps the equation balanced, which is why the balance sheet always ties. If assets rise without a matching liability, capital must rise too, as with cash brought in by the owner.",
+  "wh": {
+   "what": "The fundamental accounting identity",
+   "how": "Every transaction affects at least two elements equally",
+   "why": "It is the basis of the balance sheet"
+  },
+  "status": "Under Ind AS and IFRS the same identity holds, though presentation and measurement rules have changed.",
+  "why_wrong": [
+   "Subtracting capital would make the equation collapse for any profitable business.",
+   "",
+   "Capital is a residual claim, not the sum of assets and liabilities.",
+   "This reverses the owner and outsider claims."
+  ],
+  "tip": "Read it as a sentence: what the business owns equals what it owes to outsiders plus what it owes to owners.",
+  "improve": "Take ten transactions and show the effect of each on all three elements.",
+  "source": "NCERT Class XI Accountancy, Chapter 2"
+ },
+ {
+  "id": "com-acc-02",
+  "exams": [
+   "ca-foundation",
+   "bcom",
+   "class12-commerce"
+  ],
+  "stream": "professional",
+  "course": "B.Com / CA Foundation",
+  "subject": "Accountancy",
+  "topic": "Trial Balance",
+  "difficulty": "medium",
+  "q": "Which error will NOT be disclosed by a trial balance?",
+  "options": [
+   "Wrong totalling of a subsidiary book",
+   "Posting only the debit side of a transaction",
+   "An error of principle, such as machinery purchase debited to Purchases",
+   "A casting error while totalling the trial balance"
+  ],
+  "answer": 2,
+  "history": "A trial balance tests arithmetical accuracy only, so errors that keep debits and credits equal pass through undetected; an error of principle is one such case.",
+  "discussion": "Compensating errors can also escape detection, but a principle error is the textbook case: the books balance, yet the profit and the balance sheet are both wrong.",
+  "wh": {
+   "what": "Limitation of a trial balance",
+   "how": "Check whether debits and credits stay equal",
+   "why": "Examiners test the concept, not just the format"
+  },
+  "status": "Modern curricula teach this alongside the suspense account treatment for one-sided errors.",
+  "why_wrong": [
+   "Wrong totalling usually creates an unequal trial balance.",
+   "One-sided posting always creates a difference.",
+   "",
+   "A casting error in the trial balance itself is precisely what re-totalling detects."
+  ],
+  "tip": "A trial balance catches arithmetic, not judgement. Anything that touches the nature of the account escapes it.",
+  "improve": "List the four types of errors that a trial balance cannot detect with one example each.",
+  "source": "NCERT Class XI Accountancy, Chapter 6"
+ },
+ {
+  "id": "com-acc-03",
+  "exams": [
+   "ca-foundation",
+   "bcom",
+   "class12-commerce"
+  ],
+  "stream": "professional",
+  "course": "B.Com / CA Foundation",
+  "subject": "Accountancy",
+  "topic": "Depreciation",
+  "difficulty": "medium",
+  "q": "A machine costs ₹1,00,000 with a residual value of ₹10,000 and a useful life of 5 years. Annual depreciation under the straight line method is:",
+  "options": [
+   "₹20,000",
+   "₹18,000",
+   "₹22,000",
+   "₹16,000"
+  ],
+  "answer": 1,
+  "history": "Straight line depreciation spreads the depreciable amount, cost minus residual value, equally over the useful life.",
+  "discussion": "The depreciable amount is 90,000, and dividing by 5 gives 18,000 a year. Ignoring the residual value is the standard trap, and it produces the 20,000 distractor.",
+  "wh": {
+   "what": "Annual depreciation charge",
+   "how": "(Cost - Residual value) / Useful life",
+   "why": "Matching of cost with the revenue it helps earn"
+  },
+  "status": "The Companies Act 2013, Schedule II, prescribes useful lives for WDV and SLM, and Ind AS 16 governs measurement.",
+  "why_wrong": [
+   "₹20,000 ignores the residual value of ₹10,000.",
+   "",
+   "₹22,000 would arise if residual value were added rather than subtracted.",
+   "₹16,000 corresponds to a residual value of ₹20,000."
+  ],
+  "tip": "Always subtract salvage first. If the question gives a residual value, it is there to be used.",
+  "improve": "Compute WDV depreciation for the same figures and compare the two first-year charges.",
+  "source": "NCERT Class XI Accountancy; Companies Act 2013 Schedule II"
+ },
+ {
+  "id": "com-acc-04",
+  "exams": [
+   "ca-foundation",
+   "bcom",
+   "class12-commerce"
+  ],
+  "stream": "professional",
+  "course": "B.Com / CA Foundation",
+  "subject": "Accountancy",
+  "topic": "Final Accounts",
+  "difficulty": "medium",
+  "q": "Cost of goods sold is calculated as:",
+  "options": [
+   "Opening stock + Purchases + Closing stock",
+   "Opening stock + Purchases − Closing stock",
+   "Purchases − Opening stock + Closing stock",
+   "Sales − Gross profit + Closing stock"
+  ],
+  "answer": 1,
+  "history": "Cost of goods sold equals the goods available for sale minus what remains unsold, which is opening stock plus purchases minus closing stock.",
+  "discussion": "With opening stock 20,000, purchases 80,000 and closing stock 30,000, COGS is 70,000. This figure then drives gross profit when deducted from net sales.",
+  "wh": {
+   "what": "Cost of goods sold",
+   "how": "Opening stock + Purchases - Closing stock",
+   "why": "It separates trading results from operating expenses"
+  },
+  "status": "Under Ind AS, COGS presentation changes but the arithmetic identity stays the same.",
+  "why_wrong": [
+   "Adding closing stock double counts goods still in hand.",
+   "",
+   "Subtracting opening stock misstates goods available for sale.",
+   "This derives from the gross profit figure rather than computing it."
+  ],
+  "tip": "Think physically: what you started with, plus what you bought, minus what is left. The formula is just that sentence.",
+  "improve": "Prepare a trading account from a small trial balance to see COGS in use.",
+  "source": "NCERT Class XI Accountancy, Chapter 9"
+ },
+ {
+  "id": "com-acc-05",
+  "exams": [
+   "bcom",
+   "class12-commerce",
+   "ca-foundation"
+  ],
+  "stream": "professional",
+  "course": "B.Com",
+  "subject": "Accountancy",
+  "topic": "Ratio Analysis",
+  "difficulty": "easy",
+  "q": "Current assets are ₹4,00,000 and current liabilities ₹2,00,000. The current ratio is:",
+  "options": [
+   "1 : 1",
+   "1.5 : 1",
+   "2 : 1",
+   "3 : 1"
+  ],
+  "answer": 2,
+  "history": "The current ratio compares short-term assets with short-term obligations, and a ratio of 2:1 is conventionally treated as comfortable.",
+  "discussion": "Higher is not always better: an excess of current assets can signal idle inventory or slow collection, which is why the quick ratio is read alongside it.",
+  "wh": {
+   "what": "Liquidity ratio",
+   "how": "Current assets / Current liabilities",
+   "why": "It shows ability to meet short-term dues"
+  },
+  "status": "Ratio analysis remains a core tool in credit appraisal and is tested with the quick and cash ratios.",
+  "why_wrong": [
+   "1:1 implies no liquidity cushion.",
+   "1.5:1 would need current assets of ₹3,00,000.",
+   "",
+   "3:1 would need current assets of ₹6,00,000."
+  ],
+  "tip": "Ratios are always expressed as the numerator over the denominator; check which figure sits on top before dividing.",
+  "improve": "Compute the quick ratio from the same data by removing inventory and prepaid expenses.",
+  "source": "NCERT Class XII Accountancy, Part II"
+ },
+ {
+  "id": "com-acc-06",
+  "exams": [
+   "ca-foundation",
+   "bcom",
+   "class12-commerce"
+  ],
+  "stream": "professional",
+  "course": "B.Com / CA Foundation",
+  "subject": "Accountancy",
+  "topic": "Journal Entries",
+  "difficulty": "easy",
+  "q": "Which of the following is a nominal account?",
+  "options": [
+   "Cash account",
+   "Debtors account",
+   "Wages account",
+   "Bank account"
+  ],
+  "answer": 2,
+  "history": "Accounts are classified as personal, real and nominal; nominal accounts cover expenses, losses, incomes and gains, and are closed to the profit and loss account.",
+  "discussion": "Wages is an expense, so it is nominal. Cash and bank are real accounts, and debtors is a personal account, which is why the classification decides the rule applied.",
+  "wh": {
+   "what": "Account classification",
+   "how": "Personal: persons and firms. Real: assets. Nominal: expenses and incomes",
+   "why": "The classification decides the debit-credit rule"
+  },
+  "status": "Computerised accounting preserves the same classification in the chart of accounts.",
+  "why_wrong": [
+   "Cash is a real account, an asset in hand.",
+   "Debtors is a personal account representing people who owe money.",
+   "",
+   "Bank is a real account, an asset at the bank."
+  ],
+  "tip": "Nominal equals name of an expense or income. If you can call it a cost or a earning, it is nominal.",
+  "improve": "Classify twenty common accounts into personal, real and nominal without looking them up.",
+  "source": "NCERT Class XI Accountancy, Chapter 3"
+ },
+ {
+  "id": "com-acc-07",
+  "exams": [
+   "ca-foundation",
+   "bcom",
+   "bba"
+  ],
+  "stream": "professional",
+  "course": "B.Com / CA Foundation",
+  "subject": "Accountancy",
+  "topic": "Capital vs Revenue",
+  "difficulty": "medium",
+  "q": "Purchase of machinery for ₹5,00,000 is an example of:",
+  "options": [
+   "Revenue expenditure",
+   "Capital expenditure",
+   "Deferred revenue expenditure",
+   "Contingent liability"
+  ],
+  "answer": 1,
+  "history": "Capital expenditure creates or enhances a long-term asset and appears in the balance sheet, while revenue expenditure is consumed within the period.",
+  "discussion": "The test is benefit period, not amount. A ₹5,000 printer used for five years is capital, while a ₹5,00,000 salary bill is revenue.",
+  "wh": {
+   "what": "Classification of expenditure",
+   "how": "Ask whether the benefit extends beyond one accounting year",
+   "why": "Misclassification distorts profit and the balance sheet"
+  },
+  "status": "Ind AS 16 requires capitalisation of directly attributable costs, including installation and testing.",
+  "why_wrong": [
+   "Revenue expenditure is consumed in the current period, such as wages.",
+   "",
+   "Deferred revenue expenditure is a legacy Indian concept, largely subsumed under Ind AS.",
+   "A contingent liability is a possible obligation, not a payment made."
+  ],
+  "tip": "Amount does not decide. Duration of benefit decides. That one line settles most classification questions.",
+  "improve": "List ten common expenditures and classify each with one line of reasoning.",
+  "source": "NCERT Class XI Accountancy; Ind AS 16"
+ },
+ {
+  "id": "com-bs-01",
+  "exams": [
+   "class12-commerce",
+   "bba",
+   "bcom"
+  ],
+  "stream": "school",
+  "course": "Class 12 Commerce / BBA",
+  "subject": "Business Studies",
+  "topic": "Motivation",
+  "difficulty": "easy",
+  "q": "In Maslow's hierarchy of needs, which need sits at the base?",
+  "options": [
+   "Esteem needs",
+   "Safety needs",
+   "Physiological needs",
+   "Self-actualisation"
+  ],
+  "answer": 2,
+  "history": "Maslow placed physiological needs such as food, water and shelter at the base, arguing that higher needs motivate only after the lower ones are reasonably met.",
+  "discussion": "The order runs physiological, safety, social, esteem and self-actualisation. Organisations typically satisfy the lower two through wages and job security and the upper three through recognition and autonomy.",
+  "wh": {
+   "what": "Hierarchy of human needs",
+   "who": "Abraham Maslow, 1943",
+   "why": "To explain what motivates behaviour at different stages",
+   "how": "Lower needs are satisfied before higher ones"
+  },
+  "status": "Modern research treats the hierarchy as flexible rather than rigid, but it remains the standard teaching model.",
+  "why_wrong": [
+   "Esteem is the fourth level.",
+   "Safety is the second level.",
+   "",
+   "Self-actualisation is the top level."
+  ],
+  "tip": "Remember the ladder by its first letters: Physiological, Safety, Social, Esteem, Self-actualisation.",
+  "improve": "Write one workplace example of how each level is met.",
+  "source": "NCERT Class XII Business Studies, Chapter on Directing"
+ },
+ {
+  "id": "com-bs-02",
+  "exams": [
+   "class12-commerce",
+   "bba",
+   "bcom"
+  ],
+  "stream": "school",
+  "course": "Class 12 Commerce / BBA",
+  "subject": "Business Studies",
+  "topic": "Marketing",
+  "difficulty": "easy",
+  "q": "The traditional four Ps of the marketing mix are:",
+  "options": [
+   "Product, Price, Place, Promotion",
+   "Product, Profit, People, Place",
+   "Price, Promotion, Process, People",
+   "Product, Plan, Price, Profit"
+  ],
+  "answer": 0,
+  "history": "The four Ps were popularised by E. Jerome McCarthy in the 1960s as a framework for the controllable elements of a marketing decision.",
+  "discussion": "Services marketing extends this to seven Ps by adding people, process and physical evidence, a distinction examiners like to test.",
+  "wh": {
+   "what": "Marketing mix framework",
+   "why": "It groups the levers a marketer controls",
+   "how": "Each P answers a distinct question: what, how much, where, how to communicate"
+  },
+  "status": "Digital marketing has added data and personalisation as informal fifth and sixth levers, though the four Ps remain the base.",
+  "why_wrong": [
+   "",
+   "Profit is an outcome, not a marketing lever.",
+   "These are the service marketing extensions, missing product and place.",
+   "Plan and profit are not part of the mix."
+  ],
+  "tip": "Four Ps for goods, seven Ps for services. Remember the three extra as people, process, physical evidence.",
+  "improve": "Take a local product and write its four Ps in one line each.",
+  "source": "NCERT Class XII Business Studies, Marketing Management"
+ },
+ {
+  "id": "com-bs-03",
+  "exams": [
+   "class12-commerce",
+   "bba",
+   "bcom"
+  ],
+  "stream": "school",
+  "course": "Class 12 Commerce / BBA",
+  "subject": "Business Studies",
+  "topic": "Forms of Organisation",
+  "difficulty": "easy",
+  "q": "In a sole proprietorship, the liability of the owner is:",
+  "options": [
+   "Limited to the capital invested",
+   "Unlimited, extending to personal assets",
+   "Limited to the value of stock",
+   "Shared with creditors"
+  ],
+  "answer": 1,
+  "history": "A sole proprietorship has no separate legal identity, so business debts can be recovered from the proprietor's personal assets.",
+  "discussion": "This unlimited liability is the main reason such firms struggle to raise finance, and it is why limited liability partnership and company forms exist.",
+  "wh": {
+   "what": "Liability of a sole proprietor",
+   "why": "No separate legal entity from the owner",
+   "how": "Creditors can proceed against personal property"
+  },
+  "status": "One Person Company under the Companies Act 2013 offers limited liability to a single entrepreneur, which is the modern alternative.",
+  "why_wrong": [
+   "Limited liability is a feature of companies and LLPs.",
+   "",
+   "Liability is not capped by stock value.",
+   "Creditors do not share liability; they enforce it."
+  ],
+  "tip": "Separate legal entity and limited liability always travel together. If there is no separate entity, liability is unlimited.",
+  "improve": "Compare sole proprietorship, partnership, LLP and company on five parameters in one table.",
+  "source": "NCERT Class XI Business Studies, Forms of Business Organisation"
+ },
+ {
+  "id": "com-bs-04",
+  "exams": [
+   "class12-commerce",
+   "bba",
+   "bcom"
+  ],
+  "stream": "school",
+  "course": "Class 12 Commerce / BBA",
+  "subject": "Business Studies",
+  "topic": "Company Law",
+  "difficulty": "medium",
+  "q": "Under the Companies Act 2013, the minimum number of members required to form a private company is:",
+  "options": [
+   "One",
+   "Two",
+   "Five",
+   "Seven"
+  ],
+  "answer": 1,
+  "history": "The Companies Act 2013 requires a minimum of two members for a private company and seven for a public company, with a maximum of 200 for a private company.",
+  "discussion": "The Act also introduced the One Person Company, which allows a single member with limited liability, which is why option one is a deliberate trap.",
+  "wh": {
+   "what": "Minimum membership for a private company",
+   "when": "Companies Act 2013, effective 2014",
+   "why": "To distinguish private from public company structure"
+  },
+  "status": "The 2017 amendment simplified private company compliance, but membership thresholds stayed unchanged.",
+  "why_wrong": [
+   "One is the requirement for an OPC, not a private company.",
+   "",
+   "Five is not a statutory threshold under the Act.",
+   "Seven is the minimum for a public company."
+  ],
+  "tip": "Two for private, seven for public, one for OPC, 200 maximum for private. Four numbers cover this topic.",
+  "improve": "Learn the LLP Act 2008 thresholds alongside the company thresholds.",
+  "source": "Companies Act 2013, Sections 3 and 4"
+ },
+ {
+  "id": "com-bs-05",
+  "exams": [
+   "bba",
+   "bcom",
+   "class12-commerce"
+  ],
+  "stream": "graduation",
+  "course": "BBA",
+  "subject": "Management",
+  "difficulty": "medium",
+  "q": "The principle of unity of command states that:",
+  "options": [
+   "Each employee should receive orders from only one superior",
+   "One plan should guide the whole organisation",
+   "Authority should be concentrated at the top",
+   "Employees should be grouped by function"
+  ],
+  "answer": 0,
+  "history": "Henri Fayol's unity of command principle holds that dual reporting creates confusion, conflict and diluted accountability.",
+  "discussion": "It is often confused with unity of direction, which concerns one head and one plan for activities with the same objective. Matrix structures deliberately violate unity of command to gain flexibility.",
+  "wh": {
+   "what": "Fayol's principle of single reporting",
+   "who": "Henri Fayol, 1916",
+   "why": "Multiple bosses produce conflicting instructions"
+  },
+  "status": "Modern agile organisations accept dual reporting as a trade-off, while keeping accountability clear.",
+  "why_wrong": [
+   "",
+   "One plan and one head for similar activities is unity of direction.",
+   "Concentration of authority describes centralisation.",
+   "Grouping by function is departmentalisation."
+  ],
+  "tip": "Command is about people, direction is about activities. That one distinction answers most Fayol questions.",
+  "improve": "Learn all fourteen Fayol principles with a one-line example each.",
+  "source": "NCERT Class XII Business Studies, Principles of Management",
+  "topic": "Principles of Management"
+ },
+ {
+  "id": "com-eco-01",
+  "exams": [
+   "class12-commerce",
+   "bcom",
+   "ca-foundation",
+   "bba"
+  ],
+  "stream": "school",
+  "course": "Commerce / Economics",
+  "subject": "Economics",
+  "topic": "Demand",
+  "difficulty": "easy",
+  "q": "The law of demand states that, other things remaining constant, price and quantity demanded are:",
+  "options": [
+   "Directly related",
+   "Inversely related",
+   "Unrelated",
+   "Related only for luxury goods"
+  ],
+  "answer": 1,
+  "history": "The law of demand rests on the income and substitution effects: a higher price reduces purchasing power and pushes buyers towards substitutes.",
+  "discussion": "Exceptions include Giffen goods, where a price rise increases demand among the very poor, and goods bought for conspicuous display, where price signals status.",
+  "wh": {
+   "what": "Price-quantity relationship",
+   "why": "Income and substitution effects",
+   "how": "Shown as a downward sloping demand curve"
+  },
+  "status": "Behavioural economics has qualified the law, but it remains the foundation of microeconomic teaching.",
+  "why_wrong": [
+   "A direct relationship describes supply, not demand.",
+   "",
+   "Unrelated demand curves are vertical, a special case, not the law.",
+   "The law applies broadly, not only to luxuries."
+  ],
+  "tip": "Demand slopes down, supply slopes up. Every curve question begins with that picture.",
+  "improve": "Learn the two exceptions to the law with an Indian example each.",
+  "source": "NCERT Class XII Microeconomics, Chapter 2"
+ },
+ {
+  "id": "com-eco-02",
+  "exams": [
+   "class12-commerce",
+   "bcom",
+   "ca-foundation"
+  ],
+  "stream": "school",
+  "course": "Commerce / Economics",
+  "subject": "Economics",
+  "topic": "Elasticity",
+  "difficulty": "medium",
+  "q": "When demand does not change at all with a change in price, price elasticity of demand equals:",
+  "options": [
+   "Zero",
+   "One",
+   "Infinity",
+   "Less than one but positive"
+  ],
+  "answer": 0,
+  "history": "Perfectly inelastic demand has an elasticity of zero and a vertical demand curve, typical of life-saving medicines.",
+  "discussion": "Elasticity measures responsiveness, so no response means zero. At the other extreme, perfectly elastic demand has infinite elasticity and a horizontal curve.",
+  "wh": {
+   "what": "Degree of responsiveness",
+   "how": "Percentage change in quantity over percentage change in price",
+   "why": "It drives pricing and tax incidence"
+  },
+  "status": "Tax policy uses elasticity: goods with inelastic demand carry more of the tax burden and generate stable revenue.",
+  "why_wrong": [
+   "",
+   "Unit elasticity means quantity changes proportionally, not not at all.",
+   "Infinite elasticity means any price rise destroys all demand.",
+   "Any positive value implies some response."
+  ],
+  "tip": "Zero means no response, one means proportional, infinity means any price change wipes out demand.",
+  "improve": "Draw all five elasticity cases with their curve shapes.",
+  "source": "NCERT Class XII Microeconomics, Chapter 4"
+ },
+ {
+  "id": "com-eco-03",
+  "exams": [
+   "class12-commerce",
+   "bcom",
+   "ca-foundation",
+   "bba"
+  ],
+  "stream": "school",
+  "course": "Commerce / Economics",
+  "subject": "Economics",
+  "topic": "Basic Concepts",
+  "difficulty": "easy",
+  "q": "Opportunity cost refers to:",
+  "options": [
+   "The money paid for a good",
+   "The value of the next best alternative forgone",
+   "The cost of producing one more unit",
+   "The total cost of all alternatives"
+  ],
+  "answer": 1,
+  "history": "Opportunity cost is central to the definition of economics as the study of allocating scarce resources among competing ends.",
+  "discussion": "It explains why a free good can still have a cost: choosing to study for an exam has the opportunity cost of the earnings forgone. It differs from accounting cost, which records only actual payments.",
+  "wh": {
+   "what": "Value of the forgone alternative",
+   "why": "Resources are scarce and uses compete",
+   "how": "Identify the next best option you gave up"
+  },
+  "status": "Used in project appraisal and policy analysis under the term shadow price.",
+  "why_wrong": [
+   "Money paid is accounting cost, not opportunity cost.",
+   "",
+   "That is marginal cost.",
+   "Opportunity cost counts one forgone alternative, not all of them."
+  ],
+  "tip": "Whenever a question asks what you gave up, the answer is opportunity cost.",
+  "improve": "Apply opportunity cost to a real decision you made this month.",
+  "source": "NCERT Class XII Microeconomics, Chapter 1"
+ },
+ {
+  "id": "com-eco-04",
+  "exams": [
+   "bcom",
+   "ca-foundation",
+   "bba"
+  ],
+  "stream": "professional",
+  "course": "B.Com / CA Foundation",
+  "subject": "Economics",
+  "topic": "National Income",
+  "difficulty": "medium",
+  "q": "Gross National Product (GNP) equals GDP plus:",
+  "options": [
+   "Depreciation",
+   "Net factor income from abroad",
+   "Indirect taxes",
+   "Subsidies"
+  ],
+  "answer": 1,
+  "history": "GNP counts the output of a country's residents wherever they are, so it adds net factor income from abroad to GDP.",
+  "discussion": "For India, net factor income from abroad is usually negative, which is why GNP is lower than GDP. Adjusting GNP for depreciation gives Net National Product.",
+  "wh": {
+   "what": "National income measure",
+   "how": "GNP = GDP + NFIA",
+   "why": "To distinguish location of production from ownership"
+  },
+  "status": "India reports GVA at basic prices as the headline supply-side measure alongside GDP.",
+  "why_wrong": [
+   "Depreciation converts GNP into NNP, not GDP into GNP.",
+   "",
+   "Indirect taxes enter the market price versus factor cost distinction.",
+   "Subsidies also affect factor cost adjustments, not the national versus domestic split."
+  ],
+  "tip": "Domestic means inside the border, National means by residents. The gap is factor income from abroad.",
+  "improve": "Compute NNP at factor cost from GDP at market price using a small set of numbers.",
+  "source": "NCERT Class XII Macroeconomics, Chapter 2"
+ },
+ {
+  "id": "com-eco-05",
+  "exams": [
+   "class12-commerce",
+   "bcom",
+   "ca-foundation"
+  ],
+  "stream": "school",
+  "course": "Commerce / Economics",
+  "subject": "Economics",
+  "topic": "Inflation",
+  "difficulty": "medium",
+  "q": "Inflation caused by excess aggregate demand over available supply is called:",
+  "options": [
+   "Cost-push inflation",
+   "Demand-pull inflation",
+   "Imported inflation",
+   "Structural inflation"
+  ],
+  "answer": 1,
+  "history": "Demand-pull inflation arises when spending grows faster than output, often described as too much money chasing too few goods.",
+  "discussion": "Cost-push inflation comes from the supply side, through wages, fuel or input prices. Policy responses differ, since demand compression can worsen a supply shock.",
+  "wh": {
+   "what": "Type of inflation by cause",
+   "why": "To choose the right policy response",
+   "how": "Compare demand growth with output growth"
+  },
+  "status": "India's recent episodes have mixed imported fuel costs with food supply shocks, making classification difficult.",
+  "why_wrong": [
+   "Cost-push comes from rising input or wage costs.",
+   "",
+   "Imported inflation arrives through global prices and the exchange rate.",
+   "Structural inflation reflects supply bottlenecks in specific sectors."
+  ],
+  "tip": "Demand-pull is too much money, cost-push is too costly inputs. Ask which side of the market moved first.",
+  "improve": "Note one policy instrument suited to each inflation type.",
+  "source": "NCERT Class XII Macroeconomics, Chapter 6"
+ },
+ {
+  "id": "com-eco-06",
+  "exams": [
+   "class12-commerce",
+   "bcom",
+   "ca-foundation",
+   "bba"
+  ],
+  "stream": "school",
+  "course": "Commerce / Economics",
+  "subject": "Economics",
+  "topic": "Factors of Production",
+  "difficulty": "easy",
+  "q": "Which of the following is NOT a factor of production?",
+  "options": [
+   "Land",
+   "Labour",
+   "Money",
+   "Entrepreneurship"
+  ],
+  "answer": 2,
+  "history": "Classical economics recognises four factors: land, labour, capital and entrepreneurship, with money serving only as a medium of exchange.",
+  "discussion": "Money buys capital but is not itself productive; capital means produced means of production such as machines and tools. This distinction is a favourite exam trap.",
+  "wh": {
+   "what": "Inputs used in production",
+   "why": "Each factor earns a distinct reward: rent, wages, interest, profit"
+  },
+  "status": "Modern growth theory adds technology and human capital as separate contributors.",
+  "why_wrong": [
+   "Land earns rent and is a primary factor.",
+   "Labour earns wages and is a primary factor.",
+   "",
+   "Entrepreneurship organises the other factors and earns profit."
+  ],
+  "tip": "Money is a medium, capital is a machine. If you can touch and use it to produce, it is capital.",
+  "improve": "Match each factor to its reward and to one Indian example.",
+  "source": "NCERT Class XII Microeconomics, Chapter 1"
+ },
+ {
+  "id": "com-tax-01",
+  "exams": [
+   "ca-foundation",
+   "bcom",
+   "class12-commerce"
+  ],
+  "stream": "professional",
+  "course": "CA Foundation / B.Com",
+  "subject": "Taxation",
+  "topic": "Income Tax",
+  "difficulty": "medium",
+  "q": "Under the old tax regime, the maximum deduction available under Section 80C is:",
+  "options": [
+   "₹1,00,000",
+   "₹1,50,000",
+   "₹2,00,000",
+   "₹2,50,000"
+  ],
+  "answer": 1,
+  "history": "Section 80C allows deduction up to ₹1,50,000 for specified investments and payments including PPF, ELSS, life insurance premia and principal repayment of housing loans.",
+  "discussion": "The limit is a ceiling for the aggregate of 80C and the linked 80CCC and 80CCD(1) provisions, which is why taxpayers often need to plan across instruments rather than one.",
+  "wh": {
+   "what": "Deduction for specified investments",
+   "where": "Chapter VI-A of the Income Tax Act",
+   "why": "To encourage long-term savings"
+  },
+  "status": "The new regime under Section 115BAC, the default from 2023-24, does not allow the 80C deduction, so the choice of regime matters.",
+  "why_wrong": [
+   "₹1,00,000 was the limit before it was raised to ₹1,50,000.",
+   "",
+   "₹2,00,000 is not an 80C limit.",
+   "₹2,50,000 applies to certain other provisions, not 80C."
+  ],
+  "tip": "Keep the three numbers apart: 80C ₹1.5 lakh, 80D health insurance, 24(b) home loan interest ₹2 lakh.",
+  "improve": "Compare the old and new regimes for a sample income of ₹12 lakh.",
+  "source": "Income Tax Act 1961, Sections 80C and 115BAC"
+ },
+ {
+  "id": "com-tax-02",
+  "exams": [
+   "ca-foundation",
+   "bcom",
+   "class12-commerce",
+   "bba"
+  ],
+  "stream": "professional",
+  "course": "CA Foundation / B.Com",
+  "subject": "GST",
+  "topic": "GST Structure",
+  "difficulty": "medium",
+  "q": "For an intra-State supply of goods, which taxes are levied?",
+  "options": [
+   "IGST only",
+   "CGST and SGST",
+   "CGST and IGST",
+   "SGST and cess only"
+  ],
+  "answer": 1,
+  "history": "Intra-State supplies attract Central GST and State GST equally, while inter-State supplies attract Integrated GST, which is then apportioned between the Centre and the destination State.",
+  "discussion": "The design makes the tax destination based: revenue accrues to the State where the goods are consumed, not where they are produced.",
+  "wh": {
+   "what": "Tax on intra-State supply",
+   "how": "CGST plus SGST at half the notified rate each",
+   "why": "To preserve fiscal autonomy of States within one market"
+  },
+  "status": "Rate rationalisation into fewer slabs has been discussed repeatedly by the GST Council.",
+  "why_wrong": [
+   "IGST applies to inter-State supply.",
+   "",
+   "CGST never pairs with IGST on the same supply.",
+   "SGST alone would deny the Centre its share."
+  ],
+  "tip": "Inside the State means two taxes, CGST and SGST. Across States means one tax, IGST.",
+  "improve": "Compute the tax on a ₹10,000 intra-State and inter-State sale at 18 per cent.",
+  "source": "CGST Act 2017, Sections 7 to 9"
+ },
+ {
+  "id": "com-tax-03",
+  "exams": [
+   "ca-foundation",
+   "bcom",
+   "class12-commerce"
+  ],
+  "stream": "professional",
+  "course": "CA Foundation / B.Com",
+  "subject": "GST",
+  "topic": "Input Tax Credit",
+  "difficulty": "medium",
+  "q": "Input Tax Credit under GST allows a registered dealer to:",
+  "options": [
+   "Claim a refund of all taxes paid by consumers",
+   "Set off tax paid on inputs against tax payable on output",
+   "Avoid registration altogether",
+   "Charge tax at a lower rate than notified"
+  ],
+  "answer": 1,
+  "history": "ITC removes the cascading effect of tax on tax by allowing credit for tax already paid on purchases used in the course of business.",
+  "discussion": "Credit is available only for business use, with blocked credits listed for items such as personal consumption and certain motor vehicles, and the credit must appear in the supplier's filed return.",
+  "wh": {
+   "what": "Mechanism to avoid cascading",
+   "how": "Output tax liability minus eligible input credit",
+   "why": "Tax should fall on value added, not on every transaction"
+  },
+  "status": "The e-invoicing and GSTR-2B matching systems now govern credit eligibility in practice.",
+  "why_wrong": [
+   "Refunds to consumers are a separate welfare question, not ITC.",
+   "",
+   "Registration thresholds apply regardless of credit.",
+   "Rates are notified by the Council, not chosen by the dealer."
+  ],
+  "tip": "ITC is a set-off, not a refund. You subtract credit from liability, and only excess credit may become a refund.",
+  "improve": "Work through one purchase-sale cycle and compute net GST payable.",
+  "source": "CGST Act 2017, Chapter V"
+ },
+ {
+  "id": "com-tax-04",
+  "exams": [
+   "ca-foundation",
+   "bcom"
+  ],
+  "stream": "professional",
+  "course": "CA Foundation / B.Com",
+  "subject": "GST",
+  "topic": "Registration",
+  "difficulty": "medium",
+  "q": "The general threshold turnover for mandatory GST registration for suppliers of goods is:",
+  "options": [
+   "₹10 lakh",
+   "₹20 lakh",
+   "₹40 lakh",
+   "₹1 crore"
+  ],
+  "answer": 2,
+  "history": "The threshold for goods was raised to ₹40 lakh for normal category States, while services remain at ₹20 lakh, with lower limits for special category States.",
+  "discussion": "Thresholds apply to aggregate turnover, which includes exempt supplies and exports, so a dealer cannot avoid registration by keeping taxable turnover low.",
+  "wh": {
+   "what": "Registration threshold",
+   "why": "Small dealers should not carry full compliance cost",
+   "how": "Aggregate turnover across all registrations under one PAN"
+  },
+  "status": "Composition scheme thresholds are separate and lower for services.",
+  "why_wrong": [
+   "₹10 lakh applies in some special category States for goods.",
+   "₹20 lakh is the services threshold.",
+   "",
+   "₹1 crore is not the general goods threshold."
+  ],
+  "tip": "Goods 40, services 20. Remember it as goods being heavier, so the number is bigger.",
+  "improve": "List the special category States and their lower thresholds.",
+  "source": "CGST Act 2017, Section 22 and Notification 10/2019"
+ },
+ {
+  "id": "com-stat-01",
+  "exams": [
+   "bcom",
+   "bba",
+   "ca-foundation"
+  ],
+  "stream": "graduation",
+  "course": "B.Com / BBA",
+  "subject": "Statistics",
+  "topic": "Central Tendency",
+  "difficulty": "medium",
+  "q": "The empirical relationship between mean, median and mode is:",
+  "options": [
+   "Mode = 3 Median − 2 Mean",
+   "Mode = 2 Median − 3 Mean",
+   "Mean = 3 Median − 2 Mode",
+   "Median = 3 Mode − 2 Mean"
+  ],
+  "answer": 0,
+  "history": "Karl Pearson's empirical relation for moderately skewed distributions is Mode equals three times Median minus twice the Mean.",
+  "discussion": "The formula explains why the mean is pulled furthest by skewness while the median stays in the middle, a point examiners test through numerical problems.",
+  "wh": {
+   "what": "Relation among three averages",
+   "who": "Karl Pearson",
+   "why": "To estimate one average when the other two are known"
+  },
+  "status": "The relation is approximate and holds best for moderately skewed unimodal distributions.",
+  "why_wrong": [
+   "",
+   "The coefficients are swapped, which gives wrong values for any skewed data.",
+   "This rearranges the formula incorrectly.",
+   "This is a different rearrangement that does not follow from Pearson's relation."
+  ],
+  "tip": "Say it as a sentence: three medians minus two means gives the mode. The 3-2 order is the whole formula.",
+  "improve": "Test the relation on a small dataset and note the approximation error.",
+  "source": "NCERT Class XI Statistics, Measures of Central Tendency"
+ },
+ {
+  "id": "com-stat-02",
+  "exams": [
+   "bcom",
+   "bba",
+   "ca-foundation"
+  ],
+  "stream": "graduation",
+  "course": "B.Com / BBA",
+  "subject": "Statistics",
+  "topic": "Dispersion",
+  "difficulty": "medium",
+  "q": "Standard deviation is the:",
+  "options": [
+   "Square of the variance",
+   "Positive square root of the variance",
+   "Average of the deviations from the mean",
+   "Difference between the highest and lowest value"
+  ],
+  "answer": 1,
+  "history": "Standard deviation is defined as the positive square root of the variance, restoring the original units of the data.",
+  "discussion": "Variance squares the deviations, which inflates the unit, so the square root brings the measure back to the same scale as the observations, making comparison meaningful.",
+  "wh": {
+   "what": "Measure of dispersion",
+   "how": "Square root of the average squared deviation from the mean",
+   "why": "It is expressed in the same units as the data"
+  },
+  "status": "Used widely in quality control, finance and the coefficient of variation.",
+  "why_wrong": [
+   "Variance is the square of standard deviation, not the reverse.",
+   "",
+   "The average of absolute deviations is the mean absolute deviation.",
+   "That is the range."
+  ],
+  "tip": "Variance is in squared units, standard deviation is in original units. If the question mentions units, it is standard deviation.",
+  "improve": "Compute variance and standard deviation for a five-value dataset by hand.",
+  "source": "NCERT Class XI Statistics, Measures of Dispersion"
+ }
+]

@@ -1,0 +1,1493 @@
+[
+  {
+    "id": "bpsc-01",
+    "exams": [
+      "bpsc",
+      "upsc"
+    ],
+    "stream": "competition",
+    "course": "BPSC",
+    "subject": "Bihar Special",
+    "topic": "Modern Bihar",
+    "difficulty": "easy",
+    "q": "Bihar was carved out as a separate province on which date, now celebrated as Bihar Diwas?",
+    "options": [
+      "1 April 1912",
+      "22 March 1912",
+      "15 August 1947",
+      "26 January 1950"
+    ],
+    "answer": 1,
+    "history": "On 22 March 1912 the British carved Bihar out of the Bengal Presidency, with Patna as its capital; the day has been observed as Bihar Diwas since 2010.",
+    "discussion": "The 1912 separation followed the 1905 partition of Bengal and a long campaign for a separate administrative identity, and it also created Orissa as a separate province in 1936.",
+    "wh": {
+      "what": "Creation of Bihar province",
+      "when": "22 March 1912",
+      "where": "Carved out of Bengal Presidency",
+      "why": "Administrative size and demands for separate identity"
+    },
+    "status": "Bihar Diwas is a state holiday with a three-day cultural programme at Gandhi Maidan, Patna.",
+    "why_wrong": [
+      "1 April 1912 relates to other administrative changes, not the creation of Bihar.",
+      "",
+      "1947 is independence, not the province's formation.",
+      "1950 is when the Constitution came into force."
+    ],
+    "tip": "Fix 22 March 1912 as Bihar's birthday and remember it was separated from Bengal, not from UP.",
+    "improve": "Note the three separations of that period: Bihar 1912, Orissa 1936, and the annulled partition of Bengal 1905.",
+    "source": "Government of Bihar; Bihar Diwas records"
+  },
+  {
+    "id": "bpsc-02",
+    "exams": [
+      "bpsc",
+      "upsc"
+    ],
+    "stream": "competition",
+    "course": "BPSC",
+    "subject": "Bihar Special",
+    "topic": "Ancient Bihar",
+    "difficulty": "medium",
+    "q": "Nalanda Mahavihara, the ancient centre of learning, was founded under the patronage of which Gupta ruler?",
+    "options": [
+      "Samudragupta",
+      "Chandragupta II",
+      "Kumaragupta I",
+      "Skandagupta"
+    ],
+    "answer": 2,
+    "history": "Nalanda was established in the fifth century CE under Kumaragupta I, and seals and inscriptions credit him as its founder; it flourished for about 700 years.",
+    "discussion": "Hiuen Tsang studied there under Silabhadra and left a detailed account of its monastic organisation, which historians use to reconstruct its curriculum.",
+    "wh": {
+      "what": "Ancient residential university in Bihar",
+      "when": "5th century CE",
+      "where": "Nalanda district, near Rajgir",
+      "who": "Kumaragupta I as patron",
+      "why": "Gupta patronage of Buddhist scholasticism"
+    },
+    "status": "A UNESCO World Heritage Site since 2016; the modern Nalanda University at Rajgir was revived by an Act of Parliament in 2010.",
+    "why_wrong": [
+      "Samudragupta is known for his conquests recorded in the Allahabad pillar inscription.",
+      "Chandragupta II is associated with the Mehrauli iron pillar and the Udayagiri caves.",
+      "",
+      "Skandagupta ruled later, during Huna invasions."
+    ],
+    "tip": "Pala rulers founded Vikramshila and Odantapuri; the Guptas founded Nalanda. Keep the dynasty-founder pair straight.",
+    "improve": "List the three great mahaviharas of Bihar with their founders and locations.",
+    "source": "ASI; NCERT Themes in Indian History Part I"
+  },
+  {
+    "id": "bpsc-03",
+    "exams": [
+      "bpsc"
+    ],
+    "stream": "competition",
+    "course": "BPSC",
+    "subject": "Bihar Special",
+    "topic": "Ancient Bihar",
+    "difficulty": "medium",
+    "q": "Vikramshila University was founded by which Pala ruler?",
+    "options": [
+      "Gopala",
+      "Dharmapala",
+      "Devapala",
+      "Mahipala"
+    ],
+    "answer": 1,
+    "history": "Dharmapala founded Vikramshila in the eighth century near Bhagalpur, and it became a rival centre to Nalanda, especially strong in tantric Buddhist studies.",
+    "discussion": "Its ruins at Antichak in Bhagalpur district were excavated from the 1960s, revealing a large cruciform stupa and a monastery laid out on a square plan.",
+    "wh": {
+      "what": "Pala-era Buddhist mahavihara",
+      "when": "8th-9th century CE",
+      "where": "Antichak, Bhagalpur district",
+      "who": "Dharmapala"
+    },
+    "status": "Protected by the ASI; proposals to develop it as a heritage tourism circuit are ongoing.",
+    "why_wrong": [
+      "Gopala was the first Pala ruler and founder of the dynasty.",
+      "",
+      "Devapala expanded the empire but did not found Vikramshila.",
+      "Mahipala ruled much later, in the eleventh century."
+    ],
+    "tip": "Gopala founded the dynasty, Dharmapala founded Vikramshila — the alliteration of D is your memory hook.",
+    "improve": "Learn the Pala rulers in order with one achievement each.",
+    "source": "ASI Antichak excavations; NCERT Themes in Indian History"
+  },
+  {
+    "id": "bpsc-04",
+    "exams": [
+      "bpsc",
+      "upsc"
+    ],
+    "stream": "competition",
+    "course": "BPSC",
+    "subject": "Bihar Special",
+    "topic": "Freedom Struggle",
+    "difficulty": "easy",
+    "q": "The Champaran Satyagraha of 1917 was launched against which system?",
+    "options": [
+      "Zamindari land revenue",
+      "Tinkathia system of indigo cultivation",
+      "Salt tax",
+      "Begar labour in coal mines"
+    ],
+    "answer": 1,
+    "history": "Under tinkathia, tenants had to grow indigo on three kathas out of every twenty, and Gandhi's inquiry in Champaran forced the appointment of the Anderson Committee and abolition of the system.",
+    "discussion": "Champaran was Gandhi's first satyagraha in India and established his method: fact-finding, negotiation, then courting arrest to force a settlement.",
+    "wh": {
+      "what": "Peasant agitation against forced indigo cultivation",
+      "when": "1917",
+      "where": "Champaran, north-west Bihar",
+      "who": "Gandhi with Rajendra Prasad, Mazharul Haq and local planters",
+      "why": "Indigo prices had collapsed after synthetic dyes, so planters squeezed tenants"
+    },
+    "status": "Commemorated at the Gandhi Sangrahalaya in Motihari; the Champaran centenary was observed in 2017.",
+    "why_wrong": [
+      "Zamindari revenue was the issue in Bengal's Permanent Settlement disputes.",
+      "",
+      "Salt tax was the target of the 1930 Dandi March.",
+      "Begar was addressed later in Kheda and in the 1919 Punjab wrongs."
+    ],
+    "tip": "Gandhi's Indian movements in order: Champaran 1917, Ahmedabad mill 1918, Kheda 1918, then the all-India phase.",
+    "improve": "Write one paragraph on how tinkathia worked, since questions often test the mechanism.",
+    "source": "NCERT Class XII, Modern India"
+  },
+  {
+    "id": "bpsc-05",
+    "exams": [
+      "bpsc"
+    ],
+    "stream": "competition",
+    "course": "BPSC",
+    "subject": "Bihar Special",
+    "topic": "Post-Independence",
+    "difficulty": "easy",
+    "q": "Who was the first Chief Minister of Bihar?",
+    "options": [
+      "Rajendra Prasad",
+      "Shri Krishna Singh",
+      "Deep Narayan Singh",
+      "Binodanand Jha"
+    ],
+    "answer": 1,
+    "history": "Shri Krishna Singh, known as Bihar Kesari, became the first Chief Minister in 1946 and held office until 1961, the longest tenure in the State's history.",
+    "discussion": "He combined the premiership with the revenue portfolio and drove land reform, including the abolition of zamindari, alongside the Bhoodan movement.",
+    "wh": {
+      "what": "First Chief Minister of Bihar",
+      "when": "1946 to 1961",
+      "who": "Shri Krishna Singh",
+      "why": "Congress leadership in the pre-independence ministry continued into the State"
+    },
+    "status": "His tenure remains the benchmark for stability; Bihar has had more than 20 Chief Ministers since.",
+    "why_wrong": [
+      "Rajendra Prasad was President of India, not Chief Minister.",
+      "",
+      "Deep Narayan Singh served briefly in 1961.",
+      "Binodanand Jha was Chief Minister from 1961 to 1963."
+    ],
+    "tip": "Do not mix the Bihar Chief Minister with the first President, who was also a Bihar leader.",
+    "improve": "Make a list of Bihar Chief Ministers with tenure years for the last 30 years.",
+    "source": "Bihar Legislative Assembly records"
+  },
+  {
+    "id": "bpsc-06",
+    "exams": [
+      "bpsc",
+      "ssc"
+    ],
+    "stream": "competition",
+    "course": "BPSC",
+    "subject": "Bihar Special",
+    "topic": "Geography",
+    "difficulty": "easy",
+    "q": "Bihar shares its state boundaries with how many Indian States?",
+    "options": [
+      "Two",
+      "Three",
+      "Four",
+      "Five"
+    ],
+    "answer": 1,
+    "history": "Bihar borders Uttar Pradesh to the west, Jharkhand to the south and West Bengal to the east, while Nepal lies along its northern international boundary.",
+    "discussion": "The 2011 census counted 38 districts in Bihar; the State is landlocked and drained by the Ganga and its northern tributaries.",
+    "wh": {
+      "what": "State boundary count",
+      "where": "Eastern India, on the Nepal border",
+      "why": "A common map-based question",
+      "how": "UP, Jharkhand, West Bengal"
+    },
+    "status": "Bihar has no coastline and is one of India's most densely populated States.",
+    "why_wrong": [
+      "Two undercounts; Jharkhand and West Bengal are easy to forget.",
+      "",
+      "Four would require an additional State such as Odisha, which does not touch Bihar.",
+      "Five is well beyond the actual count."
+    ],
+    "tip": "Three States and one country — that single sentence prevents most errors here.",
+    "improve": "Draw Bihar and label its three neighbours plus the districts along the Nepal border.",
+    "source": "Census of India 2011; Survey of India"
+  },
+  {
+    "id": "bpsc-07",
+    "exams": [
+      "bpsc"
+    ],
+    "stream": "competition",
+    "course": "BPSC",
+    "subject": "Bihar Special",
+    "topic": "State Symbols",
+    "difficulty": "medium",
+    "q": "What is the State animal of Bihar?",
+    "options": [
+      "Tiger",
+      "Gaur (Indian bison)",
+      "Elephant",
+      "Leopard"
+    ],
+    "answer": 1,
+    "history": "Bihar declared the gaur as its State animal, with the house sparrow as State bird, peepal as State tree and marigold as State flower.",
+    "discussion": "The gaur is the largest extant wild bovine, and its association with Bihar is largely symbolic since wild populations sit in the Valmiki landscape.",
+    "wh": {
+      "what": "State animal of Bihar",
+      "who": "Notified by the State government",
+      "where": "Valmiki Tiger Reserve holds the State's main large mammal populations"
+    },
+    "status": "Gaur is listed as Vulnerable by IUCN, with the largest populations in the Western Ghats.",
+    "why_wrong": [
+      "The tiger is India's national animal and Bihar's flagship in Valmiki, but not the State animal.",
+      "",
+      "The elephant is the State animal of Kerala and Jharkhand.",
+      "The leopard is not a State symbol anywhere in this region."
+    ],
+    "tip": "State symbols of Bihar: gaur, house sparrow, peepal, marigold. Memorise as one four-item set.",
+    "improve": "Learn state symbols for Bihar, UP, Jharkhand and West Bengal together to avoid swaps.",
+    "source": "Government of Bihar notifications; IUCN Red List"
+  },
+  {
+    "id": "bpsc-08",
+    "exams": [
+      "bpsc",
+      "upsc"
+    ],
+    "stream": "competition",
+    "course": "BPSC",
+    "subject": "Bihar Special",
+    "topic": "1857 Revolt",
+    "difficulty": "easy",
+    "q": "Which leader led the 1857 revolt in the Jagdishpur region of Bihar?",
+    "options": [
+      "Kunwar Singh",
+      "Pir Ali Khan",
+      "Maulvi Ahmadullah Shah",
+      "Nana Saheb"
+    ],
+    "answer": 0,
+    "history": "Babu Veer Kunwar Singh of Jagdishpur, an octogenarian zamindar of Arrah, led the revolt in Bihar from 1857 to 1858 and died shortly after defeating a British force.",
+    "discussion": "His campaign combined guerrilla tactics with coordination with Nana Saheb's forces, and the Amar Singh episode at Jagdishpur became a local legend of resistance.",
+    "wh": {
+      "what": "Bihar's main 1857 uprising",
+      "when": "1857-58",
+      "where": "Jagdishpur, Bhojpur district",
+      "who": "Kunwar Singh and his brother Amar Singh"
+    },
+    "status": "Veer Kunwar Singh University in Arrah and an annual fair commemorate him.",
+    "why_wrong": [
+      "",
+      "Pir Ali Khan was a religious figure, not a leader of this revolt.",
+      "Ahmadullah Shah led in Awadh and Rohilkhand.",
+      "Nana Saheb led at Kanpur."
+    ],
+    "tip": "Map 1857 leaders to places: Kanpur Nana Saheb, Jhansi Lakshmibai, Awadh Begum Hazrat Mahal, Bihar Kunwar Singh, Delhi Bakht Khan.",
+    "improve": "Note three reasons why the 1857 revolt failed to become a national war.",
+    "source": "NCERT Class XII, Modern India"
+  },
+  {
+    "id": "bpsc-09",
+    "exams": [
+      "bpsc"
+    ],
+    "stream": "competition",
+    "course": "BPSC",
+    "subject": "Bihar Special",
+    "topic": "Fairs & Culture",
+    "difficulty": "medium",
+    "q": "The Sonepur cattle fair is held at the confluence of which two rivers?",
+    "options": [
+      "Ganga and Son",
+      "Ganga and Gandak",
+      "Ganga and Kosi",
+      "Son and Punpun"
+    ],
+    "answer": 1,
+    "history": "Sonepur in Saran district hosts Asia's largest cattle fair at the meeting point of the Ganga and the Gandak, traditionally beginning on Kartik Purnima.",
+    "discussion": "The fair's religious anchor is the Harihar Nath temple, and its trade character has shifted from elephants and cattle to horses, and now mostly to local livestock and cultural events.",
+    "wh": {
+      "what": "Cattle fair and cultural gathering",
+      "when": "November-December, Kartik Purnima",
+      "where": "Sonepur, Saran district",
+      "why": "River confluence pilgrimage plus livestock trade"
+    },
+    "status": "The elephant trade ended after 2003 restrictions; the fair now emphasises rural tourism.",
+    "why_wrong": [
+      "The Son meets the Ganga further east near Patna, not at Sonepur.",
+      "",
+      "The Kosi joins the Ganga near Kursela, far downstream.",
+      "The Punpun is a small southern tributary of the Ganga."
+    ],
+    "tip": "Two confluences to keep apart: Sonepur is Ganga-Gandak, Patna's confluence area is Ganga-Son.",
+    "improve": "Mark Bihar's main rivers and their confluences on an outline map.",
+    "source": "Bihar Tourism; NCERT Class XI"
+  },
+  {
+    "id": "bpsc-10",
+    "exams": [
+      "bpsc"
+    ],
+    "stream": "competition",
+    "course": "BPSC",
+    "subject": "Bihar Special",
+    "topic": "Geography",
+    "difficulty": "medium",
+    "q": "Which district of Bihar is the largest by area?",
+    "options": [
+      "Patna",
+      "Pashchim Champaran",
+      "Muzaffarpur",
+      "Bhagalpur"
+    ],
+    "answer": 1,
+    "history": "Pashchim Champaran, in the north-west along the Nepal border, is the largest district by area at roughly 5,229 square kilometres.",
+    "discussion": "Patna is the largest by population but small in area, which is why the two superlatives are usually tested together.",
+    "wh": {
+      "what": "Largest district by area",
+      "where": "North-west Bihar, bordering Nepal",
+      "why": "Its forest and Terai belt extends over a wide tract"
+    },
+    "status": "It contains the Valmiki Tiger Reserve, Bihar's only national park area.",
+    "why_wrong": [
+      "Patna is the most populous district but ranks low on area.",
+      "",
+      "Muzaffarpur is a populous north Bihar district but smaller in area.",
+      "Bhagalpur is a medium-sized district on the Ganga."
+    ],
+    "tip": "Largest by area is Pashchim Champaran; largest by population is Patna. Learn them as a pair.",
+    "improve": "Note the three smallest and three largest districts of Bihar by area.",
+    "source": "Census of India 2011; District records"
+  },
+  {
+    "id": "bpsc-11",
+    "exams": [
+      "bpsc",
+      "upsc"
+    ],
+    "stream": "competition",
+    "course": "BPSC",
+    "subject": "Bihar Special",
+    "topic": "Environment",
+    "difficulty": "easy",
+    "q": "Valmiki Tiger Reserve, Bihar's only tiger reserve, is located in which district?",
+    "options": [
+      "Pashchim Champaran",
+      "Gaya",
+      "Nalanda",
+      "Kaimur"
+    ],
+    "answer": 0,
+    "history": "Valmiki Tiger Reserve in Pashchim Champaran was declared a tiger reserve in 1994 and covers the Terai-Bhabar tract along the Gandak and Pandai rivers.",
+    "discussion": "It forms part of the Terai Arc Landscape linking Nepal's Chitwan with Indian reserves, which is why tiger movement across the border is monitored closely.",
+    "wh": {
+      "what": "Bihar's only tiger reserve and national park",
+      "where": "Pashchim Champaran, on the Nepal border",
+      "when": "Tiger reserve status in 1994",
+      "why": "Contiguous habitat with Chitwan National Park"
+    },
+    "status": "Tiger numbers are small but stable, and camera traps record movement from Nepal.",
+    "why_wrong": [
+      "",
+      "Gaya has Bodh Gaya and the Barabar caves, not a tiger reserve.",
+      "Nalanda is an archaeological landscape.",
+      "Kaimur has hills and rock art but no tiger reserve."
+    ],
+    "tip": "One national park in Bihar — Valmiki. Any other name is a distractor.",
+    "improve": "Learn the Terai Arc Landscape reserves across Bihar, UP and Uttarakhand.",
+    "source": "National Tiger Conservation Authority"
+  },
+  {
+    "id": "bpsc-12",
+    "exams": [
+      "bpsc"
+    ],
+    "stream": "competition",
+    "course": "BPSC",
+    "subject": "Bihar Special",
+    "topic": "Post-Independence",
+    "difficulty": "medium",
+    "q": "Who was the first woman Chief Minister of Bihar?",
+    "options": [
+      "Rabri Devi",
+      "Sushila Keto",
+      "Meira Kumar",
+      "Sushma Swaraj"
+    ],
+    "answer": 0,
+    "history": "Rabri Devi became Bihar's first woman Chief Minister in July 1997 and held the post across three separate terms until 2005.",
+    "discussion": "Her entry followed Lalu Prasad's resignation after a chargesheet in the fodder scam, making her tenure a frequently tested fact in state politics questions.",
+    "wh": {
+      "what": "First woman Chief Minister of Bihar",
+      "when": "1997, and again in 1999 and 2000",
+      "who": "Rabri Devi"
+    },
+    "status": "She later served as Leader of the Opposition in the Bihar Legislative Council.",
+    "why_wrong": [
+      "",
+      "Sushila Keto is an activist, not a Chief Minister.",
+      "Meira Kumar was a Union Minister and the first woman Speaker of the Lok Sabha.",
+      "Sushma Swaraj was Chief Minister of Delhi briefly and a Union Minister."
+    ],
+    "tip": "First woman CM facts: Bihar Rabri Devi, Delhi Sushma Swaraj, Tamil Nadu Jayalalithaa, UP Sucheta Kripalani.",
+    "improve": "Keep a small table of firsts in Indian politics by State.",
+    "source": "Bihar Legislative Assembly records"
+  },
+  {
+    "id": "bpsc-13",
+    "exams": [
+      "bpsc"
+    ],
+    "stream": "competition",
+    "course": "BPSC",
+    "subject": "Bihar Special",
+    "topic": "Art & Culture",
+    "difficulty": "medium",
+    "q": "The Patna Kalam style of painting is best known for depicting:",
+    "options": [
+      "Mughal court scenes",
+      "Everyday life and ordinary people",
+      "Religious icons only",
+      "Landscapes of the Himalayas"
+    ],
+    "answer": 1,
+    "history": "Patna Kalam grew in the eighteenth century after Mughal artists moved east, and it is known for small-scale watercolours of traders, craftsmen, festivals and household life.",
+    "discussion": "Art historians call it Company painting or the Patna Qalam, distinguished from court art by its ordinary subjects and cheaper materials for a new bazaar market.",
+    "wh": {
+      "what": "Regional miniature painting school",
+      "when": "18th-19th century",
+      "where": "Patna, Bihar",
+      "why": "Mughal decline pushed artists towards local patronage"
+    },
+    "status": "Examples are held in the Patna Museum and the Victoria and Albert Museum.",
+    "why_wrong": ["Mughal court scenes belong to the Mughal miniature tradition, which Patna Kalam moved away from.", "", "Religious icons were painted, but they do not define the style's character.", "Himalayan landscapes belong to later Company and Bengal School painters."],
+    "tip": "Patna Kalam equals ordinary life; Mughal miniature equals court life. The subject is the giveaway.",
+    "improve": "Learn three artists associated with Patna Kalam and one painting each.",
+    "source": "Patna Museum; NCERT Class XII Fine Arts"
+  },
+  {
+    "id": "bpsc-14",
+    "exams": [
+      "bpsc"
+    ],
+    "stream": "competition",
+    "course": "BPSC",
+    "subject": "Bihar Special",
+    "topic": "Industry",
+    "difficulty": "easy",
+    "q": "The Barauni oil refinery is located in which district of Bihar?",
+    "options": [
+      "Begusarai",
+      "Barauni is in Patna",
+      "Bhagalpur",
+      "Purnia"
+    ],
+    "answer": 0,
+    "history": "The Barauni refinery, commissioned in 1964 by Indian Oil, sits in Begusarai district and was built with Soviet technical assistance.",
+    "discussion": "It is fed by the crude pipeline from Haldia and anchors the Barauni industrial belt, which also includes a thermal power station and fertiliser units.",
+    "wh": {
+      "what": "Oil refinery of Indian Oil Corporation",
+      "when": "Commissioned 1964",
+      "where": "Barauni, Begusarai district",
+      "why": "To process crude for eastern India's growing demand"
+    },
+    "status": "Capacity has been expanded to about 6 million tonnes a year, with a polypropylene unit added.",
+    "why_wrong": [
+      "",
+      "Barauni is a town inside Begusarai, not in Patna district.",
+      "Bhagalpur has no refinery.",
+      "Purnia has no refinery."
+    ],
+    "tip": "Barauni town sits inside Begusarai district — the district name is the answer, not the town name.",
+    "improve": "List Bihar's major industrial units with their districts.",
+    "source": "Indian Oil Corporation"
+  },
+  {
+    "id": "ssc-q-01",
+    "exams": [
+      "ssc",
+      "banking",
+      "railway"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "Quantitative Aptitude",
+    "topic": "Simple Interest",
+    "difficulty": "easy",
+    "q": "Find the simple interest on ₹8,000 at 7.5% per annum for 2 years.",
+    "options": [
+      "₹1,100",
+      "₹1,200",
+      "₹1,250",
+      "₹1,400"
+    ],
+    "answer": 1,
+    "history": "Simple interest is calculated as principal × rate × time divided by 100, without any compounding on accrued interest.",
+    "discussion": "The trap in this question is reading 7.5% as 7% or 8%; keeping the decimal intact gives 8000 × 7.5 × 2 / 100 = 1200.",
+    "wh": {
+      "what": "Simple interest",
+      "how": "SI = P × R × T / 100",
+      "why": "Used for short-term loans and some recurring deposits"
+    },
+    "status": "In exams, simple interest questions are usually combined with part-payment or instalment problems.",
+    "why_wrong": [
+      "₹1,100 comes from rounding the rate to 7% for 2 years.",
+      "",
+      "₹1,250 would need a rate near 7.8%.",
+      "₹1,400 comes from treating the rate as 8.75%."
+    ],
+    "tip": "For 2 years, SI is just 2 × P × R / 100. Compute one year's interest first, then double it.",
+    "improve": "Practise five part-payment SI problems, which are the harder variant.",
+    "source": "SSC CGL quantitative aptitude syllabus"
+  },
+  {
+    "id": "ssc-q-02",
+    "exams": [
+      "ssc",
+      "banking"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "difficulty": "medium",
+    "q": "What is the compound interest on ₹10,000 at 10% per annum for 2 years, compounded annually?",
+    "options": [
+      "₹2,000",
+      "₹2,100",
+      "₹2,200",
+      "₹2,310"
+    ],
+    "answer": 1,
+    "history": "Compound interest adds each year's interest to the principal, so the second year earns interest on the first year's interest as well.",
+    "discussion": "The standard shortcut is net effective rate for two years: 10 + 10 + 10×10/100 = 21 per cent, giving 2,100 directly.",
+    "wh": {
+      "what": "Compound interest for two years",
+      "how": "A = P(1 + R/100)^T",
+      "why": "Banks use compounding for term deposits and loans"
+    },
+    "status": "Exams increasingly test half-yearly and quarterly compounding, where the rate is divided and time multiplied.",
+    "why_wrong": [
+      "₹2,000 is the simple interest for the same period.",
+      "",
+      "₹2,200 comes from applying 22 per cent, an error in the second-year interest base.",
+      "₹2,310 is the answer for 3 years at 10 per cent."
+    ],
+    "tip": "Two-year CI shortcut: net rate = 2r + r²/100. For 10 per cent it is 21 per cent, no long multiplication needed.",
+    "improve": "Learn the net-rate formula for three years as well: 3r + 3r²/100 + r³/10000.",
+    "source": "SSC CGL quantitative aptitude syllabus"
+  },
+  {
+    "id": "ssc-q-03",
+    "exams": [
+      "ssc",
+      "banking",
+      "railway"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "Quantitative Aptitude",
+    "topic": "Ratio",
+    "difficulty": "easy",
+    "q": "If A : B = 3 : 4 and B : C = 5 : 6, then A : B : C equals:",
+    "options": [
+      "3 : 4 : 6",
+      "15 : 20 : 24",
+      "5 : 4 : 6",
+      "3 : 5 : 6"
+    ],
+    "answer": 1,
+    "history": "When a common term appears in two ratios, it is made equal by taking the LCM of its values before combining.",
+    "discussion": "Here B is 4 in the first ratio and 5 in the second, so both ratios are scaled by the other's B value, giving 15:20 and 20:24.",
+    "wh": {
+      "what": "Combining two ratios",
+      "how": "Equalise the common term, then merge",
+      "why": "Ratio chaining is a base skill for partnership and mixture problems"
+    },
+    "status": "Frequently combined with partnership profit-sharing in mains-level papers.",
+    "why_wrong": [
+      "3:4:6 ignores the mismatch in B's value between the two ratios.",
+      "",
+      "5:4:6 reverses the ratios instead of combining them.",
+      "3:5:6 drops B's actual scaling entirely."
+    ],
+    "tip": "Write the two ratios one above the other, align the common term, and cross-multiply. It never fails.",
+    "improve": "Do five three-ratio combination sums until the alignment becomes automatic.",
+    "source": "SSC CGL quantitative aptitude syllabus"
+  },
+  {
+    "id": "ssc-q-04",
+    "exams": [
+      "ssc",
+      "banking"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "Quantitative Aptitude",
+    "topic": "Average",
+    "difficulty": "easy",
+    "q": "The average of the first 20 natural numbers is:",
+    "options": [
+      "10",
+      "10.5",
+      "11",
+      "20.5"
+    ],
+    "answer": 1,
+    "history": "The sum of the first n natural numbers is n(n+1)/2, so the average is (n+1)/2.",
+    "discussion": "For n = 20, the sum is 210 and the average 10.5. A quick sanity check: the average of 1 to 20 must sit between 10 and 11.",
+    "wh": {
+      "what": "Average of a natural number series",
+      "how": "(n + 1) / 2",
+      "why": "A standard speed-calculation question"
+    },
+    "status": "Exam variants ask for the average of first n even, odd or square numbers.",
+    "why_wrong": [
+      "10 is the average of the first 19 natural numbers, a common off-by-one error.",
+      "",
+      "11 would be the average of 1 to 21.",
+      "20.5 is the average of 1 to 40."
+    ],
+    "tip": "For consecutive numbers, the average is simply the midpoint of the first and last terms.",
+    "improve": "Memorise the sum formulas for natural numbers, squares and cubes.",
+    "source": "SSC CGL quantitative aptitude syllabus"
+  },
+  {
+    "id": "ssc-q-05",
+    "exams": [
+      "ssc",
+      "banking",
+      "railway"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "Quantitative Aptitude",
+    "topic": "Time Speed Distance",
+    "difficulty": "medium",
+    "q": "A train 180 m long running at 54 km/h crosses a pole in how many seconds?",
+    "options": [
+      "10 seconds",
+      "12 seconds",
+      "14 seconds",
+      "15 seconds"
+    ],
+    "answer": 1,
+    "history": "To cross a pole, a train covers exactly its own length, so time equals length divided by speed.",
+    "discussion": "The only step that trips candidates is the unit change: 54 km/h multiplied by 5/18 gives 15 m/s, and 180 divided by 15 is 12 seconds.",
+    "wh": {
+      "what": "Time to cross a stationary point",
+      "how": "Time = length / speed",
+      "why": "A recurring SSC and railway question type"
+    },
+    "status": "Variants ask for a platform, where the length of the platform is added to the train's length.",
+    "why_wrong": [
+      "10 seconds assumes a speed of 18 m/s.",
+      "",
+      "14 seconds comes from rounding 12.86 after a unit error.",
+      "15 seconds confuses the km/h figure with m/s."
+    ],
+    "tip": "Multiply km/h by 5/18 to get m/s instantly. For a pole use train length, for a platform add both lengths.",
+    "improve": "Solve three platform-crossing and two overtaking problems in the same sitting.",
+    "source": "SSC CGL quantitative aptitude syllabus"
+  },
+  {
+    "id": "ssc-q-06",
+    "exams": [
+      "ssc",
+      "banking"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "difficulty": "easy",
+    "q": "A price is increased by 20% and then decreased by 20%. The net change is:",
+    "options": [
+      "No change",
+      "4% decrease",
+      "4% increase",
+      "2% decrease"
+    ],
+    "answer": 1,
+    "history": "Successive percentage changes multiply rather than add, so 1.2 × 0.8 = 0.96, a net fall of 4 per cent.",
+    "discussion": "The fall happens because the 20 per cent decrease is applied to a larger base than the original price, which is why the two changes do not cancel.",
+    "wh": {
+      "what": "Net effect of successive percentage changes",
+      "how": "a + b + ab/100, with signs",
+      "why": "Common in discount and profit questions"
+    },
+    "status": "Mains papers combine this with successive discounts in profit and loss.",
+    "why_wrong": [
+      "No change is the intuitive but wrong answer.",
+      "",
+      "4% increase would require a different order of magnitudes.",
+      "2% decrease comes from subtracting 20 and 18 instead of multiplying."
+    ],
+    "tip": "Use the formula a + b + ab/100 with signs: 20 + (-20) + (20 × -20)/100 = -4.",
+    "improve": "Test the formula with three successive changes to see how the error compounds.",
+    "source": "SSC CGL quantitative aptitude syllabus"
+  },
+  {
+    "id": "ssc-q-07",
+    "exams": [
+      "ssc",
+      "banking",
+      "railway"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "difficulty": "medium",
+    "q": "A can do a job in 12 days and B in 18 days. Working together, they finish it in:",
+    "options": [
+      "7.2 days",
+      "6.5 days",
+      "8 days",
+      "9 days"
+    ],
+    "answer": 0,
+    "history": "Work problems are solved by adding rates, since one day of joint work equals the sum of each person's one-day output.",
+    "discussion": "A does 1/12 and B does 1/18 per day, giving 5/36 per day together, so the total time is 36/5, or 7.2 days.",
+    "wh": {
+      "what": "Combined work rate",
+      "how": "1/T = 1/a + 1/b",
+      "why": "A guaranteed scoring area in arithmetic sections"
+    },
+    "status": "Exam variants include efficiency ratios and workers joining or leaving mid-task.",
+    "why_wrong": [
+      "",
+      "6.5 days would need a faster combined rate than 5/36.",
+      "8 days comes from rounding up without computing the fraction.",
+      "9 days is roughly the average of the two times, a classic error."
+    ],
+    "tip": "Take the LCM of the days as total work, here 36 units, then convert each person to units per day.",
+    "improve": "Practise the LCM-unit method until you can do it without writing the fractions.",
+    "source": "SSC CGL quantitative aptitude syllabus"
+  },
+  {
+    "id": "ssc-q-08",
+    "exams": [
+      "ssc",
+      "banking",
+      "railway"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "difficulty": "easy",
+    "q": "An article bought for ₹480 is sold for ₹552. The profit percentage is:",
+    "options": [
+      "12%",
+      "15%",
+      "18%",
+      "20%"
+    ],
+    "answer": 1,
+    "history": "Profit percentage is always calculated on cost price unless the question says otherwise.",
+    "discussion": "Profit is 72 on a cost of 480, and 72/480 gives exactly 15 per cent, which is the clean answer examiners expect.",
+    "wh": {
+      "what": "Profit percentage",
+      "how": "(SP - CP) / CP × 100",
+      "why": "Core commercial arithmetic"
+    },
+    "status": "Higher-level variants involve marked price, successive discounts and dishonest dealing.",
+    "why_wrong": [
+      "12% would need a profit of about 58.",
+      "",
+      "18% would need a selling price near 566.",
+      "20% would need a selling price of 576."
+    ],
+    "tip": "Divide profit by cost, never by selling price. Most wrong options are built on the wrong denominator.",
+    "improve": "Do five problems where the profit is on selling price, since those invert the formula.",
+    "source": "SSC CGL quantitative aptitude syllabus"
+  },
+  {
+    "id": "ssc-q-09",
+    "exams": [
+      "ssc",
+      "banking"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "Quantitative Aptitude",
+    "topic": "Simple Interest",
+    "difficulty": "medium",
+    "q": "At what rate of simple interest will a sum double itself in 8 years?",
+    "options": [
+      "10%",
+      "12.5%",
+      "15%",
+      "8%"
+    ],
+    "answer": 1,
+    "history": "Doubling means the interest equals the principal, so 100 = 100 × R × 8 / 100, giving R = 12.5 per cent.",
+    "discussion": "A useful shortcut for doubling questions is R × T = 100. Here 100/8 gives 12.5 immediately.",
+    "wh": {
+      "what": "Rate needed to double a sum",
+      "how": "R × T = 100 for doubling under SI",
+      "why": "A recurring one-line question"
+    },
+    "status": "For tripling under simple interest, the product R × T equals 200.",
+    "why_wrong": [
+      "10% would double in 10 years.",
+      "",
+      "15% would double in about 6.7 years.",
+      "8% would double in 12.5 years."
+    ],
+    "tip": "Doubling under SI: R × T = 100. Tripling: R × T = 200. Quadrupling: R × T = 300.",
+    "improve": "Convert the same question to compound interest, where the rule of 72 applies instead.",
+    "source": "SSC CGL quantitative aptitude syllabus"
+  },
+  {
+    "id": "ssc-q-10",
+    "exams": [
+      "ssc",
+      "railway",
+      "banking"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "Quantitative Aptitude",
+    "topic": "Mixture",
+    "difficulty": "medium",
+    "q": "A 60 litre mixture has milk and water in the ratio 7 : 3. How much water does it contain?",
+    "options": [
+      "15 litres",
+      "18 litres",
+      "21 litres",
+      "24 litres"
+    ],
+    "answer": 1,
+    "history": "In a fixed ratio, each part equals total divided by the number of parts, so one part here is 6 litres.",
+    "discussion": "Water is 3 parts of 6 litres, that is 18 litres, and milk is 42 litres; the two add to 60, which is the quickest check.",
+    "wh": {
+      "what": "Component quantity from a ratio",
+      "how": "Total / sum of ratio terms × required term",
+      "why": "Base skill for alligation problems"
+    },
+    "status": "Exam variants add or replace a quantity and ask for the new ratio.",
+    "why_wrong": [
+      "15 litres comes from dividing 60 by 4, the wrong number of parts.",
+      "",
+      "21 litres is the milk-to-water confusion in reverse.",
+      "24 litres comes from treating water as 4 parts."
+    ],
+    "tip": "Always convert the ratio to a total number of parts first, then multiply. Then verify by adding both components back to the total.",
+    "improve": "Practise replacement problems, where a portion is removed and refilled.",
+    "source": "SSC CGL quantitative aptitude syllabus"
+  },
+  {
+    "id": "ssc-r-01",
+    "exams": [
+      "ssc",
+      "banking",
+      "railway"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "Reasoning",
+    "topic": "Number Series",
+    "difficulty": "easy",
+    "q": "Find the next term: 2, 6, 12, 20, 30, ?",
+    "options": [
+      "36",
+      "40",
+      "42",
+      "44"
+    ],
+    "answer": 2,
+    "history": "The series follows n(n+1) for n = 1, 2, 3 and so on, giving products of consecutive numbers.",
+    "discussion": "The differences are 4, 6, 8, 10 and then 12, so the next term is 30 + 12 = 42, a second and faster route to the same answer.",
+    "wh": {
+      "what": "Number series completion",
+      "how": "Check first differences, then second differences",
+      "why": "A high-frequency reasoning question"
+    },
+    "status": "Modern papers mix two interleaved series to raise difficulty.",
+    "why_wrong": [
+      "36 assumes a constant difference of 6, which breaks at the second term.",
+      "40 does not fit either the difference pattern or n(n+1).",
+      "",
+      "44 would need a difference of 14."
+    ],
+    "tip": "When differences grow by 2 each time, the underlying rule is usually a quadratic such as n(n+1).",
+    "improve": "Practise ten series mixing squares, cubes, primes and alternating patterns.",
+    "source": "SSC CGL reasoning syllabus"
+  },
+  {
+    "id": "ssc-r-02",
+    "exams": [
+      "ssc",
+      "banking"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "Reasoning",
+    "topic": "Odd One Out",
+    "difficulty": "easy",
+    "q": "Which number does not belong: 121, 144, 169, 190?",
+    "options": [
+      "121",
+      "144",
+      "169",
+      "190"
+    ],
+    "answer": 3,
+    "history": "121, 144 and 169 are the squares of 11, 12 and 13, while 190 is not a perfect square.",
+    "discussion": "Odd-one-out questions usually rest on one property shared by all but one option; here perfect squares is that property, and checking the square root settles it in seconds.",
+    "wh": {
+      "what": "Classification by property",
+      "how": "Test squares, cubes, primes and divisibility",
+      "why": "Tests pattern recognition speed"
+    },
+    "status": "Banking papers often use letter-position or Roman numeral properties instead of arithmetic ones.",
+    "why_wrong": [
+      "121 is 11 squared.",
+      "144 is 12 squared.",
+      "169 is 13 squared.",
+      ""
+    ],
+    "tip": "Memorise squares up to 30 and cubes up to 15; most number-based odd-one-out questions collapse instantly.",
+    "improve": "Keep a written chart of squares 1 to 30 and revise it daily for a week.",
+    "source": "SSC CGL reasoning syllabus"
+  },
+  {
+    "id": "ssc-r-03",
+    "exams": [
+      "ssc",
+      "banking",
+      "railway"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "Reasoning",
+    "topic": "Coding-Decoding",
+    "difficulty": "easy",
+    "q": "In a certain code, MOUSE is written as NPVTF. How is CAT written in that code?",
+    "options": [
+      "DBU",
+      "DAT",
+      "BZS",
+      "DCU"
+    ],
+    "answer": 0,
+    "history": "Each letter of the word is shifted one place forward in the alphabet, a simple substitution code.",
+    "discussion": "M to N, O to P, U to V confirms the +1 shift, so C becomes D, A becomes B and T becomes U.",
+    "wh": {
+      "what": "Letter shift coding",
+      "how": "Compare letter positions between word and code",
+      "why": "A standard coding question type"
+    },
+    "status": "Tougher variants use alternating shifts or reverse alphabet positions (A=26).",
+    "why_wrong": [
+      "",
+      "DAT leaves A unchanged, which breaks the uniform shift.",
+      "BZS shifts backwards, the opposite direction.",
+      "DCU shifts the first two letters but not the third."
+    ],
+    "tip": "Write the alphabet with positions 1 to 26 and the shift becomes arithmetic, not memory.",
+    "improve": "Practise reverse alphabet coding and mixed-shift codes next.",
+    "source": "SSC CGL reasoning syllabus"
+  },
+  {
+    "id": "ssc-r-04",
+    "exams": [
+      "ssc",
+      "banking"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "Reasoning",
+    "topic": "Direction Sense",
+    "difficulty": "easy",
+    "q": "A person facing north turns 90° clockwise, then 180°. Which direction is he facing now?",
+    "options": [
+      "North",
+      "South",
+      "East",
+      "West"
+    ],
+    "answer": 3,
+    "history": "Direction sense questions track orientation changes rather than physical movement.",
+    "discussion": "From north, 90° clockwise brings him east; a further 180° reverses that to west. Adding the turns first, 270° clockwise from north, also gives west.",
+    "wh": {
+      "what": "Net orientation after turns",
+      "how": "Add the angles, then convert to a compass direction",
+      "why": "Tests spatial reasoning under time pressure"
+    },
+    "status": "Exam variants include multiple turns plus walking distances.",
+    "why_wrong": [
+      "North would need a full 360° of turning.",
+      "South would be a single 180° turn from north.",
+      "East is the position after only the first turn.",
+      ""
+    ],
+    "tip": "Draw a small compass and rotate your pen, not your mind. Add all turns first, then read the final direction once.",
+    "improve": "Solve five direction questions that also ask for final distance using Pythagoras.",
+    "source": "SSC CGL reasoning syllabus"
+  },
+  {
+    "id": "ssc-r-05",
+    "exams": [
+      "ssc",
+      "banking",
+      "railway"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "Reasoning",
+    "topic": "Analogy",
+    "difficulty": "easy",
+    "q": "Doctor : Hospital :: Teacher : ?",
+    "options": [
+      "Student",
+      "School",
+      "Book",
+      "Class"
+    ],
+    "answer": 1,
+    "history": "In analogy questions the relationship must be identical on both sides: a professional to the place of work.",
+    "discussion": "A doctor works in a hospital as a teacher works in a school; student, book and class are related but describe different relationships.",
+    "wh": {
+      "what": "Analogy by workplace",
+      "how": "State the relationship in words before choosing",
+      "why": "Tests precise relationship mapping"
+    },
+    "status": "Higher-level papers use tool-to-user or cause-to-effect analogies.",
+    "why_wrong": [
+      "Student is the recipient of teaching, not the workplace.",
+      "",
+      "Book is a tool, not a place.",
+      "Class is a group or a session, not the institution."
+    ],
+    "tip": "Say the relationship aloud as a sentence; if it does not read naturally with the option, reject it.",
+    "improve": "Build a list of ten relationship types with one example each.",
+    "source": "SSC CGL reasoning syllabus"
+  },
+  {
+    "id": "ssc-r-06",
+    "exams": [
+      "ssc",
+      "banking"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "Reasoning",
+    "topic": "Alphabet Test",
+    "difficulty": "medium",
+    "q": "Which letter is 5th to the right of the 10th letter from the left of the English alphabet?",
+    "options": [
+      "N",
+      "O",
+      "P",
+      "M"
+    ],
+    "answer": 1,
+    "history": "Alphabet position questions convert words into numbers, so the arithmetic is done on positions rather than letters.",
+    "discussion": "The 10th letter from the left is J. Moving 5 places right gives the 15th letter, which is O.",
+    "wh": {
+      "what": "Position arithmetic in the alphabet",
+      "how": "Convert to numbers, add or subtract, convert back",
+      "why": "A fast scoring question in prelims"
+    },
+    "status": "Variants use the reverse alphabet, where A counts as 26.",
+    "why_wrong": [
+      "N is the 14th letter, one place short.",
+      "",
+      "P is the 16th letter, one place beyond.",
+      "M is the 13th letter, two places short."
+    ],
+    "tip": "Learn the landmark positions: E=5, J=10, O=15, T=20, Y=25. They let you answer without reciting the alphabet.",
+    "improve": "Memorise EJOTY and CFILORUX as your two alphabet anchors.",
+    "source": "SSC CGL reasoning syllabus"
+  },
+  {
+    "id": "ssc-r-07",
+    "exams": [
+      "ssc",
+      "banking"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "Reasoning",
+    "topic": "Syllogism",
+    "difficulty": "medium",
+    "q": "Statements: All pens are books. Some books are red. Conclusion: Some pens are red. The conclusion is:",
+    "options": [
+      "Definitely true",
+      "Definitely false",
+      "Possibly true but not certain",
+      "Cannot be evaluated"
+    ],
+    "answer": 2,
+    "history": "In syllogisms a conclusion follows only if it must be true in every possible arrangement consistent with the statements.",
+    "discussion": "The red books may or may not be the books that are pens, so the conclusion is only a possibility, not a certainty. That distinction is the whole test.",
+    "wh": {
+      "what": "Validity of a syllogistic conclusion",
+      "how": "Check whether any arrangement makes the statements true but the conclusion false",
+      "why": "Tests strict logical rather than everyday reasoning"
+    },
+    "status": "Banking papers add possibility cases with 'some not' statements to increase difficulty.",
+    "why_wrong": [
+      "It is not definitely true because a valid counter-arrangement exists.",
+      "It is not definitely false either, since one arrangement makes it true.",
+      "",
+      "It can be evaluated, so this option is a cop-out."
+    ],
+    "tip": "Draw the minimum overlap Venn diagram; if a second diagram can break the conclusion, it is only a possibility.",
+    "improve": "Practise the standard three-figure method for 'all', 'some' and 'no' statements.",
+    "source": "SSC CGL reasoning syllabus"
+  },
+  {
+    "id": "ssc-r-08",
+    "exams": [
+      "ssc",
+      "banking",
+      "railway"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "Reasoning",
+    "topic": "Clocks",
+    "difficulty": "medium",
+    "q": "What is the angle between the hands of a clock at 3:30?",
+    "options": [
+      "75°",
+      "80°",
+      "85°",
+      "90°"
+    ],
+    "answer": 0,
+    "history": "The minute hand moves 6° per minute and the hour hand 0.5° per minute, so at 3:30 the hour hand has already moved 15° past 3.",
+    "discussion": "Using the formula |30H - 5.5M| gives |90 - 165| = 75°, matching the intuitive picture of the hour hand no longer sitting exactly on 3.",
+    "wh": {
+      "what": "Angle between clock hands",
+      "how": "|30H - 5.5M|",
+      "why": "A standard reasoning question"
+    },
+    "status": "Variants ask for the time when hands coincide or are opposite.",
+    "why_wrong": [
+      "",
+      "80° does not match the formula for any standard half-hour position.",
+      "85° comes from treating the hour hand as stationary at 3.",
+      "90° is the angle at exactly 3:00, not 3:30."
+    ],
+    "tip": "Remember 5.5 as the relative speed of the hands in degrees per minute. The formula then writes itself.",
+    "improve": "Find the times between 3 and 4 when the hands are together and opposite.",
+    "source": "SSC CGL reasoning syllabus"
+  },
+  {
+    "id": "ssc-e-01",
+    "exams": [
+      "ssc",
+      "banking"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "English",
+    "topic": "Vocabulary",
+    "difficulty": "easy",
+    "q": "Choose the word most similar in meaning to 'abundant'.",
+    "options": [
+      "Scarce",
+      "Plentiful",
+      "Rare",
+      "Limited"
+    ],
+    "answer": 1,
+    "history": "Abundant comes from the Latin abundare, to overflow, and means present in large quantity.",
+    "discussion": "The three wrong options are near-synonyms of each other, which is a reliable signal in antonym-style distractors.",
+    "wh": {
+      "what": "Synonym identification",
+      "how": "Substitute the word into a sentence and test the sense",
+      "why": "Vocabulary carries several marks in SSC and banking English"
+    },
+    "status": "Modern papers prefer contextual vocabulary over isolated word lists.",
+    "why_wrong": [
+      "Scarce is the antonym.",
+      "",
+      "Rare means uncommon, close to the opposite.",
+      "Limited suggests restriction rather than quantity."
+    ],
+    "tip": "When three options cluster as synonyms of each other, the fourth is usually the answer.",
+    "improve": "Learn vocabulary in antonym pairs; it doubles retention for the same effort.",
+    "source": "SSC CGL English syllabus"
+  },
+  {
+    "id": "ssc-e-02",
+    "exams": [
+      "ssc",
+      "banking"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "English",
+    "topic": "Vocabulary",
+    "difficulty": "easy",
+    "q": "Choose the word opposite in meaning to 'benevolent'.",
+    "options": [
+      "Kind",
+      "Generous",
+      "Malevolent",
+      "Charitable"
+    ],
+    "answer": 2,
+    "history": "Benevolent means wishing well, from Latin bene plus velle; malevolent is its exact opposite.",
+    "discussion": "The bene and male prefixes are the key: they recur in benefit, benediction, malice and malign, making the answer derivable without memorising the word.",
+    "wh": {
+      "what": "Antonym identification",
+      "how": "Use prefix roots to derive meaning",
+      "why": "Prefix knowledge answers unseen words"
+    },
+    "status": "Prefix-based vocabulary is tested heavily in banking mains.",
+    "why_wrong": [
+      "Kind is a synonym.",
+      "Generous is a synonym.",
+      "",
+      "Charitable is a synonym, not an antonym."
+    ],
+    "tip": "Learn the bene, mal, ben, mis and anti prefixes; they unlock dozens of exam words at once.",
+    "improve": "Write ten word pairs using bene and male prefixes.",
+    "source": "SSC CGL English syllabus"
+  },
+  {
+    "id": "ssc-e-03",
+    "exams": [
+      "ssc",
+      "banking",
+      "railway"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "English",
+    "topic": "Idioms",
+    "difficulty": "medium",
+    "q": "The idiom 'to bite the bullet' means:",
+    "options": [
+      "To speak rudely",
+      "To endure a painful situation bravely",
+      "To take a risk without preparation",
+      "To refuse to cooperate"
+    ],
+    "answer": 1,
+    "history": "The phrase is often traced to soldiers biting a lead bullet during surgery before anaesthesia existed, though the earliest written record is nineteenth-century.",
+    "discussion": "Idiom questions reward knowing the figurative sense, not the literal words; the literal reading is exactly what the distractors exploit.",
+    "wh": {
+      "what": "Idiomatic meaning",
+      "how": "Learn idioms as whole phrases with one example sentence",
+      "why": "Idioms appear in every SSC and banking paper"
+    },
+    "status": "Exams favour idioms with military or nautical origins.",
+    "why_wrong": [
+      "Speaking rudely describes 'to talk back' or 'to snap at someone'.",
+      "",
+      "Taking an unprepared risk is 'to take a leap in the dark'.",
+      "Refusing to cooperate is 'to dig in one's heels'."
+    ],
+    "tip": "Store idioms with one sentence you invent yourself; the sentence is what you will recall in the exam.",
+    "improve": "Learn five idioms a day with a self-written sentence each.",
+    "source": "SSC CGL English syllabus"
+  },
+  {
+    "id": "ssc-e-04",
+    "exams": [
+      "ssc",
+      "banking"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "English",
+    "topic": "Error Spotting",
+    "difficulty": "easy",
+    "q": "Find the error: 'He do not like tea.'",
+    "options": [
+      "He",
+      "do",
+      "not",
+      "like"
+    ],
+    "answer": 1,
+    "history": "In the simple present tense, third-person singular subjects take 'does', not 'do'.",
+    "discussion": "The corrected sentence is 'He does not like tea'. Spotting the subject-verb agreement is the single most common error type in these papers.",
+    "wh": {
+      "what": "Subject-verb agreement",
+      "how": "Match the auxiliary to the subject's person and number",
+      "why": "Grammar accuracy is a high-yield area"
+    },
+    "status": "Modern exams embed errors in longer sentences to slow the reader down.",
+    "why_wrong": [
+      "'He' is correct as the subject.",
+      "",
+      "'Not' correctly negates the auxiliary.",
+      "'Like' is the correct base form after 'does not'."
+    ],
+    "tip": "For error spotting, check three things first: subject-verb agreement, tense consistency and preposition use.",
+    "improve": "Do ten agreement exercises covering collective nouns and indefinite pronouns.",
+    "source": "SSC CGL English syllabus"
+  },
+  {
+    "id": "ssc-e-05",
+    "exams": [
+      "ssc",
+      "banking"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "English",
+    "topic": "One Word Substitution",
+    "difficulty": "medium",
+    "q": "One word for 'a person who talks too much':",
+    "options": [
+      "Taciturn",
+      "Garrulous",
+      "Reticent",
+      "Laconic"
+    ],
+    "answer": 1,
+    "history": "Garrulous comes from the Latin garrire, to chatter, and describes someone habitually talkative about trivial matters.",
+    "discussion": "All four options relate to speech, but three describe saying little, which makes this a classic grouping trap.",
+    "wh": {
+      "what": "One word substitution",
+      "how": "Check the direction of meaning before choosing",
+      "why": "Vocabulary density question"
+    },
+    "status": "Exams prefer words with Latin roots that can be reasoned out.",
+    "why_wrong": [
+      "Taciturn means habitually silent.",
+      "",
+      "Reticent means reserved in speech.",
+      "Laconic means using very few words."
+    ],
+    "tip": "Sort the options into talkative and silent groups first; the answer is then a one-in-four choice inside one group.",
+    "improve": "Build a one-word substitution list of 100 items grouped by theme.",
+    "source": "SSC CGL English syllabus"
+  },
+  {
+    "id": "ssc-e-06",
+    "exams": [
+      "ssc",
+      "banking"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "English",
+    "topic": "Spelling",
+    "difficulty": "easy",
+    "q": "Choose the correctly spelt word.",
+    "options": [
+      "Occurence",
+      "Occurrence",
+      "Ocurrence",
+      "Occurrance"
+    ],
+    "answer": 1,
+    "history": "Occurrence keeps both the double c and the double r, following the pattern of occur plus the suffix ence.",
+    "discussion": "When a word ending in a single consonant is stressed on the last syllable and takes a suffix, the consonant doubles; occur follows that rule.",
+    "wh": {
+      "what": "Correct spelling",
+      "how": "Check doubling after a stressed final syllable",
+      "why": "Spelling carries direct marks"
+    },
+    "status": "Exams repeat a small set of commonly misspelt words, so a list of 100 covers most cases.",
+    "why_wrong": [
+      "Occurence drops the second r.",
+      "",
+      "Ocurrence drops the second c.",
+      "Occurrance uses a instead of e in the suffix."
+    ],
+    "tip": "Learn the doubling rule once and it covers occurred, occurrence, beginning and committed together.",
+    "improve": "Write the twenty most commonly misspelt exam words five times each.",
+    "source": "SSC CGL English syllabus"
+  },
+  {
+    "id": "ssc-e-07",
+    "exams": [
+      "ssc",
+      "banking"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "English",
+    "topic": "Prepositions",
+    "difficulty": "easy",
+    "q": "Fill in the blank: 'She has been working here ____ 2015.'",
+    "options": [
+      "for",
+      "since",
+      "from",
+      "in"
+    ],
+    "answer": 1,
+    "history": "Since marks a point in time from which an action continues, while for marks a duration.",
+    "discussion": "The present perfect continuous tense pairs with since plus a point in time, so 'since 2015' is correct, whereas 'for five years' would also be correct.",
+    "wh": {
+      "what": "Preposition of time",
+      "how": "Since for a point, for a duration",
+      "why": "A frequent fill-in-the-blank pattern"
+    },
+    "status": "Banking papers test since and for inside paragraphs rather than single sentences.",
+    "why_wrong": [
+      "'For' needs a duration such as five years.",
+      "",
+      "'From' needs a matching 'to' in a range.",
+      "'In' with a year means during that year, not from then onwards."
+    ],
+    "tip": "Since takes a date or event, for takes a length of time. If the blank is followed by a year alone, it is since.",
+    "improve": "Write ten sentences using since and for correctly.",
+    "source": "SSC CGL English syllabus"
+  },
+  {
+    "id": "ssc-e-08",
+    "exams": [
+      "ssc",
+      "banking"
+    ],
+    "stream": "competition",
+    "course": "SSC",
+    "subject": "English",
+    "topic": "Voice",
+    "difficulty": "medium",
+    "q": "Choose the correct passive voice: 'They cancelled the match.'",
+    "options": [
+      "The match is cancelled by them.",
+      "The match was cancelled by them.",
+      "The match has cancelled.",
+      "The match were cancelled by them."
+    ],
+    "answer": 1,
+    "history": "The passive is formed with the appropriate form of be plus the past participle, keeping the tense of the active sentence.",
+    "discussion": "The active verb is simple past, so the passive needs 'was' with a singular subject, giving 'The match was cancelled by them'.",
+    "wh": {
+      "what": "Voice transformation",
+      "how": "Object becomes subject, verb becomes be plus past participle",
+      "why": "Grammar transformation questions appear every year"
+    },
+    "status": "Higher-level papers ask for passive forms of sentences with modals.",
+    "why_wrong": [
+      "'Is cancelled' changes the tense to present.",
+      "",
+      "'Has cancelled' is active and grammatically incomplete here.",
+      "'Were cancelled' mismatches the singular subject."
+    ],
+    "tip": "Keep the tense, change the voice. Write the tense of the original first, then build the passive around it.",
+    "improve": "Convert ten active sentences across all tenses into passive voice.",
+    "source": "SSC CGL English syllabus"
+  }
+]

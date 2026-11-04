@@ -1,0 +1,13 @@
+{
+  "name": "ExamArena — mock tests for every exam",
+  "short_name": "ExamArena",
+  "description": "Daily AI mock tests for UPSC, BPSC, SSC, Banking, CA, B.Com, BBA, BCA, Arts, Science and Commerce with full answer analysis.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#080d17",
+  "theme_color": "#0b1220",
+  "icons": [
+    { "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

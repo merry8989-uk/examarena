@@ -1,0 +1,304 @@
+[
+  {
+    "id": "adv-01",
+    "exams": [
+      "upsc",
+      "bpsc"
+    ],
+    "stream": "competition",
+    "course": "UPSC CSE",
+    "subject": "Polity",
+    "topic": "Parliament — Rajya Sabha",
+    "difficulty": "hard",
+    "q": "Consider the following statements about the Rajya Sabha:\n1. It cannot vote on the Demand for Grants.\n2. It can pass a no-confidence motion against the Council of Ministers.\n3. A Money Bill must be returned by it within 14 days.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": 1,
+    "history": "The Rajya Sabha is a permanent House with limited financial powers; the Constitution reserves confidence and money matters for the directly elected House.",
+    "discussion": "Demands for Grants are voted only in the Lok Sabha, so statement 1 is correct. The no-confidence motion lies exclusively with the Lok Sabha, so statement 2 is wrong. A Money Bill goes to the Rajya Sabha only for recommendation and must be returned within 14 days, making statement 3 correct.",
+    "wh": {
+      "what": "Asymmetry between the two Houses on money and confidence",
+      "why": "The Council of Ministers is responsible to the Lok Sabha alone",
+      "how": "Articles 109, 113 and 75(3)"
+    },
+    "status": "The Rajya Sabha retains equal powers on constitutional amendments and on removing the President, which is why it is not a wholly weak House.",
+    "why_wrong": [
+      "Statement 2 is wrong: the no-confidence motion is a Lok Sabha device only.",
+      "",
+      "Statement 2 is wrong, so any option containing it fails.",
+      "Statement 2 is wrong, so the all-correct option fails."
+    ],
+    "tip": "On any question mixing both Houses, check the three money items first: Money Bill, Demands for Grants, no-confidence motion. All three belong to the Lok Sabha.",
+    "improve": "Write a two-column table of exclusive Lok Sabha powers and equal powers of both Houses.",
+    "source": "Constitution of India, Articles 75, 109, 113"
+  },
+  {
+    "id": "adv-02",
+    "exams": [
+      "upsc",
+      "bpsc"
+    ],
+    "stream": "competition",
+    "course": "UPSC CSE",
+    "subject": "Polity",
+    "topic": "Fundamental Rights",
+    "difficulty": "hard",
+    "q": "Which of the following Fundamental Rights are available only to citizens and not to foreigners?\n1. Article 15 — prohibition of discrimination\n2. Article 19 — six freedoms\n3. Article 21 — protection of life and personal liberty\n4. Article 29 — protection of interests of minorities",
+    "options": [
+      "1 and 2 only",
+      "1, 2 and 4 only",
+      "2 and 3 only",
+      "1, 2, 3 and 4"
+    ],
+    "answer": 1,
+    "history": "Articles 15, 16, 19, 29 and 30 use the word 'citizen', while Articles 14, 20, 21, 21A, 22, 23, 24, 25, 26, 27 and 28 speak of 'persons'.",
+    "discussion": "The distinction is textual, not moral: the Constitution deliberately limits political and cultural rights to citizens while extending life, liberty, equality before law and religion to every person, including foreigners.",
+    "wh": {
+      "what": "Citizen-only versus person-based rights",
+      "why": "Some rights attach to membership of the political community",
+      "how": "Read the subject clause of each article"
+    },
+    "status": "Article 21 has been expanded to include privacy, dignity, livelihood and a clean environment, and remains available to non-citizens.",
+    "why_wrong": [
+      "Article 29 is also citizen-only, so this option is incomplete.",
+      "",
+      "Article 21 is available to all persons, so this option is wrong.",
+      "Article 21 is not citizen-only."
+    ],
+    "tip": "Memorise the five citizen-only articles as a set: 15, 16, 19, 29, 30. Everything else in Part III covers persons.",
+    "improve": "Make a checklist of Part III articles marking citizen-only and person-based.",
+    "source": "Constitution of India, Part III"
+  },
+  {
+    "id": "adv-03",
+    "exams": [
+      "upsc",
+      "bpsc",
+      "banking"
+    ],
+    "stream": "competition",
+    "course": "UPSC CSE",
+    "subject": "Economy",
+    "topic": "Monetary Policy",
+    "difficulty": "hard",
+    "q": "With reference to India's monetary policy framework, consider the following statements:\n1. An increase in the cash reserve ratio reduces the lendable resources of banks.\n2. The marginal standing facility rate is normally above the repo rate.\n3. The liquidity corridor is bounded by the marginal standing facility rate and the standing deposit facility rate.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": 3,
+    "history": "The Liquidity Adjustment Facility corridor has the MSF as its ceiling and, since 2022, the Standing Deposit Facility as its floor, with the repo rate inside the corridor.",
+    "discussion": "CRR is a cash reserve held with the RBI and earns no interest, so raising it directly shrinks lendable funds. The MSF sits 25 basis points above the repo, allowing banks to borrow against securities in an emergency. The SDF floor lets the RBI absorb liquidity without collateral.",
+    "wh": {
+      "what": "Instruments and the liquidity corridor",
+      "who": "RBI and the Monetary Policy Committee",
+      "how": "CRR, repo, SDF floor, MSF ceiling",
+      "why": "To keep the call money rate inside a target band"
+    },
+    "status": "The SDF replaced the fixed reverse repo as the operative floor in April 2022.",
+    "why_wrong": [
+      "Statement 3 is also correct, so this is incomplete.",
+      "Statement 1 is correct, so this is incomplete.",
+      "Statement 2 is correct, so this is incomplete.",
+      ""
+    ],
+    "tip": "Draw the corridor vertically: MSF on top, repo in the middle, SDF at the bottom. Every question about rates becomes a position on that line.",
+    "improve": "Learn which instrument is quantitative (CRR, SLR) and which is rate-based (repo, MSF, SDF).",
+    "source": "RBI Act; Monetary Policy Report"
+  },
+  {
+    "id": "adv-04",
+    "exams": [
+      "upsc",
+      "bpsc"
+    ],
+    "stream": "competition",
+    "course": "UPSC CSE",
+    "subject": "Polity",
+    "topic": "Preamble",
+    "difficulty": "hard",
+    "q": "Assertion (A): The Preamble cannot be enforced in a court of law.\nReason (R): The Preamble is a part of the Constitution and can be amended.\nChoose the correct option:",
+    "options": [
+      "Both A and R are true, and R is the correct explanation of A",
+      "Both A and R are true, but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true"
+    ],
+    "answer": 1,
+    "history": "In Kesavananda Bharati (1973) the Supreme Court held that the Preamble is part of the Constitution and can be amended, subject to the basic structure doctrine.",
+    "discussion": "Both statements are true but they answer different questions. The Preamble is unenforceable because it confers no rights and imposes no duties; it is amendable because it is part of the Constitution. Amendability is not the reason for unenforceability.",
+    "wh": {
+      "what": "Assertion-reason on the Preamble",
+      "why": "Two true propositions can be causally unrelated",
+      "how": "Test whether R independently explains A"
+    },
+    "status": "The Preamble has been amended once, by the 42nd Amendment, which added 'socialist', 'secular' and 'integrity'.",
+    "why_wrong": [
+      "R does not explain why the Preamble is unenforceable.",
+      "",
+      "R is true: the Preamble was amended in 1976.",
+      "A is true: courts have repeatedly held the Preamble non-enforceable."
+    ],
+    "tip": "In assertion-reason, first check truth of each statement separately, then check causation. Most errors come from skipping the causation step.",
+    "improve": "Practise ten assertion-reason items, writing one line on why R does or does not explain A.",
+    "source": "Kesavananda Bharati v. State of Kerala (1973)"
+  },
+  {
+    "id": "adv-05",
+    "exams": [
+      "upsc",
+      "bpsc",
+      "ssc"
+    ],
+    "stream": "competition",
+    "course": "UPSC CSE",
+    "subject": "History",
+    "topic": "Freedom Struggle",
+    "difficulty": "hard",
+    "q": "Arrange the following in correct chronological order:\n1. Cripps Mission\n2. Cabinet Mission\n3. Wavell Plan\n4. Mountbatten Plan",
+    "options": [
+      "1-2-3-4",
+      "1-3-2-4",
+      "3-1-2-4",
+      "1-2-4-3"
+    ],
+    "answer": 1,
+    "history": "The Cripps Mission came in 1942, the Wavell Plan and the Simla Conference in 1945, the Cabinet Mission in 1946, and the Mountbatten Plan in June 1947.",
+    "discussion": "The sequence tracks the collapsing British position: wartime offers of dominion status, then post-war attempts to hold the centre together, then the decision to partition and leave.",
+    "wh": {
+      "what": "Order of British missions and plans",
+      "when": "1942 to 1947",
+      "who": "Cripps, Wavell, Pethick-Lawrence and Mountbatten",
+      "why": "Each followed a shift in the British strategic position"
+    },
+    "status": "The Cabinet Mission Plan's grouping scheme remains central to debates on why partition became unavoidable.",
+    "why_wrong": [
+      "This places the Cabinet Mission before the Wavell Plan, which is wrong.",
+      "",
+      "The Cripps Mission came first, in 1942.",
+      "The Mountbatten Plan came after the Cabinet Mission."
+    ],
+    "tip": "Anchor on two dates: Cripps 1942 (during the war) and Mountbatten 1947 (the last one). The middle two are Wavell then Cabinet.",
+    "improve": "Make a timeline of 1940 to 1947 with one line per event.",
+    "source": "NCERT Class XII, Modern India"
+  },
+  {
+    "id": "adv-06",
+    "exams": [
+      "ca-foundation",
+      "bcom",
+      "bba"
+    ],
+    "stream": "professional",
+    "course": "B.Com / CA Foundation",
+    "subject": "Accountancy",
+    "topic": "Ratio Analysis",
+    "difficulty": "hard",
+    "q": "A firm has a current ratio of 2.5 and a quick ratio of 1.5. If its current liabilities are ₹4,00,000, the value of inventory is:",
+    "options": [
+      "₹3,00,000",
+      "₹4,00,000",
+      "₹5,00,000",
+      "₹6,00,000"
+    ],
+    "answer": 1,
+    "history": "The quick ratio removes inventory and prepaid expenses from current assets, so the gap between the two ratios isolates stock.",
+    "discussion": "Current assets are 2.5 × 4,00,000 = 10,00,000. Quick assets are 1.5 × 4,00,000 = 6,00,000. The difference, 4,00,000, is inventory.",
+    "wh": {
+      "what": "Derivation of inventory from two ratios",
+      "how": "CA = CR × CL, quick assets = QR × CL, inventory = CA − quick assets",
+      "why": "A standard two-step numerical in ratio analysis"
+    },
+    "status": "Ind AS presentation may separate inventories into raw material, WIP and finished goods, but the arithmetic is unchanged.",
+    "why_wrong": [
+      "₹3,00,000 comes from a quick ratio of 1.75.",
+      "",
+      "₹5,00,000 would need a quick ratio of 1.25.",
+      "₹6,00,000 is the quick assets figure, not inventory."
+    ],
+    "tip": "Write both equations with the same denominator first. The subtraction then gives inventory in one line.",
+    "improve": "Solve five problems that give two ratios and ask for a balance sheet item.",
+    "source": "NCERT Class XII Accountancy, Part II"
+  },
+  {
+    "id": "adv-07",
+    "exams": [
+      "class12-science",
+      "bsc",
+      "upsc"
+    ],
+    "stream": "science",
+    "course": "Class 12 Science / B.Sc",
+    "subject": "Physics",
+    "topic": "Photoelectric Effect",
+    "difficulty": "hard",
+    "q": "Consider the following statements about the photoelectric effect:\n1. The stopping potential depends on the intensity of incident light.\n2. The maximum kinetic energy of emitted electrons depends on the frequency of incident light.\n3. Above the threshold frequency, the photoelectric current depends on the intensity of light.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": 1,
+    "history": "Einstein's photoelectric equation, hf = φ + Kmax, makes maximum kinetic energy a function of frequency alone, while current tracks the number of photons arriving.",
+    "discussion": "Stopping potential is a direct measure of maximum kinetic energy, so it depends on frequency and not intensity — statement 1 is wrong. Intensity changes the number of photons, hence the number of electrons and the current.",
+    "wh": {
+      "what": "Dependence of photoelectric quantities",
+      "how": "hf = φ + eV₀",
+      "why": "Light arrives as discrete quanta, not as continuous energy"
+    },
+    "status": "The effect is the working principle of photomultiplier tubes and of photovoltaic cells, though cells rely on the internal photoelectric effect in semiconductors.",
+    "why_wrong": [
+      "Statement 1 is wrong: stopping potential is intensity-independent.",
+      "",
+      "Statement 1 is wrong, so this option fails.",
+      "Statement 1 is wrong."
+    ],
+    "tip": "Two rules settle every photoelectric question: frequency controls energy, intensity controls number.",
+    "improve": "Sketch the graph of stopping potential against frequency and label its slope and intercept.",
+    "source": "NCERT Class XII Physics, Dual Nature of Radiation"
+  },
+  {
+    "id": "adv-08",
+    "exams": [
+      "upsc",
+      "bpsc"
+    ],
+    "stream": "competition",
+    "course": "UPSC CSE",
+    "subject": "History",
+    "topic": "Constitutional History",
+    "difficulty": "hard",
+    "q": "With reference to the Government of India Act, 1935, consider the following statements:\n1. It provided for dyarchy at the Centre.\n2. It abolished dyarchy in the provinces.\n3. It established the Reserve Bank of India.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": 0,
+    "history": "The 1935 Act introduced provincial autonomy, ending the 1919 system of dyarchy in the provinces, and provided for dyarchy at the Centre — a provision that never came into force.",
+    "discussion": "The Act also created a Federal Court, a Federal Public Service Commission and a bicameral legislature in six provinces. The Reserve Bank was constituted under the separate Reserve Bank of India Act, 1934, so statement 3 is wrong.",
+    "wh": {
+      "what": "Government of India Act 1935",
+      "when": "1935, with provincial autonomy from 1937",
+      "why": "To widen Indian participation while retaining British control at the centre"
+    },
+    "status": "The Act became the working constitution of British India until 1950 and shaped many provisions of the Indian Constitution.",
+    "why_wrong": [
+      "",
+      "Statement 3 is wrong: the RBI was created by the 1934 Act.",
+      "Statement 3 is wrong.",
+      "Statement 3 is wrong."
+    ],
+    "tip": "Separate Acts by year: RBI 1934, Government of India 1935, Federal Court 1937. One year per institution prevents this trap.",
+    "improve": "List the features of the 1919 and 1935 Acts side by side.",
+    "source": "NCERT Class XII, Modern India; Government of India Act 1935"
+  }
+]

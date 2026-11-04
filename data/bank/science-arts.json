@@ -1,0 +1,1183 @@
+[
+  {
+    "id": "sci-phy-01",
+    "exams": [
+      "class12-science",
+      "bsc",
+      "class10",
+      "ssc"
+    ],
+    "stream": "school",
+    "course": "Class 12 Science / B.Sc",
+    "subject": "Physics",
+    "topic": "Units & Measurement",
+    "difficulty": "easy",
+    "q": "The SI unit of force is:",
+    "options": [
+      "Joule",
+      "Newton",
+      "Watt",
+      "Pascal"
+    ],
+    "answer": 1,
+    "history": "The newton is defined as the force that gives a mass of one kilogram an acceleration of one metre per second squared.",
+    "discussion": "Units named after scientists follow the same pattern: force in newtons, energy in joules, power in watts, pressure in pascals. Each is a derived unit from the seven base units.",
+    "wh": {
+      "what": "SI unit of force",
+      "how": "F = ma, so kg m s⁻²",
+      "why": "Derived units must be traceable to base units"
+    },
+    "status": "The SI system was revised in 2019 so that all base units rest on defined constants rather than physical artefacts.",
+    "why_wrong": [
+      "Joule is the unit of energy or work.",
+      "",
+      "Watt is the unit of power.",
+      "Pascal is the unit of pressure."
+    ],
+    "tip": "Learn each derived unit by its formula: force ma, work Fd, power Fd/t, pressure F/A.",
+    "improve": "Write the seven SI base units and derive three units of your choice from them.",
+    "source": "NCERT Class XI Physics, Chapter 2"
+  },
+  {
+    "id": "sci-phy-02",
+    "exams": [
+      "class12-science",
+      "bsc",
+      "class10"
+    ],
+    "stream": "school",
+    "course": "Class 12 Science / B.Sc",
+    "subject": "Physics",
+    "topic": "Light",
+    "difficulty": "easy",
+    "q": "A convex lens is also known as a:",
+    "options": [
+      "Diverging lens",
+      "Converging lens",
+      "Plano lens",
+      "Cylindrical lens"
+    ],
+    "answer": 1,
+    "history": "A convex lens is thicker at the centre, so parallel rays converge to a real focus; a concave lens is thinner at the centre and diverges rays.",
+    "discussion": "The sign convention follows from this: focal length is positive for a convex lens in the Cartesian system, which is why the lens formula gives a positive image distance for real images.",
+    "wh": {
+      "what": "Lens type by shape",
+      "how": "Centre thickness decides convergence or divergence",
+      "why": "Convergence is the basis of cameras, eyes and magnifiers"
+    },
+    "status": "Modern optics uses the same geometry in fibre collimators and camera lens stacks.",
+    "why_wrong": [
+      "A diverging lens is concave, thinner at the centre.",
+      "",
+      "Plano is a surface description, not a lens class.",
+      "Cylindrical lenses correct astigmatism and describe shape, not convergence."
+    ],
+    "tip": "Convex converges, concave diverges. The letter C repeats and so does the property pair.",
+    "improve": "Trace three rays through a convex lens and locate the image for an object beyond 2F.",
+    "source": "NCERT Class X Science, Light"
+  },
+  {
+    "id": "sci-phy-03",
+    "exams": [
+      "class12-science",
+      "bsc",
+      "class10",
+      "ssc"
+    ],
+    "stream": "school",
+    "course": "Class 12 Science / B.Sc",
+    "subject": "Physics",
+    "topic": "Sound",
+    "difficulty": "easy",
+    "q": "Sound cannot travel through:",
+    "options": [
+      "Solids",
+      "Liquids",
+      "Gases",
+      "Vacuum"
+    ],
+    "answer": 3,
+    "history": "Sound is a mechanical longitudinal wave and needs a material medium to propagate, which is why space is silent.",
+    "discussion": "Speed varies with medium elasticity and density: fastest in solids, slower in liquids, slowest in gases. That is why a train is heard through the rails before it is heard through the air.",
+    "wh": {
+      "what": "Propagation of sound",
+      "why": "Particles must vibrate and transfer energy",
+      "how": "Compressions and rarefactions travel through the medium"
+    },
+    "status": "Spacecraft communications use radio waves, which are electromagnetic and need no medium.",
+    "why_wrong": [
+      "Solids transmit sound fastest.",
+      "Liquids transmit sound well, as whales demonstrate.",
+      "Gases transmit sound, though more slowly.",
+      ""
+    ],
+    "tip": "Mechanical waves need a medium, electromagnetic waves do not. Sound is mechanical, light is electromagnetic.",
+    "improve": "Learn the approximate speed of sound in air, water and steel.",
+    "source": "NCERT Class IX Science, Sound"
+  },
+  {
+    "id": "sci-phy-04",
+    "exams": [
+      "class12-science",
+      "bsc",
+      "class10"
+    ],
+    "stream": "school",
+    "course": "Class 12 Science / B.Sc",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "difficulty": "easy",
+    "q": "According to Ohm's law, the relationship between potential difference and current at constant temperature is:",
+    "options": [
+      "V is proportional to I",
+      "V is proportional to I²",
+      "V is inversely proportional to I",
+      "V is independent of I"
+    ],
+    "answer": 0,
+    "history": "Ohm's law states that at constant temperature the current through a conductor is directly proportional to the potential difference across it, giving V = IR.",
+    "discussion": "The constant of proportionality is resistance, and materials that obey this relationship are called ohmic. Semiconductors and filament lamps deviate, which is why the law is stated with the temperature condition.",
+    "wh": {
+      "what": "Voltage-current relationship",
+      "who": "Georg Simon Ohm",
+      "how": "V = IR",
+      "why": "It allows circuit design by arithmetic"
+    },
+    "status": "Ohm's law holds for metallic conductors at constant temperature and fails for non-ohmic devices.",
+    "why_wrong": [
+      "",
+      "Power dissipated is proportional to I², not voltage itself.",
+      "Inverse proportionality would mean higher voltage gives lower current.",
+      "Voltage and current are not independent in a resistor."
+    ],
+    "tip": "Read the law as a sentence: more voltage pushes more current through the same resistance.",
+    "improve": "Plot V against I for a resistor and for a bulb and compare the slopes.",
+    "source": "NCERT Class X Science, Electricity"
+  },
+  {
+    "id": "sci-phy-05",
+    "exams": [
+      "class12-science",
+      "bsc"
+    ],
+    "stream": "graduation",
+    "course": "B.Sc Physics",
+    "subject": "Physics",
+    "topic": "Modern Physics",
+    "difficulty": "medium",
+    "q": "The photoelectric effect provided evidence that light behaves as:",
+    "options": [
+      "A continuous wave only",
+      "A stream of particles called photons",
+      "A magnetic field",
+      "A longitudinal wave"
+    ],
+    "answer": 1,
+    "history": "Einstein explained the photoelectric effect in 1905 by proposing that light arrives in discrete quanta of energy hf, later called photons.",
+    "discussion": "The decisive observation was that below a threshold frequency no electrons are emitted however intense the light, which wave theory cannot explain but photon theory predicts exactly.",
+    "wh": {
+      "what": "Particle nature of light",
+      "who": "Einstein, building on Planck",
+      "when": "1905",
+      "why": "Classical wave theory could not explain the threshold frequency"
+    },
+    "status": "Photoelectric detectors now underpin solar cells, night-vision tubes and photomultiplier sensors.",
+    "why_wrong": [
+      "Wave behaviour explains interference but not the threshold frequency.",
+      "",
+      "Magnetic fields are unrelated to the emission threshold.",
+      "Light is transverse, not longitudinal, and that is separate from the quantum issue."
+    ],
+    "tip": "Interference proves light is a wave, photoelectric effect proves it is a particle. Both are true, which is wave-particle duality.",
+    "improve": "Write Einstein's photoelectric equation and explain each term.",
+    "source": "NCERT Class XII Physics, Dual Nature of Radiation and Matter"
+  },
+  {
+    "id": "sci-phy-06",
+    "exams": [
+      "class12-science",
+      "bsc",
+      "class10"
+    ],
+    "stream": "school",
+    "course": "Class 12 Science / B.Sc",
+    "subject": "Physics",
+    "topic": "Work Power Energy",
+    "difficulty": "easy",
+    "q": "The SI unit of power is:",
+    "options": [
+      "Newton",
+      "Joule",
+      "Watt",
+      "Coulomb"
+    ],
+    "answer": 2,
+    "history": "One watt is one joule of work done per second, named after James Watt, whose steam engine improvements made the measure commercially important.",
+    "discussion": "Power is a rate, which is why time appears in its definition. Electrical power uses the same unit, computed as V times I.",
+    "wh": {
+      "what": "Rate of doing work",
+      "how": "P = W/t = VI",
+      "why": "To compare devices that do the same work at different speeds"
+    },
+    "status": "Household consumption is billed in kilowatt-hours, which is energy, not power.",
+    "why_wrong": [
+      "Newton measures force.",
+      "Joule measures energy or work.",
+      "",
+      "Coulomb measures electric charge."
+    ],
+    "tip": "Watt is per second, joule is the amount. Any 'per unit time' phrase points to power.",
+    "improve": "Convert a 100 W bulb's one-month usage into kilowatt-hours.",
+    "source": "NCERT Class XI Physics, Work Energy and Power"
+  },
+  {
+    "id": "sci-phy-07",
+    "exams": [
+      "class12-science",
+      "bsc",
+      "class10"
+    ],
+    "stream": "school",
+    "course": "Class 12 Science / B.Sc",
+    "subject": "Physics",
+    "topic": "Newton's Laws",
+    "difficulty": "medium",
+    "q": "A rocket moving forward by expelling gases backward is an application of:",
+    "options": [
+      "Newton's first law",
+      "Newton's second law",
+      "Newton's third law",
+      "Law of gravitation"
+    ],
+    "answer": 2,
+    "history": "Newton's third law states that every action has an equal and opposite reaction, and rocket propulsion is the standard illustration of momentum conservation.",
+    "discussion": "The rocket does not push against air, which is why it works in vacuum. The expelled mass carries momentum backward and the rocket gains equal momentum forward.",
+    "wh": {
+      "what": "Action-reaction pair",
+      "how": "Momentum conservation in an isolated system",
+      "why": "It explains motion without an external medium"
+    },
+    "status": "The same principle governs jet engines, ion thrusters and the recoil of a gun.",
+    "why_wrong": [
+      "The first law explains inertia, not propulsion.",
+      "The second law gives the force from the mass flow rate, but the origin is the third law.",
+      "",
+      "Gravitation is the force that acts on the rocket, not the propulsion mechanism."
+    ],
+    "tip": "For every action-reaction question, identify the two bodies exchanging force. If there are two, it is the third law.",
+    "improve": "Compute the thrust of a rocket expelling 5 kg per second at 2,000 m/s.",
+    "source": "NCERT Class XI Physics, Laws of Motion"
+  },
+  {
+    "id": "sci-chem-01",
+    "exams": [
+      "class12-science",
+      "bsc",
+      "class10",
+      "ssc"
+    ],
+    "stream": "school",
+    "course": "Class 12 Science / B.Sc",
+    "subject": "Chemistry",
+    "topic": "Acids and Bases",
+    "difficulty": "easy",
+    "q": "The pH of a neutral solution at 25°C is:",
+    "options": [
+      "0",
+      "7",
+      "14",
+      "1"
+    ],
+    "answer": 1,
+    "history": "pH is the negative logarithm of hydrogen ion concentration, and at 25°C pure water has equal concentrations of H⁺ and OH⁻, each 10⁻⁷ mol per litre, giving pH 7.",
+    "discussion": "Below 7 is acidic, above 7 is basic. The scale is logarithmic, so a pH of 3 is a hundred times more acidic than pH 5, a point often missed in numerical questions.",
+    "wh": {
+      "what": "Measure of acidity",
+      "how": "pH = -log[H⁺]",
+      "why": "It compresses a huge concentration range into a small scale"
+    },
+    "status": "pH is temperature dependent: neutral water shifts slightly below 7 at higher temperatures, though it stays neutral.",
+    "why_wrong": [
+      "0 is strongly acidic, as with concentrated hydrochloric acid.",
+      "",
+      "14 is strongly basic, as with sodium hydroxide.",
+      "1 is strongly acidic."
+    ],
+    "tip": "Neutral equals 7 at 25°C only. Each unit step is a factor of ten, so use the logarithm before comparing.",
+    "improve": "Calculate pH for 0.01 M HCl and 0.01 M NaOH.",
+    "source": "NCERT Class XI Chemistry, Equilibrium"
+  },
+  {
+    "id": "sci-chem-02",
+    "exams": [
+      "class12-science",
+      "bsc",
+      "class10",
+      "ssc"
+    ],
+    "stream": "school",
+    "course": "Class 12 Science / B.Sc",
+    "subject": "Chemistry",
+    "topic": "Atomic Structure",
+    "difficulty": "easy",
+    "q": "The atomic number of an element equals the number of:",
+    "options": [
+      "Neutrons",
+      "Protons",
+      "Nucleons",
+      "Electrons in the outermost shell"
+    ],
+    "answer": 1,
+    "history": "Atomic number, denoted Z, counts protons in the nucleus and determines the element's identity in the modern periodic table.",
+    "discussion": "Mass number counts protons plus neutrons, so isotopes of an element share the atomic number but differ in mass number, which explains why isotopes behave identically in chemical reactions.",
+    "wh": {
+      "what": "Proton count",
+      "who": "Introduced by Moseley through X-ray studies",
+      "why": "It orders elements by nuclear charge, not atomic weight"
+    },
+    "status": "Moseley's ordering resolved anomalies in Mendeleev's weight-based table and is the basis of the modern periodic law.",
+    "why_wrong": [
+      "Neutron count equals mass number minus atomic number.",
+      "",
+      "Nucleons are protons plus neutrons together.",
+      "Valence electrons vary with the group and are not the atomic number."
+    ],
+    "tip": "Z is protons, A is protons plus neutrons, and charge is protons minus electrons.",
+    "improve": "Work out protons, neutrons and electrons for three ions of your choice.",
+    "source": "NCERT Class XI Chemistry, Structure of Atom"
+  },
+  {
+    "id": "sci-chem-03",
+    "exams": [
+      "class12-science",
+      "bsc",
+      "class10",
+      "ssc"
+    ],
+    "stream": "school",
+    "course": "Class 12 Science / B.Sc",
+    "subject": "Chemistry",
+    "topic": "Atmosphere",
+    "difficulty": "easy",
+    "q": "Which gas is most abundant in the Earth's atmosphere?",
+    "options": [
+      "Oxygen",
+      "Nitrogen",
+      "Carbon dioxide",
+      "Argon"
+    ],
+    "answer": 1,
+    "history": "Nitrogen makes up about 78 per cent of the atmosphere by volume, oxygen about 21 per cent, and argon just under 1 per cent.",
+    "discussion": "Carbon dioxide is present in only about 0.04 per cent, yet it matters disproportionately because of its greenhouse effect, which is why abundance and importance are separate questions.",
+    "wh": {
+      "what": "Most abundant atmospheric gas",
+      "how": "About 78 per cent by volume",
+      "why": "Nitrogen is relatively inert, so it accumulated rather than reacting away"
+    },
+    "status": "Atmospheric CO2 has risen from about 280 ppm in pre-industrial times to over 420 ppm today.",
+    "why_wrong": [
+      "Oxygen is second at about 21 per cent.",
+      "",
+      "CO2 is a trace gas at roughly 0.04 per cent.",
+      "Argon is a noble gas at just under 1 per cent."
+    ],
+    "tip": "Remember 78, 21, 1: nitrogen, oxygen, argon. Everything else is a trace gas.",
+    "improve": "Note the composition of the atmosphere and the share of greenhouse gases within it.",
+    "source": "NCERT Class IX Science, Natural Resources"
+  },
+  {
+    "id": "sci-chem-04",
+    "exams": [
+      "class12-science",
+      "bsc",
+      "class10"
+    ],
+    "stream": "school",
+    "course": "Class 12 Science / B.Sc",
+    "subject": "Chemistry",
+    "topic": "Periodic Table",
+    "difficulty": "medium",
+    "q": "Elements of group 18 of the modern periodic table are called:",
+    "options": [
+      "Alkali metals",
+      "Halogens",
+      "Noble gases",
+      "Transition metals"
+    ],
+    "answer": 2,
+    "history": "Group 18 holds helium, neon, argon, krypton, xenon and radon, whose filled outer shells make them chemically inert in most conditions.",
+    "discussion": "Their very high ionisation energies explain why they form almost no compounds; xenon fluorides were the first exceptions, and those required extreme conditions.",
+    "wh": {
+      "what": "Noble gases",
+      "where": "Group 18, rightmost column",
+      "why": "Complete valence shells mean no tendency to gain or lose electrons"
+    },
+    "status": "Used in lighting, welding shields, MRI magnets with liquid helium, and inert atmospheres.",
+    "why_wrong": [
+      "Alkali metals are group 1.",
+      "Halogens are group 17.",
+      "",
+      "Transition metals are groups 3 to 12."
+    ],
+    "tip": "Groups at a glance: 1 alkali, 2 alkaline earth, 17 halogens, 18 noble gases.",
+    "improve": "Learn the group names and one property of each.",
+    "source": "NCERT Class XI Chemistry, Classification of Elements"
+  },
+  {
+    "id": "sci-chem-05",
+    "exams": [
+      "class12-science",
+      "bsc",
+      "class10"
+    ],
+    "stream": "school",
+    "course": "Class 12 Science / B.Sc",
+    "subject": "Chemistry",
+    "topic": "Reactions",
+    "difficulty": "medium",
+    "q": "Oxidation in terms of electron transfer means:",
+    "options": [
+      "Gain of electrons",
+      "Loss of electrons",
+      "Gain of protons",
+      "Loss of neutrons"
+    ],
+    "answer": 1,
+    "history": "The modern electronic definition is OIL RIG: oxidation is loss, reduction is gain of electrons, which replaced earlier oxygen and hydrogen based definitions.",
+    "discussion": "Because electrons lost by one species must be gained by another, oxidation and reduction always occur together, which is why the term redox is used.",
+    "wh": {
+      "what": "Electron transfer definition",
+      "how": "OIL RIG",
+      "why": "It generalises oxidation beyond reactions with oxygen"
+    },
+    "status": "The definition now underpins electrochemistry, corrosion science and battery design.",
+    "why_wrong": [
+      "Gain of electrons is reduction.",
+      "",
+      "Proton transfer describes acid-base reactions, not redox.",
+      "Neutrons are not exchanged in chemical reactions."
+    ],
+    "tip": "OIL RIG: Oxidation Is Loss, Reduction Is Gain. Learn the mnemonic and you will never invert it under pressure.",
+    "improve": "Identify the oxidising and reducing agents in three reactions.",
+    "source": "NCERT Class XI Chemistry, Redox Reactions"
+  },
+  {
+    "id": "sci-chem-06",
+    "exams": [
+      "class12-science",
+      "class10",
+      "ssc"
+    ],
+    "stream": "school",
+    "course": "Class 12 Science / B.Sc",
+    "subject": "Chemistry",
+    "topic": "Everyday Chemistry",
+    "difficulty": "easy",
+    "q": "The chemical formula of common salt is:",
+    "options": [
+      "NaCl",
+      "KCl",
+      "NaHCO₃",
+      "CaCO₃"
+    ],
+    "answer": 0,
+    "history": "Common salt is sodium chloride, formed by the ionic bond between a sodium cation and a chloride anion in a face-centred cubic lattice.",
+    "discussion": "The other options are also familiar salts, which is exactly the trap: potassium chloride is a salt substitute, sodium bicarbonate is baking soda, and calcium carbonate is limestone.",
+    "wh": {
+      "what": "Sodium chloride",
+      "where": "Seawater, rock salt and salt pans",
+      "why": "Essential for electrolyte balance and food preservation"
+    },
+    "status": "Iodised salt is the main vehicle for iodine supplementation in India's public health programmes.",
+    "why_wrong": [
+      "",
+      "KCl is potassium chloride, used as a low-sodium salt substitute.",
+      "NaHCO₃ is baking soda, sodium bicarbonate.",
+      "CaCO₃ is calcium carbonate, found in chalk and limestone."
+    ],
+    "tip": "Learn the everyday names table: NaCl salt, NaHCO₃ baking soda, CaO quicklime, Ca(OH)₂ slaked lime, CaSO₄ plaster of Paris.",
+    "improve": "Write ten common names with formulas in one table.",
+    "source": "NCERT Class X Science, Acids Bases and Salts"
+  },
+  {
+    "id": "sci-bio-01",
+    "exams": [
+      "class12-science",
+      "bsc",
+      "class10",
+      "ssc"
+    ],
+    "stream": "school",
+    "course": "Class 12 Science / B.Sc",
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "difficulty": "easy",
+    "q": "Which organelle is called the powerhouse of the cell?",
+    "options": [
+      "Ribosome",
+      "Mitochondria",
+      "Golgi body",
+      "Lysosome"
+    ],
+    "answer": 1,
+    "history": "Mitochondria generate most cellular ATP through oxidative phosphorylation, which is why they earned the powerhouse label.",
+    "discussion": "They have their own circular DNA and ribosomes and divide independently, evidence for the endosymbiotic theory that they were once free-living bacteria.",
+    "wh": {
+      "what": "Site of aerobic respiration",
+      "how": "Electron transport chain builds a proton gradient to make ATP",
+      "why": "ATP is the energy currency every cell process draws on"
+    },
+    "status": "Mitochondrial DNA is inherited maternally, which is the basis of mitochondrial lineage studies.",
+    "why_wrong": [
+      "Ribosomes synthesise proteins.",
+      "",
+      "The Golgi body packages and modifies proteins.",
+      "Lysosomes digest waste using hydrolytic enzymes."
+    ],
+    "tip": "One organelle, one job: ribosome makes, Golgi packs, lysosome digests, mitochondria pays the bills.",
+    "improve": "Draw a cell and label ten organelles with one function each.",
+    "source": "NCERT Class XI Biology, Cell: The Unit of Life"
+  },
+  {
+    "id": "sci-bio-02",
+    "exams": [
+      "class12-science",
+      "bsc",
+      "class10"
+    ],
+    "stream": "school",
+    "course": "Class 12 Science / B.Sc",
+    "subject": "Biology",
+    "topic": "Photosynthesis",
+    "difficulty": "medium",
+    "q": "In photosynthesis, oxygen is released from the splitting of:",
+    "options": [
+      "Carbon dioxide",
+      "Water",
+      "Glucose",
+      "Chlorophyll"
+    ],
+    "answer": 1,
+    "history": "Photosystem II splits water through photolysis to replace the electrons it loses, releasing oxygen as a by-product.",
+    "discussion": "This was established using isotope labelling with oxygen-18, which showed the released gas came from water rather than carbon dioxide, settling a long-standing debate.",
+    "wh": {
+      "what": "Source of released oxygen",
+      "where": "Thylakoid membrane of the chloroplast",
+      "how": "Photolysis of water in photosystem II",
+      "why": "To replenish electrons lost by chlorophyll"
+    },
+    "status": "Artificial photosynthesis research aims to replicate water splitting for hydrogen fuel.",
+    "why_wrong": [
+      "Carbon dioxide is reduced to carbohydrate and its oxygen ends up in glucose and water.",
+      "",
+      "Glucose is a product, not a source.",
+      "Chlorophyll is the pigment that absorbs light, not a substrate."
+    ],
+    "tip": "The isotope experiment is the evidence; remember that the answer is water, not carbon dioxide.",
+    "improve": "Write the overall photosynthesis equation and label the light and dark reactions.",
+    "source": "NCERT Class XI Biology, Photosynthesis in Higher Plants"
+  },
+  {
+    "id": "sci-bio-03",
+    "exams": [
+      "class12-science",
+      "bsc",
+      "class10",
+      "ssc"
+    ],
+    "stream": "school",
+    "course": "Class 12 Science / B.Sc",
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "difficulty": "medium",
+    "q": "Which blood group is called the universal donor?",
+    "options": [
+      "AB positive",
+      "O negative",
+      "A positive",
+      "B negative"
+    ],
+    "answer": 1,
+    "history": "O negative red cells carry neither A nor B antigens nor the Rh D antigen, so they provoke no reaction in recipients of any group.",
+    "discussion": "The universal recipient is AB positive, which has no antibodies against any of these antigens. In practice plasma compatibility runs in the opposite direction to red cell compatibility.",
+    "wh": {
+      "what": "Blood group compatibility",
+      "why": "Antigen absence prevents agglutination",
+      "how": "ABO and Rh antigen systems together"
+    },
+    "status": "O negative is always in short supply and is the group blood banks appeal for most urgently.",
+    "why_wrong": [
+      "AB positive is the universal recipient, the exact opposite.",
+      "",
+      "A positive carries the A and Rh antigens.",
+      "B negative lacks the Rh antigen but carries B."
+    ],
+    "tip": "O negative gives to all, AB positive receives from all. Two facts, no confusion.",
+    "improve": "Draw a compatibility grid for the eight common blood groups.",
+    "source": "NCERT Class XII Biology, Body Fluids and Circulation"
+  },
+  {
+    "id": "sci-bio-04",
+    "exams": [
+      "class12-science",
+      "bsc",
+      "class10"
+    ],
+    "stream": "school",
+    "course": "Class 12 Science / B.Sc",
+    "subject": "Biology",
+    "topic": "Genetics",
+    "difficulty": "medium",
+    "q": "The double helix structure of DNA was proposed by:",
+    "options": [
+      "Gregor Mendel",
+      "Watson and Crick",
+      "Charles Darwin",
+      "Robert Hooke"
+    ],
+    "answer": 1,
+    "history": "James Watson and Francis Crick published the double helix model in 1953, drawing critically on the X-ray diffraction work of Rosalind Franklin and Maurice Wilkins.",
+    "discussion": "The model explained base pairing and replication, and Franklin's Photograph 51 was the evidence that made the helical geometry unavoidable.",
+    "wh": {
+      "what": "Structure of DNA",
+      "when": "1953",
+      "who": "Watson and Crick, with Franklin's diffraction data",
+      "why": "To explain how genetic information is stored and copied"
+    },
+    "status": "Franklin's contribution is now widely acknowledged; the Nobel Prize in 1962 went only to Watson, Crick and Wilkins.",
+    "why_wrong": [
+      "Mendel established the laws of inheritance without knowing about DNA.",
+      "",
+      "Darwin proposed natural selection.",
+      "Hooke coined the term cell after observing cork."
+    ],
+    "tip": "Keep the roles apart: Mendel for inheritance laws, Watson and Crick for structure, Franklin for the diffraction evidence.",
+    "improve": "Learn the four base pairs and the difference between DNA and RNA.",
+    "source": "NCERT Class XII Biology, Molecular Basis of Inheritance"
+  },
+  {
+    "id": "sci-bio-05",
+    "exams": [
+      "class12-science",
+      "bsc",
+      "class10",
+      "ssc"
+    ],
+    "stream": "school",
+    "course": "Class 12 Science / B.Sc",
+    "subject": "Biology",
+    "topic": "Human Physiology",
+    "difficulty": "easy",
+    "q": "Insulin, which regulates blood glucose, is secreted by which organ?",
+    "options": [
+      "Liver",
+      "Pancreas",
+      "Kidney",
+      "Thyroid"
+    ],
+    "answer": 1,
+    "history": "Beta cells of the islets of Langerhans in the pancreas secrete insulin, while alpha cells secrete glucagon, and the two together regulate blood glucose.",
+    "discussion": "The liver is the target rather than the source: insulin signals it to store glucose as glycogen, which is why liver function and insulin action are usually studied together.",
+    "wh": {
+      "what": "Glucose lowering hormone",
+      "where": "Beta cells of the pancreas",
+      "why": "To move glucose from blood into cells"
+    },
+    "status": "Recombinant human insulin, produced since 1982, replaced animal-derived insulin in diabetes treatment.",
+    "why_wrong": [
+      "The liver stores glycogen but does not secrete insulin.",
+      "",
+      "The kidney filters blood and produces erythropoietin.",
+      "The thyroid secretes thyroxine, which regulates metabolism."
+    ],
+    "tip": "Pancreas is both exocrine and endocrine. Insulin and glucagon come from its endocrine part, the islets.",
+    "improve": "Learn the major endocrine glands and one hormone each.",
+    "source": "NCERT Class XI Biology, Chemical Coordination and Integration"
+  },
+  {
+    "id": "sci-bio-06",
+    "exams": [
+      "class12-science",
+      "bsc",
+      "class10"
+    ],
+    "stream": "school",
+    "course": "Class 12 Science / B.Sc",
+    "subject": "Biology",
+    "topic": "Human Body",
+    "difficulty": "easy",
+    "q": "The largest organ of the human body is:",
+    "options": [
+      "Liver",
+      "Skin",
+      "Brain",
+      "Lung"
+    ],
+    "answer": 1,
+    "history": "The skin is the largest organ by surface area and weight, forming the integumentary system that covers roughly two square metres in an adult.",
+    "discussion": "The liver is the largest internal organ and the largest gland, which is why both statements are true and examiners exploit the difference in wording.",
+    "wh": {
+      "what": "Largest organ",
+      "why": "It covers the entire body and performs barrier, sensory and thermal functions",
+      "how": "Three layers: epidermis, dermis and hypodermis"
+    },
+    "status": "Skin is also a major route for drug delivery and a site for vitamin D synthesis.",
+    "why_wrong": [
+      "The liver is the largest internal organ and gland, but not the largest organ overall.",
+      "",
+      "The brain is large but far lighter than the skin.",
+      "Lungs are paired organs and smaller by mass."
+    ],
+    "tip": "Read the wording: largest organ is skin, largest internal organ is liver, largest gland is liver.",
+    "improve": "Learn the three layers of skin and one function of each.",
+    "source": "NCERT Class XI Biology, Structural Organisation in Animals"
+  },
+  {
+    "id": "bca-01",
+    "exams": [
+      "bca",
+      "class12-science"
+    ],
+    "stream": "graduation",
+    "course": "BCA",
+    "subject": "Computer Fundamentals",
+    "topic": "Data Representation",
+    "difficulty": "easy",
+    "q": "One byte is equal to how many bits?",
+    "options": [
+      "4",
+      "8",
+      "16",
+      "32"
+    ],
+    "answer": 1,
+    "history": "A byte of eight bits became the standard through IBM's System/360 in the 1960s, replacing earlier six and seven bit arrangements.",
+    "discussion": "Eight bits give 256 distinct values, enough for the ASCII character set, which is why character encoding and byte length are tied together.",
+    "wh": {
+      "what": "Basic unit of digital storage",
+      "how": "1 byte = 8 bits",
+      "why": "Eight bits cover a full character set"
+    },
+    "status": "Modern systems still use 8-bit bytes, though word sizes have grown to 64 bits.",
+    "why_wrong": [
+      "4 bits is a nibble, half a byte.",
+      "",
+      "16 bits is a word on older processors.",
+      "32 bits is a double word."
+    ],
+    "tip": "Learn the ladder: bit, nibble 4, byte 8, kilobyte 1024 bytes, and so on upward.",
+    "improve": "Convert 2 GB into bits to see how the units compound.",
+    "source": "BCA Computer Fundamentals syllabus"
+  },
+  {
+    "id": "bca-02",
+    "exams": [
+      "bca",
+      "class12-science"
+    ],
+    "stream": "graduation",
+    "course": "BCA",
+    "subject": "Computer Fundamentals",
+    "topic": "Number Systems",
+    "difficulty": "medium",
+    "q": "The decimal number 10 in binary is:",
+    "options": [
+      "1010",
+      "1100",
+      "1001",
+      "1110"
+    ],
+    "answer": 0,
+    "history": "Decimal to binary conversion repeatedly divides by two and reads the remainders upward, giving 1010 for ten.",
+    "discussion": "Verify by expanding: 1×8 + 0×4 + 1×2 + 0×1 = 10. That check catches nearly every conversion mistake under exam pressure.",
+    "wh": {
+      "what": "Base conversion",
+      "how": "Divide by 2, record remainders, read bottom to top",
+      "why": "Computers represent values in binary states"
+    },
+    "status": "Hexadecimal is used as shorthand for binary in memory dumps and colour codes.",
+    "why_wrong": [
+      "",
+      "1100 is 12 in decimal.",
+      "1001 is 9 in decimal.",
+      "1110 is 14 in decimal."
+    ],
+    "tip": "Place values from the right are 1, 2, 4, 8, 16. Add the ones that are switched on and you have the decimal value.",
+    "improve": "Convert 25, 37 and 100 into binary and back.",
+    "source": "BCA Computer Fundamentals syllabus"
+  },
+  {
+    "id": "bca-03",
+    "exams": [
+      "bca",
+      "class12-science"
+    ],
+    "stream": "graduation",
+    "course": "BCA",
+    "subject": "Computer Fundamentals",
+    "topic": "Memory",
+    "difficulty": "easy",
+    "q": "Which of the following is a volatile memory?",
+    "options": [
+      "ROM",
+      "RAM",
+      "Hard disk",
+      "Flash drive"
+    ],
+    "answer": 1,
+    "history": "RAM loses its contents when power is removed, which is why unsaved work disappears in a power cut, while ROM retains data permanently.",
+    "discussion": "Volatility is about persistence without power, not about speed. RAM is both volatile and fast, while flash storage is non-volatile and slower.",
+    "wh": {
+      "what": "Volatile versus non-volatile storage",
+      "why": "RAM needs constant refresh to hold charge",
+      "how": "DRAM uses capacitors that leak charge"
+    },
+    "status": "DRAM and SRAM remain volatile; emerging technologies such as MRAM aim to combine speed with persistence.",
+    "why_wrong": [
+      "ROM is non-volatile and retains data without power.",
+      "",
+      "A hard disk is non-volatile magnetic storage.",
+      "A flash drive is non-volatile solid state storage."
+    ],
+    "tip": "If losing power would erase it, it is volatile. RAM is the only common example in exam options.",
+    "improve": "Compare RAM, ROM, cache and secondary storage on speed, volatility and cost per GB.",
+    "source": "BCA Computer Fundamentals syllabus"
+  },
+  {
+    "id": "bca-04",
+    "exams": [
+      "bca"
+    ],
+    "stream": "graduation",
+    "course": "BCA",
+    "subject": "DBMS",
+    "topic": "Keys",
+    "difficulty": "medium",
+    "q": "In a relational database, a primary key must be:",
+    "options": [
+      "Unique and not null",
+      "Unique but nullable",
+      "Duplicable but not null",
+      "Optional in every row"
+    ],
+    "answer": 0,
+    "history": "A primary key uniquely identifies each row, so the relational model requires both uniqueness and the absence of nulls, since a null cannot identify anything.",
+    "discussion": "A candidate key that is not chosen as primary becomes an alternate key, and a foreign key in another table references the primary key to enforce referential integrity.",
+    "wh": {
+      "what": "Row identifier",
+      "how": "Unique constraint plus not null constraint",
+      "why": "Every row must be addressable and unambiguous"
+    },
+    "status": "Surrogate keys such as auto-increment ids are now common in place of natural keys.",
+    "why_wrong": [
+      "",
+      "A nullable unique column is a unique key, not a primary key.",
+      "Duplicates defeat the purpose of identification.",
+      "Every row must carry a primary key value."
+    ],
+    "tip": "Primary key equals unique plus not null. Both conditions must appear in the option for it to be correct.",
+    "improve": "Write the SQL for creating a table with primary and foreign keys.",
+    "source": "BCA DBMS syllabus; Codd's relational model"
+  },
+  {
+    "id": "bca-05",
+    "exams": [
+      "bca",
+      "class12-science"
+    ],
+    "stream": "graduation",
+    "course": "BCA",
+    "subject": "C Programming",
+    "topic": "Basics",
+    "difficulty": "medium",
+    "q": "Which of the following is NOT a keyword in C?",
+    "options": [
+      "static",
+      "volatile",
+      "main",
+      "register"
+    ],
+    "answer": 2,
+    "history": "C has 32 keywords in the C89 standard, and main is a function name defined by the programmer, not a reserved word.",
+    "discussion": "Because main is not reserved, a programmer could technically use it as a variable name, though doing so would break the program's entry point and is poor practice.",
+    "wh": {
+      "what": "C keywords",
+      "how": "Check the reserved word list for the standard",
+      "why": "Keywords cannot be used as identifiers"
+    },
+    "status": "C11 and C17 added a few keywords such as _Static_assert and _Generic, but main remains an identifier.",
+    "why_wrong": [
+      "static is a storage class keyword.",
+      "volatile is a type qualifier keyword.",
+      "",
+      "register is a storage class keyword."
+    ],
+    "tip": "main is a function, not a keyword. If a question lists it among keywords, it is usually the answer.",
+    "improve": "Memorise the 32 C keywords by grouping them into storage, type and control categories.",
+    "source": "BCA C Programming syllabus; ISO C standard"
+  },
+  {
+    "id": "bca-06",
+    "exams": [
+      "bca"
+    ],
+    "stream": "graduation",
+    "course": "BCA",
+    "subject": "OOP",
+    "topic": "Concepts",
+    "difficulty": "medium",
+    "q": "Which of the following is NOT one of the four pillars of object oriented programming?",
+    "options": [
+      "Encapsulation",
+      "Inheritance",
+      "Compilation",
+      "Polymorphism"
+    ],
+    "answer": 2,
+    "history": "The four pillars are encapsulation, inheritance, polymorphism and abstraction; compilation is a build process, not a design principle.",
+    "discussion": "Encapsulation hides state behind methods, inheritance reuses behaviour, polymorphism lets one interface serve many types, and abstraction exposes only what matters.",
+    "wh": {
+      "what": "Core OOP principles",
+      "why": "To model software around data and behaviour rather than procedures",
+      "how": "Classes, objects, interfaces and inheritance hierarchies"
+    },
+    "status": "Modern design favours composition over inheritance, but the four pillars remain the standard syllabus framing.",
+    "why_wrong": [
+      "Encapsulation is a pillar.",
+      "Inheritance is a pillar.",
+      "",
+      "Polymorphism is a pillar."
+    ],
+    "tip": "Four pillars: encapsulation, inheritance, polymorphism, abstraction. Anything about tooling is not a pillar.",
+    "improve": "Write one Java or C++ example demonstrating each pillar.",
+    "source": "BCA OOP syllabus"
+  },
+  {
+    "id": "bca-07",
+    "exams": [
+      "bca",
+      "class12-science"
+    ],
+    "stream": "graduation",
+    "course": "BCA",
+    "subject": "Networking",
+    "topic": "Protocols",
+    "difficulty": "easy",
+    "q": "The default port number for HTTP is:",
+    "options": [
+      "21",
+      "25",
+      "80",
+      "443"
+    ],
+    "answer": 2,
+    "history": "HTTP uses port 80 by default, while HTTPS uses 443 with TLS layered on top.",
+    "discussion": "Port numbers route traffic to the right service on a single IP address, so a server can run web, mail and file services simultaneously.",
+    "wh": {
+      "what": "Well-known port allocation",
+      "how": "IANA assigns ports 0 to 1023 to standard services",
+      "why": "One IP address must serve many services"
+    },
+    "status": "Browsers now default to HTTPS on 443, and port 80 often redirects there.",
+    "why_wrong": [
+      "21 is FTP.",
+      "25 is SMTP for mail transfer.",
+      "",
+      "443 is HTTPS."
+    ],
+    "tip": "Memorise five ports: 21 FTP, 25 SMTP, 53 DNS, 80 HTTP, 443 HTTPS.",
+    "improve": "Note the difference between TCP and UDP with one example each.",
+    "source": "BCA Networking syllabus; IANA registry"
+  },
+  {
+    "id": "arts-soc-01",
+    "exams": [
+      "ba-arts",
+      "class12-arts",
+      "upsc"
+    ],
+    "stream": "graduation",
+    "course": "BA Sociology",
+    "subject": "Sociology",
+    "topic": "Social Groups",
+    "difficulty": "medium",
+    "q": "The concept of the primary group was introduced by:",
+    "options": [
+      "Emile Durkheim",
+      "Charles Horton Cooley",
+      "Max Weber",
+      "Talcott Parsons"
+    ],
+    "answer": 1,
+    "history": "Cooley introduced the primary group in 1909 to describe small, face-to-face, emotionally close groups such as family and neighbourhood.",
+    "discussion": "Primary groups build the self through what Cooley called the looking-glass self, while secondary groups are impersonal and goal oriented, such as a workplace.",
+    "wh": {
+      "what": "Types of social group",
+      "who": "Charles Horton Cooley",
+      "why": "To distinguish intimate groups from formal ones"
+    },
+    "status": "Digital communication has blurred the distinction, with online communities showing both intimacy and scale.",
+    "why_wrong": [
+      "Durkheim is associated with social facts, anomie and suicide typology.",
+      "",
+      "Weber is known for ideal types and the Protestant ethic thesis.",
+      "Parsons developed structural functionalism and pattern variables."
+    ],
+    "tip": "Cooley for primary group and looking-glass self. Both belong to the same thinker, so learn them as a pair.",
+    "improve": "Compare primary and secondary groups on five characteristics.",
+    "source": "NCERT Class XI Sociology, Understanding Society"
+  },
+  {
+    "id": "arts-psy-01",
+    "exams": [
+      "ba-arts",
+      "class12-arts"
+    ],
+    "stream": "graduation",
+    "course": "BA Psychology",
+    "subject": "Psychology",
+    "topic": "Learning",
+    "difficulty": "medium",
+    "q": "Classical conditioning was demonstrated by which experiment?",
+    "options": [
+      "Skinner's box with a lever",
+      "Pavlov's dogs salivating to a bell",
+      "Kohler's chimpanzee with sticks",
+      "Bandura's bobo doll"
+    ],
+    "answer": 1,
+    "history": "Pavlov paired a neutral stimulus, a bell, with food until the bell alone produced salivation, establishing the conditioned response.",
+    "discussion": "The other experiments map to distinct theories: operant conditioning, insight learning and observational learning, which is why examiners list them together.",
+    "wh": {
+      "what": "Associative learning",
+      "who": "Ivan Pavlov",
+      "how": "Pairing conditioned and unconditioned stimuli",
+      "why": "To explain how responses attach to new cues"
+    },
+    "status": "Classical conditioning underpins exposure therapy for phobias and aversion treatments.",
+    "why_wrong": [
+      "Skinner's box demonstrates operant conditioning through reinforcement.",
+      "",
+      "Kohler's chimpanzee demonstrates insight learning.",
+      "Bandura's bobo doll demonstrates observational learning."
+    ],
+    "tip": "One name, one theory: Pavlov classical, Skinner operant, Kohler insight, Bandura observational.",
+    "improve": "Draw the classical conditioning paradigm with UCS, CS, UCR and CR labelled.",
+    "source": "NCERT Class XI Psychology, Learning"
+  },
+  {
+    "id": "arts-pol-01",
+    "exams": [
+      "ba-arts",
+      "class12-arts",
+      "upsc"
+    ],
+    "stream": "graduation",
+    "course": "BA Political Science",
+    "subject": "Political Science",
+    "topic": "Concepts",
+    "difficulty": "medium",
+    "q": "In political theory, sovereignty means:",
+    "options": [
+      "Separation of powers",
+      "Supreme and final authority within a territory",
+      "Rule by consent of the majority",
+      "Division of authority among States"
+    ],
+    "answer": 1,
+    "history": "Sovereignty, elaborated by Bodin and later Austin, denotes the supreme and final law-making authority within a defined territory.",
+    "discussion": "Internal sovereignty concerns authority over citizens, while external sovereignty concerns independence from other States, and the two are often tested together.",
+    "wh": {
+      "what": "Supreme authority of the State",
+      "who": "Jean Bodin, then John Austin",
+      "why": "It distinguishes the State from other associations"
+    },
+    "status": "Globalisation and international institutions have qualified external sovereignty, a live debate in international relations.",
+    "why_wrong": [
+      "Separation of powers is a structural principle, not sovereignty.",
+      "",
+      "Majority rule describes a decision rule, not supreme authority.",
+      "Division of authority describes federalism."
+    ],
+    "tip": "Sovereignty is about who has the final word. Federalism is about who has which word.",
+    "improve": "Learn the four elements of the State: population, territory, government, sovereignty.",
+    "source": "NCERT Class XI Political Science, Political Theory"
+  },
+  {
+    "id": "arts-his-01",
+    "exams": [
+      "ba-arts",
+      "class12-arts",
+      "upsc"
+    ],
+    "stream": "graduation",
+    "course": "BA History",
+    "subject": "History",
+    "topic": "World History",
+    "difficulty": "medium",
+    "q": "The Renaissance began in which country?",
+    "options": [
+      "France",
+      "Italy",
+      "England",
+      "Germany"
+    ],
+    "answer": 1,
+    "history": "The Renaissance began in the Italian city-states, especially Florence, in the fourteenth century, funded by mercantile wealth and sustained by classical manuscripts.",
+    "discussion": "Patronage by families such as the Medici, the fall of Constantinople pushing Greek scholars westward, and printing with movable type together created the conditions for its spread.",
+    "wh": {
+      "what": "Cultural and intellectual revival",
+      "when": "14th to 17th century",
+      "where": "Italy, then northern Europe",
+      "why": "Urban wealth, patronage and recovery of classical texts"
+    },
+    "status": "Historians now treat the Renaissance as one phase in a longer continuity rather than a sharp break with the medieval world.",
+    "why_wrong": [
+      "France was important later, in the Enlightenment.",
+      "",
+      "England produced the Elizabethan flowering but not the origin.",
+      "Germany was central to the Reformation, not the Renaissance."
+    ],
+    "tip": "Sequence them: Renaissance in Italy, Reformation in Germany, Enlightenment in France, Industrial Revolution in Britain.",
+    "improve": "List five Renaissance figures with their fields.",
+    "source": "NCERT Class XI Themes in World History"
+  },
+  {
+    "id": "arts-eng-01",
+    "exams": [
+      "ba-arts",
+      "class12-arts"
+    ],
+    "stream": "graduation",
+    "course": "BA English",
+    "subject": "English",
+    "topic": "Literature",
+    "difficulty": "easy",
+    "q": "'Hamlet' was written by:",
+    "options": [
+      "Christopher Marlowe",
+      "William Shakespeare",
+      "John Milton",
+      "Ben Jonson"
+    ],
+    "answer": 1,
+    "history": "Shakespeare wrote Hamlet around 1600, and it was published in the Second Quarto of 1604 with the fuller text.",
+    "discussion": "Marlowe and Jonson were contemporaries of Shakespeare, which is why their names appear as distractors in every literature paper on the period.",
+    "wh": {
+      "what": "Tragedy of Prince Hamlet",
+      "when": "c. 1600",
+      "who": "William Shakespeare",
+      "why": "Studied for its soliloquies and revenge plot structure"
+    },
+    "status": "The play remains the most performed and most adapted work in the English canon.",
+    "why_wrong": [
+      "Marlowe wrote Doctor Faustus and Tamburlaine.",
+      "",
+      "Milton wrote Paradise Lost.",
+      "Jonson wrote Volpone and The Alchemist."
+    ],
+    "tip": "Group Elizabethan playwrights by their best-known work; one title each is enough for identification.",
+    "improve": "Learn five Shakespeare plays with genre and approximate year.",
+    "source": "NCERT Class XI English; Arden Shakespeare editions"
+  }
+]

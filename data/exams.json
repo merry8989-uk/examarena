@@ -1,0 +1,297 @@
+{
+  "streams": [
+    {
+      "id": "competition",
+      "name": "Competition / Government Exams",
+      "blurb": "UPSC, State PSC, SSC, Banking, Railway, Defence"
+    },
+    {
+      "id": "professional",
+      "name": "Professional Courses",
+      "blurb": "CA, CS, CMA, and allied commerce professionals"
+    },
+    {
+      "id": "graduation",
+      "name": "Graduation / UG Courses",
+      "blurb": "BA, BSc, BCom, BBA, BCA — semester-wise"
+    },
+    {
+      "id": "school",
+      "name": "School & Foundation",
+      "blurb": "Class 9 to 12, all streams"
+    }
+  ],
+  "exams": [
+    {
+      "id": "upsc",
+      "name": "UPSC Civil Services",
+      "short": "UPSC CSE",
+      "stream": "competition",
+      "papers": "Prelims GS-I + CSAT",
+      "subjects": [
+        "Polity",
+        "History",
+        "Geography",
+        "Economy",
+        "Environment",
+        "Current Affairs",
+        "CSAT"
+      ]
+    },
+    {
+      "id": "bpsc",
+      "name": "BPSC — Bihar Public Service Commission",
+      "short": "BPSC",
+      "stream": "competition",
+      "papers": "Prelims + Mains GS",
+      "subjects": [
+        "Polity",
+        "History",
+        "Geography",
+        "Economy",
+        "Bihar Special",
+        "Current Affairs"
+      ]
+    },
+    {
+      "id": "ssc",
+      "name": "SSC CGL / CHSL / MTS",
+      "short": "SSC",
+      "stream": "competition",
+      "papers": "Tier-1 + Tier-2",
+      "subjects": [
+        "Quantitative Aptitude",
+        "Reasoning",
+        "English",
+        "General Awareness"
+      ]
+    },
+    {
+      "id": "banking",
+      "name": "Banking — IBPS / SBI PO & Clerk",
+      "short": "Banking",
+      "stream": "competition",
+      "papers": "Prelims + Mains",
+      "subjects": [
+        "Quantitative Aptitude",
+        "Reasoning",
+        "English",
+        "Banking Awareness"
+      ]
+    },
+    {
+      "id": "railway",
+      "name": "Railway — RRB NTPC / Group D",
+      "short": "Railway",
+      "stream": "competition",
+      "papers": "CBT-1 + CBT-2",
+      "subjects": [
+        "Mathematics",
+        "General Intelligence",
+        "General Awareness"
+      ]
+    },
+    {
+      "id": "defence",
+      "name": "Defence — NDA / CDS / AFCAT",
+      "short": "Defence",
+      "stream": "competition",
+      "papers": "Written + SSB",
+      "subjects": [
+        "Mathematics",
+        "General Ability",
+        "English"
+      ]
+    },
+    {
+      "id": "ca-foundation",
+      "name": "CA Foundation",
+      "short": "CA Foundation",
+      "stream": "professional",
+      "papers": "4 papers",
+      "subjects": [
+        "Accounting",
+        "Business Laws",
+        "Quantitative Aptitude",
+        "Business Economics"
+      ]
+    },
+    {
+      "id": "ca-inter",
+      "name": "CA Intermediate",
+      "short": "CA Inter",
+      "stream": "professional",
+      "papers": "Group I + II",
+      "subjects": [
+        "Advanced Accounting",
+        "Corporate Laws",
+        "Taxation",
+        "Cost & Management Accounting",
+        "Auditing"
+      ]
+    },
+    {
+      "id": "cs-executive",
+      "name": "CS Executive",
+      "short": "CS Executive",
+      "stream": "professional",
+      "papers": "Module I + II",
+      "subjects": [
+        "Company Law",
+        "Jurisprudence",
+        "Taxation",
+        "Financial Management"
+      ]
+    },
+    {
+      "id": "bcom",
+      "name": "B.Com — Honours / Pass",
+      "short": "B.Com",
+      "stream": "graduation",
+      "papers": "Semester I–VI",
+      "subjects": [
+        "Accountancy",
+        "Business Studies",
+        "Economics",
+        "Statistics",
+        "Income Tax",
+        "GST",
+        "Corporate Law"
+      ]
+    },
+    {
+      "id": "bba",
+      "name": "BBA",
+      "short": "BBA",
+      "stream": "graduation",
+      "papers": "Semester I–VI",
+      "subjects": [
+        "Management",
+        "Marketing",
+        "Business Mathematics",
+        "Business Law",
+        "HRM",
+        "Finance"
+      ]
+    },
+    {
+      "id": "bca",
+      "name": "BCA",
+      "short": "BCA",
+      "stream": "graduation",
+      "papers": "Semester I–VI",
+      "subjects": [
+        "Computer Fundamentals",
+        "C Programming",
+        "DBMS",
+        "Data Structures",
+        "Mathematics",
+        "Networking"
+      ]
+    },
+    {
+      "id": "ba-arts",
+      "name": "BA — Arts & Humanities",
+      "short": "BA",
+      "stream": "graduation",
+      "papers": "Semester I–VI",
+      "subjects": [
+        "History",
+        "Political Science",
+        "Sociology",
+        "Psychology",
+        "English",
+        "Hindi"
+      ]
+    },
+    {
+      "id": "bsc",
+      "name": "B.Sc — Science",
+      "short": "B.Sc",
+      "stream": "graduation",
+      "papers": "Semester I–VI",
+      "subjects": [
+        "Physics",
+        "Chemistry",
+        "Biology",
+        "Mathematics",
+        "Zoology",
+        "Botany"
+      ]
+    },
+    {
+      "id": "class12-commerce",
+      "name": "Class 12 — Commerce",
+      "short": "12th Commerce",
+      "stream": "school",
+      "papers": "CBSE / State Board",
+      "subjects": [
+        "Accountancy",
+        "Business Studies",
+        "Economics",
+        "Applied Maths"
+      ]
+    },
+    {
+      "id": "class12-science",
+      "name": "Class 12 — Science",
+      "short": "12th Science",
+      "stream": "school",
+      "papers": "CBSE / State Board",
+      "subjects": [
+        "Physics",
+        "Chemistry",
+        "Biology",
+        "Mathematics"
+      ]
+    },
+    {
+      "id": "class12-arts",
+      "name": "Class 12 — Arts",
+      "short": "12th Arts",
+      "stream": "school",
+      "papers": "CBSE / State Board",
+      "subjects": [
+        "History",
+        "Political Science",
+        "Geography",
+        "Economics"
+      ]
+    },
+    {
+      "id": "class10",
+      "name": "Class 10 — All Subjects",
+      "short": "10th Board",
+      "stream": "school",
+      "papers": "CBSE / State Board",
+      "subjects": [
+        "Science",
+        "Social Science",
+        "Mathematics",
+        "English"
+      ]
+    }
+  ],
+  "dailyTopics": [
+    "Indian Polity — Constitutional Foundations",
+    "Modern Indian History — Freedom Struggle",
+    "Indian Geography — Rivers & Landforms",
+    "Indian Economy — Budget, Banking & Inflation",
+    "Environment & Ecology — Conservation",
+    "Ancient & Medieval India",
+    "Bihar Special — History, Geography & Polity",
+    "Quantitative Aptitude — Arithmetic Blitz",
+    "Reasoning — Puzzles & Seating Arrangement",
+    "English — Grammar & Vocabulary",
+    "Accounting Fundamentals & Journal Entries",
+    "Business Studies & Management Concepts",
+    "Economics — Micro & Macro Mix",
+    "General Science — Physics & Chemistry",
+    "General Science — Biology & Health",
+    "Computer Awareness & Digital India",
+    "Current Affairs & Government Schemes",
+    "Political Science & Public Administration",
+    "Sociology & Social Issues",
+    "Statistics & Data Interpretation"
+  ]
+}
