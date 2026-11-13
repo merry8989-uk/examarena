@@ -1,5 +1,14 @@
 [
  {
+  "date": "2026-11-14",
+  "count": 140,
+  "source": "bank",
+  "topic": "Business Studies & Management Concepts",
+  "subjects": 27,
+  "provider": "sarvam",
+  "generatedAt": "2026-11-13T23:50:22.822Z"
+ },
+ {
   "date": "2026-11-13",
   "count": 140,
   "source": "bank",
