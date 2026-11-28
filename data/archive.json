@@ -1,5 +1,14 @@
 [
  {
+  "date": "2026-11-28",
+  "count": 140,
+  "source": "bank",
+  "topic": "Ancient & Medieval India",
+  "subjects": 27,
+  "provider": "sarvam",
+  "generatedAt": "2026-11-28T01:37:56.258Z"
+ },
+ {
   "date": "2026-11-27",
   "count": 140,
   "source": "bank",
